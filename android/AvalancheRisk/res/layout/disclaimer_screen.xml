@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/transWhite"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            style="@style/textLarge"
+            android:gravity="center_horizontal"
+            android:text="@string/appLongName"
+            android:textColor="@color/blue"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/textSmall"
+            android:gravity="right"
+            android:text="@string/author"
+            android:textColor="@color/blue"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            style="@style/textVerySmall.warning"
+            android:text="@string/asIs" />
+
+        <TextView
+            style="@style/textVerySmall"
+            android:text="@string/disclaimer" />
+
+        <TextView
+            style="@style/textVerySmall.warning"
+            android:text="@string/noSnowMobiles" />
+
+        <TextView
+            style="@style/textVerySmall"
+            android:paddingBottom="10dp"
+            android:text="@string/whyNoSnowMobiles" />
+
+        <Button
+            android:id="@+id/frontContinueButton"
+            style="@style/button"
+            android:text="@string/continueButton" />
+    </LinearLayout>
+
+</FrameLayout>

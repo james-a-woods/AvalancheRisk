@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transWhite"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dangerLevelText"
+        style="@style/textMedium.heading"
+        android:gravity="center_horizontal"
+        android:minLines="3" 
+        android:text="XXX" />
+
+    <ScrollView
+        android:id="@+id/reductionScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/reductionForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transWhite"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textMedium"
+                    android:text="@string/hazardLevel" />
+
+                <RadioGroup
+                    android:id="@+id/hazard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/veryHigh"
+                        style="@style/textMedium"
+                        android:checked="true"
+                        android:text="@string/veryHigh"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/high"
+                        style="@style/textMedium"
+                        android:text="@string/high"
+                        android:textColor="@color/red" />
+
+                    <RadioButton
+                        android:id="@+id/considerable"
+                        style="@style/textMedium"
+                        android:text="@string/considerable"
+                        android:textColor="@color/darkOrange" />
+
+                    <RadioButton
+                        android:id="@+id/moderate"
+                        style="@style/textMedium"
+                        android:text="@string/moderate"
+                        android:textColor="@color/darkYellow" />
+
+                    <RadioButton
+                        android:id="@+id/low"
+                        style="@style/textMedium"
+                        android:text="@string/low"
+                        android:textColor="@color/darkGreen" />
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/higherHazard"
+                    style="@style/textSmall"
+                    android:text="@string/higherHazard" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/firstClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:background="@color/transRed"
+                    android:text="@string/firstClass" />
+
+                <TextView
+                    style="@style/textSmall"
+                    android:text="@string/howSteep" />
+
+                <RadioGroup
+                    android:id="@+id/steepness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/veryVerySteep"
+                        style="@style/textSmall"
+                        android:checked="true"
+                        android:text="@string/veryVerySteep" />
+
+                    <RadioButton
+                        android:id="@+id/verySteep"
+                        style="@style/textSmall"
+                        android:text="@string/verySteep" />
+
+                    <RadioButton
+                        android:id="@+id/steep"
+                        style="@style/textSmall"
+                        android:text="@string/steep" />
+
+                    <RadioButton
+                        android:id="@+id/moderatelySteep"
+                        style="@style/textSmall"
+                        android:text="@string/moderatelySteep" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:background="@color/transOrange"
+                    android:text="@string/secondClass" />
+
+                <CheckBox
+                    android:id="@+id/allAspectsDanger"
+                    style="@style/textSmall"
+                    android:text="@string/allAspectsDanger" />
+
+                <CheckBox
+                    android:id="@+id/inverse"
+                    style="@style/textSmall"
+                    android:text="@string/inverse" />
+
+                <TextView
+                    style="@style/textSmall"
+                    android:text="@string/where" />
+
+                <RadioGroup
+                    android:id="@+id/where"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/allAspects"
+                        style="@style/textSmall"
+                        android:checked="true"
+                        android:text="@string/allAspects" />
+
+                    <RadioButton
+                        android:id="@+id/avoidNorthSector"
+                        style="@style/textSmall"
+                        android:text="@string/avoidNorthSector" />
+
+                    <RadioButton
+                        android:id="@+id/avoidNorthHalf"
+                        style="@style/textSmall"
+                        android:text="@string/avoidNorthHalf" />
+
+                    <RadioButton
+                        android:id="@+id/avoidCritical"
+                        style="@style/textSmall"
+                        android:text="@string/avoidCritical" />
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/tracked"
+                    style="@style/textSmall"
+                    android:text="@string/tracked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:background="@color/transYellow"
+                    android:text="@string/thirdClass" />
+
+                <TextView
+                    style="@style/textSmall"
+                    android:text="@string/who" />
+
+                <RadioGroup
+                    android:id="@+id/groupSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/largeGroup"
+                        style="@style/textSmall"
+                        android:checked="true"
+                        android:text="@string/largeGroup" />
+
+                    <RadioButton
+                        android:id="@+id/largeGroupSpaced"
+                        style="@style/textSmall"
+                        android:text="@string/largeGroupSpaced" />
+
+                    <RadioButton
+                        android:id="@+id/smallGroup"
+                        style="@style/textSmall"
+                        android:text="@string/smallGroup" />
+
+                    <RadioButton
+                        android:id="@+id/smallGroupSpaced"
+                        style="@style/textSmall"
+                        android:text="@string/smallGroupSpaced" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

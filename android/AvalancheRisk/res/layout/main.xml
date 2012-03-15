@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        android:id="@+id/disclaimerScreen"
+        layout="@layout/disclaimer_screen" />
+
+    <include
+        android:id="@+id/reductionMethodScreen"
+        layout="@layout/reduction_method_screen"
+        android:visibility="invisible" />
+
+</merge>
