@@ -7,7 +7,7 @@ import woodsie.avalanche.data.Hazard;
 import woodsie.avalanche.data.ReductionParams;
 import woodsie.avalanche.data.Where;
 
-public class ReductionProcessor {
+public class ReductionCalculator {
     public static final BigDecimal EXTREME = BigDecimal.valueOf(100);
 
     public BigDecimal Process(ReductionParams params) {
