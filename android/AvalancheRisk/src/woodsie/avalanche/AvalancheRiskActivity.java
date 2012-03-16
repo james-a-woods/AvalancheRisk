@@ -14,72 +14,91 @@ import android.view.ViewGroup;
 import android.widget.ScrollView;
 
 public class AvalancheRiskActivity extends Activity implements OnClickListener {
-    private final ReductionListener listener = new ReductionListener(this);
+	private final ReductionListener listener = new ReductionListener(this);
 
-    public static final long DISCLAIMER_TIMEOUT = 12 * 60 * 60 * 1000; // 12 hours
+	public static final long DISCLAIMER_TIMEOUT = 12 * 60 * 60 * 1000; // 12 hours
 
-    Date lastWarningShown = null;
+	Date lastWarningShown = null;
 
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
 
-        View topLevel = findViewById(R.id.reductionForm);
-        setRecursiveOnClickListener(topLevel, listener);
+		View topLevel = findViewById(R.id.reductionForm);
+		setRecursiveOnClickListener(topLevel, listener);
 
-        View continueButton = findViewById(R.id.frontContinueButton);
-        continueButton.setOnClickListener(this);
-    }
+		View continueButton = findViewById(R.id.frontContinueButton);
+		continueButton.setOnClickListener(this);
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+		System.err.println("HERE");
+	}
 
-        ScrollView scroll = (ScrollView) findViewById(R.id.reductionScroller);
-        scroll.scrollTo(0, 0);
+	@Override
+	protected void onResume() {
+		super.onResume();
 
-        listener.onClick(null);
+		ScrollView scroll = (ScrollView) findViewById(R.id.reductionScroller);
+		scroll.scrollTo(0, 0);
 
-        if (lastWarningShown == null || (new Date().getTime() - lastWarningShown.getTime()) > DISCLAIMER_TIMEOUT) {
-            showDisclaimer();
-        }
-    }
+		listener.onClick(null);
 
-    private void setRecursiveOnClickListener(View view, OnClickListener listener) {
+		if (lastWarningShown == null || (new Date().getTime() - lastWarningShown.getTime()) > DISCLAIMER_TIMEOUT) {
+			showDisclaimer();
+		} else {
+			hideDisclaimer();
+		}
+	}
 
-        if (view instanceof ViewGroup) {
-            ViewGroup group = (ViewGroup) view;
-            for (int i = 0; i < group.getChildCount(); i++) {
-                setRecursiveOnClickListener(group.getChildAt(i), listener);
-            }
-        } else {
-            view.setOnClickListener(listener);
-        }
-    }
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+		super.onRestoreInstanceState(savedInstanceState);
 
-    public void onClick(View v) {
-        hideDisclaimer();
-    }
+		lastWarningShown = new Date(savedInstanceState.getLong("lastWarningShown"));
+	}
 
-    private void hideDisclaimer() {
-        View page = findViewById(R.id.reductionMethodScreen);
-        page.setVisibility(VISIBLE);
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
 
-        page = findViewById(R.id.disclaimerScreen);
-        page.setVisibility(INVISIBLE);
+		if (lastWarningShown != null)
+			outState.putLong("lastWarningShown", lastWarningShown.getTime());
+	}
 
-        lastWarningShown = new Date();
-    }
+	private void setRecursiveOnClickListener(View view, OnClickListener listener) {
 
-    private void showDisclaimer() {
-        View page = findViewById(R.id.disclaimerScreen);
-        page.setVisibility(VISIBLE);
+		if (view instanceof ViewGroup) {
+			ViewGroup group = (ViewGroup) view;
+			for (int i = 0; i < group.getChildCount(); i++) {
+				setRecursiveOnClickListener(group.getChildAt(i), listener);
+			}
+		} else {
+			view.setOnClickListener(listener);
+		}
+	}
 
-        page = findViewById(R.id.reductionMethodScreen);
-        page.setVisibility(INVISIBLE);
+	public void onClick(View v) {
+		hideDisclaimer();
+	}
 
-        lastWarningShown = new Date();
-    }
+	private void hideDisclaimer() {
+		View page = findViewById(R.id.reductionMethodScreen);
+		page.setVisibility(VISIBLE);
+
+		page = findViewById(R.id.disclaimerScreen);
+		page.setVisibility(INVISIBLE);
+
+		lastWarningShown = new Date();
+	}
+
+	private void showDisclaimer() {
+		View page = findViewById(R.id.disclaimerScreen);
+		page.setVisibility(VISIBLE);
+
+		page = findViewById(R.id.reductionMethodScreen);
+		page.setVisibility(INVISIBLE);
+
+		lastWarningShown = new Date();
+	}
 }
