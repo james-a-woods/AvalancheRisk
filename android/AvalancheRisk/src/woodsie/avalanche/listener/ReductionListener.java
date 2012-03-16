@@ -50,7 +50,7 @@ public class ReductionListener implements OnClickListener {
 
 		showOrHideInputFields(params);
 
-		BigDecimal risk = processor.Process(params);
+		BigDecimal risk = processor.process(params);
 
 		displayRisk(risk);
 	}

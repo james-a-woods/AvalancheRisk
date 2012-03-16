@@ -11,7 +11,7 @@ import woodsie.avalanche.data.Where;
 public class ReductionCalculator {
 	public static final BigDecimal EXTREME = BigDecimal.valueOf(100);
 
-	public BigDecimal Process(ReductionParams params) {
+	public BigDecimal process(ReductionParams params) {
 		if (params.hazardLevel == Hazard.VERY_HIGH) {
 			return EXTREME;
 		}
@@ -20,8 +20,8 @@ public class ReductionCalculator {
 
 		int reductionFactor = 1;
 
-		if (!(params.hazardLevel.ordinal() >= Hazard.CONSIDERABLE.ordinal() && params.steepness.getReductionFactor() <= 1
-		|| params.hazardLevel.ordinal() >= Hazard.CONSIDERABLE.ordinal() && params.steepness != Steepness.NOT_STEEP)) {
+		if (!(params.hazardLevel.ordinal() >= Hazard.CONSIDERABLE.ordinal() && params.steepness.getReductionFactor() <= 1)
+		        || (params.hazardLevel.ordinal() >= Hazard.CONSIDERABLE.ordinal() && params.steepness != Steepness.NOT_STEEP)) {
 			reductionFactor *= params.steepness.getReductionFactor();
 
 			if (!params.allAspects) {
