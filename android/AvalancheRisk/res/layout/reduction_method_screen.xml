@@ -9,7 +9,7 @@
         android:id="@+id/dangerLevelText"
         style="@style/textMedium.heading"
         android:gravity="center_horizontal"
-        android:minLines="3" 
+        android:minLines="3"
         android:text="XXX" />
 
     <ScrollView
@@ -26,6 +26,8 @@
             android:layout_height="wrap_content"
             android:background="@color/transWhite"
             android:orientation="vertical" >
+
+            <!-- Hazard Level -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -79,6 +81,8 @@
                     android:text="@string/higherHazard" />
             </LinearLayout>
 
+            <!-- First Class (steepness) -->
+
             <LinearLayout
                 android:id="@+id/firstClass"
                 android:layout_width="match_parent"
@@ -119,8 +123,15 @@
                         android:id="@+id/moderatelySteep"
                         style="@style/textSmall"
                         android:text="@string/moderatelySteep" />
+
+                    <RadioButton
+                        android:id="@+id/notSteep"
+                        style="@style/textSmall"
+                        android:text="@string/notSteep" />
                 </RadioGroup>
             </LinearLayout>
+
+            <!-- Second Class (where) -->
 
             <LinearLayout
                 android:id="@+id/secondClass"
@@ -179,6 +190,8 @@
                     style="@style/textSmall"
                     android:text="@string/tracked" />
             </LinearLayout>
+
+            <!-- Third Class (who) -->
 
             <LinearLayout
                 android:id="@+id/thirdClass"

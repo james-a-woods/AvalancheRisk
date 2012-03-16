@@ -30,40 +30,41 @@ public final class R {
         public static final int snowflake=0x7f020002;
     }
     public static final class id {
-        public static final int allAspects=0x7f070017;
-        public static final int allAspectsDanger=0x7f070014;
-        public static final int avoidCritical=0x7f07001a;
-        public static final int avoidNorthHalf=0x7f070019;
-        public static final int avoidNorthSector=0x7f070018;
+        public static final int allAspects=0x7f070018;
+        public static final int allAspectsDanger=0x7f070015;
+        public static final int avoidCritical=0x7f07001b;
+        public static final int avoidNorthHalf=0x7f07001a;
+        public static final int avoidNorthSector=0x7f070019;
         public static final int considerable=0x7f070009;
         public static final int dangerLevelText=0x7f070003;
         public static final int disclaimerScreen=0x7f070001;
         public static final int firstClass=0x7f07000d;
         public static final int frontContinueButton=0x7f070000;
-        public static final int groupSize=0x7f07001d;
+        public static final int groupSize=0x7f07001e;
         public static final int hazard=0x7f070006;
         public static final int high=0x7f070008;
         public static final int higherHazard=0x7f07000c;
-        public static final int inverse=0x7f070015;
-        public static final int largeGroup=0x7f07001e;
-        public static final int largeGroupSpaced=0x7f07001f;
+        public static final int inverse=0x7f070016;
+        public static final int largeGroup=0x7f07001f;
+        public static final int largeGroupSpaced=0x7f070020;
         public static final int low=0x7f07000b;
         public static final int moderate=0x7f07000a;
         public static final int moderatelySteep=0x7f070012;
+        public static final int notSteep=0x7f070013;
         public static final int reductionForm=0x7f070005;
         public static final int reductionMethodScreen=0x7f070002;
         public static final int reductionScroller=0x7f070004;
-        public static final int secondClass=0x7f070013;
-        public static final int smallGroup=0x7f070020;
-        public static final int smallGroupSpaced=0x7f070021;
+        public static final int secondClass=0x7f070014;
+        public static final int smallGroup=0x7f070021;
+        public static final int smallGroupSpaced=0x7f070022;
         public static final int steep=0x7f070011;
         public static final int steepness=0x7f07000e;
-        public static final int thirdClass=0x7f07001c;
-        public static final int tracked=0x7f07001b;
+        public static final int thirdClass=0x7f07001d;
+        public static final int tracked=0x7f07001c;
         public static final int veryHigh=0x7f070007;
         public static final int verySteep=0x7f070010;
         public static final int veryVerySteep=0x7f07000f;
-        public static final int where=0x7f070016;
+        public static final int where=0x7f070017;
     }
     public static final class layout {
         public static final int disclaimer_screen=0x7f030000;
@@ -71,15 +72,15 @@ public final class R {
         public static final int reduction_method_screen=0x7f030002;
     }
     public static final class string {
-        public static final int allAspects=0x7f05001d;
-        public static final int allAspectsDanger=0x7f05001a;
+        public static final int allAspects=0x7f05001e;
+        public static final int allAspectsDanger=0x7f05001b;
         public static final int appLongName=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int asIs=0x7f050003;
         public static final int author=0x7f050002;
-        public static final int avoidCritical=0x7f050020;
-        public static final int avoidNorthHalf=0x7f05001f;
-        public static final int avoidNorthSector=0x7f05001e;
+        public static final int avoidCritical=0x7f050021;
+        public static final int avoidNorthHalf=0x7f050020;
+        public static final int avoidNorthSector=0x7f05001f;
         public static final int considerable=0x7f05000f;
         public static final int continueButton=0x7f050007;
         public static final int dangerLevel=0x7f050008;
@@ -89,27 +90,28 @@ public final class R {
         public static final int high=0x7f05000e;
         public static final int higherHazard=0x7f050012;
         public static final int howSteep=0x7f050014;
-        public static final int inverse=0x7f05001b;
-        public static final int largeGroup=0x7f050024;
-        public static final int largeGroupSpaced=0x7f050025;
+        public static final int inverse=0x7f05001c;
+        public static final int largeGroup=0x7f050025;
+        public static final int largeGroupSpaced=0x7f050026;
         public static final int low=0x7f050011;
         public static final int moderate=0x7f050010;
         public static final int moderatelySteep=0x7f050018;
         public static final int noSnowMobiles=0x7f050005;
+        public static final int notSteep=0x7f050019;
         public static final int riskDangerous=0x7f05000a;
         public static final int riskExtreme=0x7f05000b;
         public static final int riskSafe=0x7f050009;
-        public static final int secondClass=0x7f050019;
-        public static final int smallGroup=0x7f050026;
-        public static final int smallGroupSpaced=0x7f050027;
+        public static final int secondClass=0x7f05001a;
+        public static final int smallGroup=0x7f050027;
+        public static final int smallGroupSpaced=0x7f050028;
         public static final int steep=0x7f050017;
-        public static final int thirdClass=0x7f050022;
-        public static final int tracked=0x7f050021;
+        public static final int thirdClass=0x7f050023;
+        public static final int tracked=0x7f050022;
         public static final int veryHigh=0x7f05000d;
         public static final int verySteep=0x7f050016;
         public static final int veryVerySteep=0x7f050015;
-        public static final int where=0x7f05001c;
-        public static final int who=0x7f050023;
+        public static final int where=0x7f05001d;
+        public static final int who=0x7f050024;
         public static final int whyNoSnowMobiles=0x7f050006;
     }
     public static final class style {

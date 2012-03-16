@@ -12,6 +12,7 @@ import static woodsie.avalanche.data.Hazard.LOW;
 import static woodsie.avalanche.data.Hazard.MODERATE;
 import static woodsie.avalanche.data.Hazard.VERY_HIGH;
 import static woodsie.avalanche.data.Steepness.MODERATELY_STEEP;
+import static woodsie.avalanche.data.Steepness.NOT_STEEP;
 import static woodsie.avalanche.data.Steepness.STEEP;
 import static woodsie.avalanche.data.Steepness.VERY_STEEP;
 import static woodsie.avalanche.data.Steepness.VERY_VERY_STEEP;
@@ -36,168 +37,171 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class ReductionListener implements OnClickListener {
-    private final ReductionCalculator processor = new ReductionCalculator();
+	private final ReductionCalculator processor = new ReductionCalculator();
 
-    private final Activity activity;
+	private final Activity activity;
 
-    public ReductionListener(Activity activity) {
-        this.activity = activity;
-    }
+	public ReductionListener(Activity activity) {
+		this.activity = activity;
+	}
 
-    public void onClick(View view) {
-        ReductionParams params = getParamsFromScreen();
+	public void onClick(View view) {
+		ReductionParams params = getParamsFromScreen();
 
-        showOrHideInputFields(params);
+		showOrHideInputFields(params);
 
-        BigDecimal risk = processor.Process(params);
-        
-        displayRisk(risk);
-    }
+		BigDecimal risk = processor.Process(params);
 
-    public ReductionParams getParamsFromScreen() {
-        ReductionParams params = new ReductionParams();
+		displayRisk(risk);
+	}
 
-        // Hazard level
-        RadioGroup hazard = (RadioGroup) activity.findViewById(R.id.hazard);
-        switch (hazard.getCheckedRadioButtonId()) {
-        case R.id.low:
-            params.hazardLevel = LOW;
-            break;
-        case R.id.moderate:
-            params.hazardLevel = MODERATE;
-            break;
-        case R.id.considerable:
-            params.hazardLevel = CONSIDERABLE;
-            break;
-        case R.id.high:
-            params.hazardLevel = HIGH;
-            break;
-        case R.id.veryHigh:
-        default:
-            params.hazardLevel = VERY_HIGH;
-            break;
-        }
+	public ReductionParams getParamsFromScreen() {
+		ReductionParams params = new ReductionParams();
 
-        CheckBox higherHazard = (CheckBox) activity.findViewById(R.id.higherHazard);
-        params.higherHazard = higherHazard.isChecked();
+		// Hazard level
+		RadioGroup hazard = (RadioGroup) activity.findViewById(R.id.hazard);
+		switch (hazard.getCheckedRadioButtonId()) {
+		case R.id.low:
+			params.hazardLevel = LOW;
+			break;
+		case R.id.moderate:
+			params.hazardLevel = MODERATE;
+			break;
+		case R.id.considerable:
+			params.hazardLevel = CONSIDERABLE;
+			break;
+		case R.id.high:
+			params.hazardLevel = HIGH;
+			break;
+		case R.id.veryHigh:
+		default:
+			params.hazardLevel = VERY_HIGH;
+			break;
+		}
 
-        // First class
-        RadioGroup steepness = (RadioGroup) activity.findViewById(R.id.steepness);
-        switch (steepness.getCheckedRadioButtonId()) {
-        case R.id.moderatelySteep:
-            params.steepness = MODERATELY_STEEP;
-            break;
-        case R.id.steep:
-            params.steepness = STEEP;
-            break;
-        case R.id.verySteep:
-            params.steepness = VERY_STEEP;
-            break;
-        case R.id.veryVerySteep:
-        default:
-            params.steepness = VERY_VERY_STEEP;
-            break;
-        }
+		CheckBox higherHazard = (CheckBox) activity.findViewById(R.id.higherHazard);
+		params.higherHazard = higherHazard.isChecked();
 
-        // Second class
-        CheckBox allAspects = (CheckBox) activity.findViewById(R.id.allAspectsDanger);
-        params.allAspects = allAspects.isChecked();
+		// First class
+		RadioGroup steepness = (RadioGroup) activity.findViewById(R.id.steepness);
+		switch (steepness.getCheckedRadioButtonId()) {
+		case R.id.notSteep:
+			params.steepness = NOT_STEEP;
+			break;
+		case R.id.moderatelySteep:
+			params.steepness = MODERATELY_STEEP;
+			break;
+		case R.id.steep:
+			params.steepness = STEEP;
+			break;
+		case R.id.verySteep:
+			params.steepness = VERY_STEEP;
+			break;
+		case R.id.veryVerySteep:
+		default:
+			params.steepness = VERY_VERY_STEEP;
+			break;
+		}
 
-        CheckBox inverse = (CheckBox) activity.findViewById(R.id.inverse);
-        params.inverse = inverse.isChecked();
+		// Second class
+		CheckBox allAspects = (CheckBox) activity.findViewById(R.id.allAspectsDanger);
+		params.allAspects = allAspects.isChecked();
 
-        RadioGroup where = (RadioGroup) activity.findViewById(R.id.where);
-        switch (where.getCheckedRadioButtonId()) {
-        case R.id.allAspects:
-            params.where = ALL_ASPECTS;
-            break;
-        case R.id.avoidNorthSector:
-            params.where = AVOID_NORTH_SECTOR;
-            break;
-        case R.id.avoidNorthHalf:
-            params.where = AVOID_NORTH_SECTOR;
-            break;
-        case R.id.avoidCritical:
-        default:
-            params.where = AVOID_CRITICAL;
-            break;
-        }
+		CheckBox inverse = (CheckBox) activity.findViewById(R.id.inverse);
+		params.inverse = inverse.isChecked();
 
-        CheckBox tracked = (CheckBox) activity.findViewById(R.id.tracked);
-        params.terrain = tracked.isChecked() ? TRACKED : UNTRACKED;
+		RadioGroup where = (RadioGroup) activity.findViewById(R.id.where);
+		switch (where.getCheckedRadioButtonId()) {
+		case R.id.allAspects:
+			params.where = ALL_ASPECTS;
+			break;
+		case R.id.avoidNorthSector:
+			params.where = AVOID_NORTH_SECTOR;
+			break;
+		case R.id.avoidNorthHalf:
+			params.where = AVOID_NORTH_SECTOR;
+			break;
+		case R.id.avoidCritical:
+		default:
+			params.where = AVOID_CRITICAL;
+			break;
+		}
 
-        // Third class
-        RadioGroup groupSize = (RadioGroup) activity.findViewById(R.id.groupSize);
-        switch (groupSize.getCheckedRadioButtonId()) {
-        case R.id.smallGroupSpaced:
-            params.groupSize = SMALL_SPACED;
-            break;
-        case R.id.smallGroup:
-            params.groupSize = SMALL;
-            break;
-        case R.id.largeGroupSpaced:
-            params.groupSize = LARGE_SPACED;
-            break;
-        case R.id.largeGroup:
-        default:
-            params.groupSize = LARGE;
-            break;
-        }
+		CheckBox tracked = (CheckBox) activity.findViewById(R.id.tracked);
+		params.terrain = tracked.isChecked() ? TRACKED : UNTRACKED;
 
-        return params;
-    }
-    
-    private void showOrHideInputFields(ReductionParams params) {
-        RadioGroup where = (RadioGroup) activity.findViewById(R.id.where);
-        CheckBox tracked = (CheckBox) activity.findViewById(R.id.tracked);
-        RadioButton avoidNorthSector = (RadioButton) activity.findViewById(R.id.avoidNorthSector);
-        RadioButton avoidNorthHalf = (RadioButton) activity.findViewById(R.id.avoidNorthHalf);
+		// Third class
+		RadioGroup groupSize = (RadioGroup) activity.findViewById(R.id.groupSize);
+		switch (groupSize.getCheckedRadioButtonId()) {
+		case R.id.smallGroupSpaced:
+			params.groupSize = SMALL_SPACED;
+			break;
+		case R.id.smallGroup:
+			params.groupSize = SMALL;
+			break;
+		case R.id.largeGroupSpaced:
+			params.groupSize = LARGE_SPACED;
+			break;
+		case R.id.largeGroup:
+		default:
+			params.groupSize = LARGE;
+			break;
+		}
 
-        if (params.allAspects) {
-            avoidNorthSector.setVisibility(VISIBLE);
-            avoidNorthHalf.setVisibility(VISIBLE);
+		return params;
+	}
 
-            where.setVisibility(GONE);
-            tracked.setVisibility(GONE);
+	private void showOrHideInputFields(ReductionParams params) {
+		RadioGroup where = (RadioGroup) activity.findViewById(R.id.where);
+		CheckBox tracked = (CheckBox) activity.findViewById(R.id.tracked);
+		RadioButton avoidNorthSector = (RadioButton) activity.findViewById(R.id.avoidNorthSector);
+		RadioButton avoidNorthHalf = (RadioButton) activity.findViewById(R.id.avoidNorthHalf);
 
-        } else if (params.inverse) {
-            where.setVisibility(VISIBLE);
-            tracked.setVisibility(VISIBLE);
+		if (params.allAspects) {
+			avoidNorthSector.setVisibility(VISIBLE);
+			avoidNorthHalf.setVisibility(VISIBLE);
 
-            avoidNorthSector.setVisibility(GONE);
-            avoidNorthHalf.setVisibility(GONE);
+			where.setVisibility(GONE);
+			tracked.setVisibility(GONE);
 
-        } else {
-            where.setVisibility(VISIBLE);
-            avoidNorthSector.setVisibility(VISIBLE);
-            avoidNorthHalf.setVisibility(VISIBLE);
-            tracked.setVisibility(VISIBLE);
-        }
-    	
-    }
-    
-    private void displayRisk(BigDecimal risk) {
-        String riskStr = activity.getResources().getString(R.string.dangerLevel);
-        riskStr = riskStr.replace("%", risk.setScale(3, RoundingMode.CEILING).toString());
+		} else if (params.inverse) {
+			where.setVisibility(VISIBLE);
+			tracked.setVisibility(VISIBLE);
 
-        TextView text = (TextView) activity.findViewById(R.id.dangerLevelText);
+			avoidNorthSector.setVisibility(GONE);
+			avoidNorthHalf.setVisibility(GONE);
 
-        String message;
-        if (risk.compareTo(BigDecimal.ONE) <= 0) {
-            text.setBackgroundColor(activity.getResources().getColor(R.color.green));
-            message = activity.getResources().getString(R.string.riskSafe);
-        } else {
-            text.setBackgroundColor(activity.getResources().getColor(R.color.red));
-            if (risk.equals(ReductionCalculator.EXTREME)) {
-                message = activity.getResources().getString(R.string.riskExtreme);
-            } else {
-                message = activity.getResources().getString(R.string.riskDangerous);
-            }
+		} else {
+			where.setVisibility(VISIBLE);
+			avoidNorthSector.setVisibility(VISIBLE);
+			avoidNorthHalf.setVisibility(VISIBLE);
+			tracked.setVisibility(VISIBLE);
+		}
 
-        }
+	}
 
-        message = riskStr + "\n" + message;
-        text.setText(message);
-    	
-    }
+	private void displayRisk(BigDecimal risk) {
+		String riskStr = activity.getResources().getString(R.string.dangerLevel);
+		riskStr = riskStr.replace("%", risk.setScale(3, RoundingMode.CEILING).toString());
+
+		TextView text = (TextView) activity.findViewById(R.id.dangerLevelText);
+
+		String message;
+		if (risk.compareTo(BigDecimal.ONE) <= 0) {
+			text.setBackgroundColor(activity.getResources().getColor(R.color.green));
+			message = activity.getResources().getString(R.string.riskSafe);
+		} else {
+			text.setBackgroundColor(activity.getResources().getColor(R.color.red));
+			if (risk.equals(ReductionCalculator.EXTREME)) {
+				message = activity.getResources().getString(R.string.riskExtreme);
+			} else {
+				message = activity.getResources().getString(R.string.riskDangerous);
+			}
+
+		}
+
+		message = riskStr + "\n" + message;
+		text.setText(message);
+
+	}
 }

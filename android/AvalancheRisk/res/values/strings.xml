@@ -8,13 +8,11 @@
     <string name="disclaimer">This is a tool for assisting with the calculation of avalanche risk using the Reduction Method developed by Werner Munter.  This is in no way a replacement for training and experience in the assessment of avalanche danger.  The use of this application must be used together with an assessment of local conditions and route choices using the 3x3 method.  If in doubt, hire a qualified mountain guide.</string>
     <string name="noSnowMobiles">Not for use with Snowmobiles</string>
     <string name="whyNoSnowMobiles">Snowmobiles put extra load on the snow pack and can trigger an avalanche in conditions where a skier or snowboarder would be safe.</string>
-    <string name="continueButton">Continue &gt;&gt;</string>
-    
+    <string name="continueButton">Continue >></string>
     <string name="dangerLevel">Danger Level: %</string>
     <string name="riskSafe">Hit the slopes, but remember to assess local conditions and individual slopes using the 3x3 Filter</string>
     <string name="riskDangerous">The avalanche danger is too high, you need to change your plans to bring the risk down. Somewhere less steep would be a good start.</string>
     <string name="riskExtreme">Seriously, the pub or the sofa is the only safe place today.</string>
-    
     <string name="hazardLevel">What is the hazard level in the current avalanche bulletin?</string>
     <string name="veryHigh">Very High - 5</string>
     <string name="high">High - 4</string>
@@ -22,14 +20,13 @@
     <string name="moderate">Moderate - 2</string>
     <string name="low">Low - 1</string>
     <string name="higherHazard">In your assessment is the hazard higher than in the avalanche bulletin?</string>
-    
     <string name="firstClass">First class reduction factors</string>
     <string name="howSteep">What is the steepest slope you will be riding (including slopes above you)?</string>
-    <string name="veryVerySteep">Greater than 40°</string>
+    <string name="veryVerySteep">40° or steeper</string>
     <string name="verySteep">35° - 39° (less than 40°)</string>
     <string name="steep">Around 35°</string>
     <string name="moderatelySteep">30°-34° (less than 35°)</string>
-    
+    <string name="notSteep">30° or flatter</string>
     <string name="secondClass">Second class reduction factors</string>
     <string name="allAspectsDanger">Does the avalanche bulletin declare all aspects to be dangerous?</string>
     <string name="inverse">Does the avalanche bulletin declare that southern aspects are more dangerous than northern aspects?</string>
@@ -39,7 +36,6 @@
     <string name="avoidNorthHalf">Avoiding the \"northern half\" of the compass: (west-northwest to east-southeast aspects)</string>
     <string name="avoidCritical">Avoiding critical aspects and elevations as defined in the current avalanche bulletin</string>
     <string name="tracked">Regularly tracked-out (highly frequented) slopes</string>
-    
     <string name="thirdClass">Third class reduction factors</string>
     <string name="who">Who will you be riding with?</string>
     <string name="largeGroup">A large group (more than 4 members)</string>
@@ -47,5 +43,4 @@
     <string name="smallGroup">A small group (2–4 members)</string>
     <string name="smallGroupSpaced">A small group (2–4 members) keeping a safe distance</string>
 
-    
 </resources>
