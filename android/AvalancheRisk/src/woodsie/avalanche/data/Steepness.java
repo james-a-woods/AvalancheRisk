@@ -1,6 +1,7 @@
 package woodsie.avalanche.data;
 
 public enum Steepness implements ReductionFactor {
+	FLAT(4),
     MODERATELY_STEEP(4),
     STEEP(3),
     VERY_STEEP(2),

@@ -41,7 +41,6 @@
 
         <TextView
             style="@style/textVerySmall"
-            android:paddingBottom="10dp"
             android:text="@string/whyNoSnowMobiles" />
 
         <Button
