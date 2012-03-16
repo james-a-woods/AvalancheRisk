@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="textVeryLarge" parent="textMedium">
+        <item name="android:textSize">26sp</item>
+    </style>
+
     <style name="textLarge" parent="textMedium">
         <item name="android:textSize">18sp</item>
     </style>
@@ -18,14 +22,14 @@
     </style>
 
     <style name="textVerySmall" parent="textSmall">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">13sp</item>
     </style>
 
     <style name="textMedium.heading">
         <item name="android:textStyle">bold</item>
     </style>
     
-    <style name="textVerySmall.warning">
+    <style name="textSmall.warning">
         <item name="android:textColor">@color/red</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center_horizontal</item>
