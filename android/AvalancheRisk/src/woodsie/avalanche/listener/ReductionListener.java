@@ -26,7 +26,7 @@ import java.math.RoundingMode;
 
 import woodsie.avalanche.R;
 import woodsie.avalanche.data.ReductionParams;
-import woodsie.avalanche.listener.processor.ReductionCalculator;
+import woodsie.avalanche.processor.ReductionCalculator;
 import android.app.Activity;
 import android.view.View;
 import android.view.View.OnClickListener;
