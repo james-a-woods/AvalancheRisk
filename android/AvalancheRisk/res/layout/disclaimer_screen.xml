@@ -13,19 +13,37 @@
         android:orientation="vertical"
         android:padding="5dp" >
 
-        <TextView
-            style="@style/textVeryLarge"
-            android:gravity="center_horizontal"
-            android:text="@string/appLongName"
-            android:textColor="@color/blue"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
 
-        <TextView
-            style="@style/textVerySmall"
-            android:gravity="right"
-            android:text="@string/author"
-            android:textColor="@color/blue"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_snowflake" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textVeryLarge"
+                    android:text="@string/appLongName"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/textVerySmall"
+                    android:gravity="right"
+                    android:text="@string/author"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+        </LinearLayout>
 
         <TextView
             style="@style/textSmall.warning"
