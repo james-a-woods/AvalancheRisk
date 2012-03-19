@@ -21,15 +21,21 @@ public class MainTabActivity extends TabActivity {
 		Intent intent;
 
 		intent = new Intent().setClass(this, ReductionActivity.class);
-		spec = tabHost.newTabSpec("reduction").setIndicator("Reduction").setContent(intent);
+		spec = tabHost.newTabSpec("reduction")
+		        .setIndicator(getResources().getString(R.string.reductionTab))
+		        .setContent(intent);
 		tabHost.addTab(spec);
 
 		intent = new Intent().setClass(this, Checklist3x3Activity.class);
-		spec = tabHost.newTabSpec("checklist3x3").setIndicator("3x3").setContent(intent);
+		spec = tabHost.newTabSpec("checklist3x3")
+		        .setIndicator(getResources().getString(R.string.checklist3x3Tab))
+		        .setContent(intent);
 		tabHost.addTab(spec);
 
 		intent = new Intent().setClass(this, InfoActivity.class);
-		spec = tabHost.newTabSpec("info").setIndicator("Info").setContent(intent);
+		spec = tabHost.newTabSpec("info")
+		        .setIndicator(getResources().getString(R.string.infoTab))
+		        .setContent(intent);
 		tabHost.addTab(spec);
 
 		for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++)
