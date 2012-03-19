@@ -1,12 +1,12 @@
-package woodsie.avalanche.processor;
+package woodsie.avalanche.reduction.processor;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
 
-import woodsie.avalanche.data.Hazard;
-import woodsie.avalanche.data.ReductionParams;
-import woodsie.avalanche.data.Steepness;
-import woodsie.avalanche.data.Where;
+import woodsie.avalanche.reduction.data.Hazard;
+import woodsie.avalanche.reduction.data.ReductionParams;
+import woodsie.avalanche.reduction.data.Steepness;
+import woodsie.avalanche.reduction.data.Where;
 
 public class ReductionCalculator {
 	public static final BigDecimal EXTREME = BigDecimal.valueOf(100);

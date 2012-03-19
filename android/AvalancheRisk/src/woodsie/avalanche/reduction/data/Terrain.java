@@ -1,4 +1,4 @@
-package woodsie.avalanche.data;
+package woodsie.avalanche.reduction.data;
 
 public enum Terrain implements ReductionFactor {
     TRACKED(2),

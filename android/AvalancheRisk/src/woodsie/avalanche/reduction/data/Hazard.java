@@ -1,4 +1,4 @@
-package woodsie.avalanche.data;
+package woodsie.avalanche.reduction.data;
 
 public enum Hazard {
     LOW(2, 3),

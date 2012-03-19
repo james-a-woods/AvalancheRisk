@@ -1,4 +1,4 @@
-package woodsie.avalanche.data;
+package woodsie.avalanche.reduction.data;
 
 public enum Steepness implements ReductionFactor {
 	NOT_STEEP(4),

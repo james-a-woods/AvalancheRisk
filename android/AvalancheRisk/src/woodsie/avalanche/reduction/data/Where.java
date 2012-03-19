@@ -1,4 +1,4 @@
-package woodsie.avalanche.data;
+package woodsie.avalanche.reduction.data;
 
 public enum Where implements ReductionFactor {
     AVOID_CRITICAL(4),

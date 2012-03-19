@@ -5,9 +5,11 @@
         android:id="@+id/disclaimerScreen"
         layout="@layout/disclaimer_screen" />
 
+    <!--
     <include
         android:id="@+id/reductionMethodScreen"
         layout="@layout/reduction_method_screen"
-        android:visibility="invisible" />
+        android:visibility="invisible" />
+    -->
 
 </merge>

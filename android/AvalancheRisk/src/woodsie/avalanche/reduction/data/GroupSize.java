@@ -1,4 +1,4 @@
-package woodsie.avalanche.data;
+package woodsie.avalanche.reduction.data;
 
 public enum GroupSize implements ReductionFactor {
     SMALL_SPACED(3),
