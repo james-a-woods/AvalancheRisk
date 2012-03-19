@@ -188,10 +188,10 @@ public class ReductionListener implements OnClickListener {
 
 		String message;
 		if (risk.compareTo(BigDecimal.ONE) <= 0) {
-			text.setBackgroundColor(activity.getResources().getColor(R.color.green));
+			text.setBackgroundColor(activity.getResources().getColor(R.color.go));
 			message = activity.getResources().getString(R.string.riskSafe);
 		} else {
-			text.setBackgroundColor(activity.getResources().getColor(R.color.red));
+			text.setBackgroundColor(activity.getResources().getColor(R.color.stop));
 			if (risk.equals(ReductionCalculator.EXTREME)) {
 				message = activity.getResources().getString(R.string.riskExtreme);
 			} else {
