@@ -17,244 +17,328 @@
             android:background="@color/transWhite"
             android:orientation="vertical" >
 
-            <TextView
-                style="@style/textMedium.heading"
+            <Button
+                android:id="@+id/resetTop"
+                style="@style/button"
+                android:text="Reset" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/transRed"
-                android:text="@string/regional" />
+                android:orientation="horizontal" >
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/conditions" />
+                <TextView
+                    android:id="@+id/regionalHeading"
+                    style="@style/textMedium.heading"
+                    android:layout_weight="1"
+                    android:text="@string/regional" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_cond_a" />
+                <ImageView
+                    android:id="@+id/regionalArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="0"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_cond_b" />
+            <LinearLayout
+                android:id="@+id/regionalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_cond_c" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/conditions" />
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/terrain" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_cond_a" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_terrain_a" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_cond_b" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_terrain_b" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_cond_c" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_terrain_c" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/terrain" />
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/human" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_terrain_a" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_human_a" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_terrain_b" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_human_b" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_terrain_c" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_human_c" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/human" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_human_d" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_human_a" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/regional_human_e" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_human_b" />
 
-            <TextView
-                style="@style/textMedium.heading"
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_human_c" />
+
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_human_d" />
+
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/regional_human_e" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/transOrange"
-                android:text="@string/local" />
+                android:orientation="horizontal" >
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/conditions" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:layout_weight="1"
+                    android:text="@string/local" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_a" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="0"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_b" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_c" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/conditions" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_d" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_a" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_e" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_b" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_f" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_c" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_g" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_d" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_h" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_e" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_i" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_f" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_cond_j" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_g" />
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/terrain" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_h" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_terrain_a" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_i" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_terrain_b" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_cond_j" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_terrain_c" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/terrain" />
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/human" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_terrain_a" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_human_a" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_terrain_b" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_human_b" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_terrain_c" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_human_c" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/human" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/local_human_d" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_human_a" />
 
-            <TextView
-                style="@style/textMedium.heading"
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_human_b" />
+
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_human_c" />
+
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/local_human_d" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/transYellow"
-                android:text="@string/zonal" />
+                android:orientation="horizontal" >
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/conditions" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:layout_weight="1"
+                    android:text="@string/zonal" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_cond_a" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="0"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_cond_b" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_cond_c" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/conditions" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_cond_d" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_cond_a" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_cond_e" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_cond_b" />
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/terrain" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_cond_c" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_terrain_a" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_cond_d" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_terrain_b" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_cond_e" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_terrain_c" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/terrain" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_terrain_d" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_terrain_a" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_terrain_e" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_terrain_b" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_terrain_f" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_terrain_c" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_terrain_g" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_terrain_d" />
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/human" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_terrain_e" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_human_a" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_terrain_f" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_human_b" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_terrain_g" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_human_d" />
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/human" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_human_e" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_human_a" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_human_f" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_human_b" />
 
-            <CheckBox
-                style="@style/textSmall"
-                android:text="@string/zonal_human_g" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_human_d" />
 
-            <TextView
-                style="@style/textMedium.heading"
-                android:text="@string/lastCheck" />
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_human_e" />
+
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_human_f" />
+
+                <CheckBox
+                    style="@style/textSmall"
+                    android:text="@string/zonal_human_g" />
+
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/lastCheck" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/resetBottom"
+                style="@style/button"
+                android:text="Reset" />
         </LinearLayout>
     </ScrollView>
 
