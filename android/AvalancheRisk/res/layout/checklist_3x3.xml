@@ -118,12 +118,13 @@
                 android:orientation="horizontal" >
 
                 <TextView
+                    android:id="@+id/localHeading"
                     style="@style/textMedium.heading"
                     android:layout_weight="1"
                     android:text="@string/local" />
 
                 <ImageView
-                    android:id="@+id/imageView1"
+                    android:id="@+id/localArrow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|right"
@@ -132,6 +133,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/localLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -227,12 +229,13 @@
                 android:orientation="horizontal" >
 
                 <TextView
+                    android:id="@+id/zonalHeading"
                     style="@style/textMedium.heading"
                     android:layout_weight="1"
                     android:text="@string/zonal" />
 
                 <ImageView
-                    android:id="@+id/imageView1"
+                    android:id="@+id/zonalArrow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|right"
@@ -241,6 +244,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/zonalLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
