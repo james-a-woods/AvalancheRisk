@@ -28,7 +28,7 @@
     <style name="textMedium.heading">
         <item name="android:textStyle">bold</item>
     </style>
-    
+
     <style name="textSmall.warning">
         <item name="android:textColor">@color/red</item>
         <item name="android:textStyle">bold</item>

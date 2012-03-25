@@ -20,6 +20,7 @@
             <Button
                 android:id="@+id/resetTop"
                 style="@style/button"
+                android:layout_marginTop="15dp"
                 android:text="Reset" />
 
             <LinearLayout
@@ -333,15 +334,19 @@
                 <CheckBox
                     style="@style/textSmall"
                     android:text="@string/zonal_human_g" />
-
-                <TextView
-                    style="@style/textMedium.heading"
-                    android:text="@string/lastCheck" />
             </LinearLayout>
+
+            <TextView
+                style="@style/textMedium.heading"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/transGreen"
+                android:text="@string/lastCheck" />
 
             <Button
                 android:id="@+id/resetBottom"
                 style="@style/button"
+                android:layout_marginBottom="15dp"
                 android:text="Reset" />
         </LinearLayout>
     </ScrollView>

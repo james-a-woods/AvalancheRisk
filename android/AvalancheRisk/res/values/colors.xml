@@ -4,14 +4,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FFFF0000</color>
-    <color name="blue">#FF0000FF</color>
+    <color name="blue">#FF3377C8</color>
     <color name="darkGreen">#FF00AA00</color>
     <color name="darkYellow">#FFAAAA00</color>
     <color name="darkOrange">#FFCC6600</color>
     <color name="transWhite">#CCFFFFFF</color>
     <color name="transRed">#EEFFCCCC</color>
-    <color name="transYellow">#EEFFFFCC</color>
     <color name="transOrange">#EEFFDCCC</color>
+    <color name="transYellow">#EEFFFFCC</color>
+    <color name="transGreen">#EE00FFCC</color>
     <color name="stop">#FFFF0000</color>
     <color name="go">#FF00FFCC</color>
 
