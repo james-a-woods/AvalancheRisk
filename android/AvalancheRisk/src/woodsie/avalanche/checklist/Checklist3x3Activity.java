@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 
@@ -43,6 +45,10 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 		heading.setOnClickListener(this);
 		arrow.setOnClickListener(this);
 
+		View button = findViewById(R.id.resetTop);
+		button.setOnClickListener(this);
+		button = findViewById(R.id.resetBottom);
+		button.setOnClickListener(this);
 	}
 
 	public void onClick(View view) {
@@ -68,8 +74,29 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 			zonal.toggle();
 			break;
 
+		case R.id.resetTop:
+		case R.id.resetBottom:
+			regional.close();
+			local.close();
+			zonal.close();
+
+			recursiveReset(findViewById(R.id.checklist3x3Form));
+			break;
 		}
 
 		((ScrollView) findViewById(R.id.checklistScroll)).scrollTo(0, 0);
 	}
+
+	private void recursiveReset(View view) {
+
+		if (view instanceof ViewGroup) {
+			ViewGroup group = (ViewGroup) view;
+			for (int i = 0; i < group.getChildCount(); i++) {
+				recursiveReset(group.getChildAt(i));
+			}
+		} else if (view instanceof CheckBox) {
+			((CheckBox) view).setChecked(false);
+		}
+	}
+
 }

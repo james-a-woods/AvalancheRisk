@@ -25,9 +25,6 @@ public class ReductionActivity extends Activity {
 	protected void onResume() {
 		super.onResume();
 
-//		ScrollView scroll = (ScrollView) findViewById(R.id.reductionScroller);
-//		scroll.scrollTo(0, 0);
-
 		listener.onClick(null);
 	}
 
