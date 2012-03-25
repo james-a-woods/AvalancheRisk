@@ -105,10 +105,6 @@
                 <CheckBox
                     style="@style/textSmall"
                     android:text="@string/regional_human_d" />
-
-                <CheckBox
-                    style="@style/textSmall"
-                    android:text="@string/regional_human_e" />
             </LinearLayout>
 
             <LinearLayout
@@ -172,18 +168,6 @@
                 <CheckBox
                     style="@style/textSmall"
                     android:text="@string/local_cond_g" />
-
-                <CheckBox
-                    style="@style/textSmall"
-                    android:text="@string/local_cond_h" />
-
-                <CheckBox
-                    style="@style/textSmall"
-                    android:text="@string/local_cond_i" />
-
-                <CheckBox
-                    style="@style/textSmall"
-                    android:text="@string/local_cond_j" />
 
                 <TextView
                     style="@style/textMedium.heading"
@@ -272,10 +256,6 @@
                     style="@style/textSmall"
                     android:text="@string/zonal_cond_d" />
 
-                <CheckBox
-                    style="@style/textSmall"
-                    android:text="@string/zonal_cond_e" />
-
                 <TextView
                     style="@style/textMedium.heading"
                     android:text="@string/terrain" />
@@ -331,10 +311,6 @@
                 <CheckBox
                     style="@style/textSmall"
                     android:text="@string/zonal_human_f" />
-
-                <CheckBox
-                    style="@style/textSmall"
-                    android:text="@string/zonal_human_g" />
             </LinearLayout>
 
             <TextView
