@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 
 public class Checklist3x3Activity extends Activity implements OnClickListener {
 
@@ -68,6 +69,7 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 			break;
 
 		}
-	}
 
+		((ScrollView) findViewById(R.id.checklistScroll)).scrollTo(0, 0);
+	}
 }
