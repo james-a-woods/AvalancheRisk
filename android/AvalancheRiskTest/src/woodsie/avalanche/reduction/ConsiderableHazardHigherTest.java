@@ -14,7 +14,7 @@ import woodsie.avalanche.reduction.data.Steepness;
 import woodsie.avalanche.reduction.data.Terrain;
 import woodsie.avalanche.reduction.data.Where;
 
-public class HighHazardTest extends TestCase {
+public class ConsiderableHazardHigherTest extends TestCase {
 
 	private ReductionCalculator calculator;
 
@@ -23,7 +23,7 @@ public class HighHazardTest extends TestCase {
 	@Override
 	protected void setUp() throws Exception {
 		calculator = new ReductionCalculator();
-		params = getDefaultParams(Hazard.HIGH, false);
+		params = getDefaultParams(Hazard.CONSIDERABLE, true);
 	}
 
 	public void test_default() {
@@ -49,7 +49,7 @@ public class HighHazardTest extends TestCase {
 		params.groupSize = GroupSize.SMALL_SPACED;
 
 		BigDecimal risk = calculator.process(params);
-		assertIsNotSafe(risk);
+		assertIsSafe(risk);
 	}
 
 	public void test_steep_3() {
@@ -59,7 +59,7 @@ public class HighHazardTest extends TestCase {
 		params.groupSize = GroupSize.SMALL_SPACED;
 
 		BigDecimal risk = calculator.process(params);
-		assertIsNotSafe(risk);
+		assertIsSafe(risk);
 	}
 
 	public void test_steep_4() {
@@ -69,7 +69,7 @@ public class HighHazardTest extends TestCase {
 		params.groupSize = GroupSize.SMALL_SPACED;
 
 		BigDecimal risk = calculator.process(params);
-		assertIsNotSafe(risk);
+		assertIsSafe(risk);
 	}
 
 	public void test_steep_5() {
@@ -89,58 +89,49 @@ public class HighHazardTest extends TestCase {
 		assertIsNotSafe(risk);
 	}
 
-	public void test_not_steep_avoid_north_half() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
+	public void test_moderately_steep_avoid_north_sector() {
+		params.steepness = Steepness.MODERATELY_STEEP;
+		params.where = Where.AVOID_NORTH_SECTOR;
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
-	public void test_not_steep_avoid_critical() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_CRITICAL;
+	public void test_moderately_steep_north_half() {
+		params.steepness = Steepness.MODERATELY_STEEP;
+		params.where = Where.AVOID_NORTH_HALF;
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
-	public void test_not_steep_avoid_north_half_tracked() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
+	public void test_moderately_steep_avoid_north_SECTOR_tracked() {
+		params.steepness = Steepness.MODERATELY_STEEP;
+		params.where = Where.AVOID_NORTH_SECTOR;
 		params.terrain = Terrain.TRACKED;
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
-	public void test_not_steep_avoid_north_sector_large_spaced_group() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
+	public void test_moderately_steep_all_aspects_large_spaced_group() {
+		params.steepness = Steepness.MODERATELY_STEEP;
 		params.groupSize = GroupSize.LARGE_SPACED;
+
+		BigDecimal risk = calculator.process(params);
+		assertIsNotSafe(risk);
+	}
+
+	public void test_moderately_steep_all_aspects_small_spaced_group() {
+		params.steepness = Steepness.MODERATELY_STEEP;
+		params.groupSize = GroupSize.SMALL_SPACED;
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
-	public void test_not_steep_all_aspects_large_spaced_group() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.groupSize = GroupSize.LARGE_SPACED;
-
-		BigDecimal risk = calculator.process(params);
-		assertIsNotSafe(risk);
-	}
-
-	public void test_not_steep_all_aspects_small_spaced_group() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.groupSize = GroupSize.SMALL_SPACED;
-
-		BigDecimal risk = calculator.process(params);
-		assertIsNotSafe(risk);
-	}
-
-	public void test_not_steep_all_aspects_tracked_small_spaced_group() {
-		params.steepness = Steepness.NOT_STEEP;
+	public void test_steep_all_aspects_tracked_small_spaced_group() {
+		params.steepness = Steepness.STEEP;
 		params.terrain = Terrain.TRACKED;
 		params.groupSize = GroupSize.SMALL_SPACED;
 
