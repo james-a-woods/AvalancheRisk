@@ -14,6 +14,8 @@ public class AllTests {
 		suite.addTestSuite(HighHazardHigherTest.class);
 		suite.addTestSuite(ConsiderableHazardTest.class);
 		suite.addTestSuite(ConsiderableHazardHigherTest.class);
+		suite.addTestSuite(ModerateHazardTest.class);
+		suite.addTestSuite(ModerateHazardHigherTest.class);
 		//$JUnit-END$
 		return suite;
 	}
