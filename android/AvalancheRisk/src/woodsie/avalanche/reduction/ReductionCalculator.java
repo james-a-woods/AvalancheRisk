@@ -22,7 +22,7 @@ public class ReductionCalculator {
 
 		if ((params.hazardLevel.getDangerPotential(params.higherHazard) < Hazard.CONSIDERABLE.getDangerPotential(false))
 		        || (params.hazardLevel == Hazard.HIGH && params.steepness == Steepness.NOT_STEEP)
-		        || (params.hazardLevel == Hazard.CONSIDERABLE && params.steepness.getReductionFactor() >= 1)) {
+		        || (params.hazardLevel == Hazard.CONSIDERABLE && params.steepness.getReductionFactor() > 1)) {
 			reductionFactor *= params.steepness.getReductionFactor();
 
 			if (!params.allAspects) {
