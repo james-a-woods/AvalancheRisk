@@ -1,4 +1,4 @@
-package woodsie.avalanche.reduction.processor;
+package woodsie.avalanche.reduction;
 
 import java.math.BigDecimal;
 import java.math.MathContext;

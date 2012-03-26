@@ -1,7 +1,6 @@
 package woodsie.avalanche.reduction;
 
 import woodsie.avalanche.R;
-import woodsie.avalanche.reduction.listener.ReductionListener;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

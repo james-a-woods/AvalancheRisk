@@ -1,4 +1,4 @@
-package woodsie.avalanche.reduction.listener;
+package woodsie.avalanche.reduction;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
@@ -27,7 +27,6 @@ import java.math.RoundingMode;
 
 import woodsie.avalanche.R;
 import woodsie.avalanche.reduction.data.ReductionParams;
-import woodsie.avalanche.reduction.processor.ReductionCalculator;
 import android.app.Activity;
 import android.view.View;
 import android.view.View.OnClickListener;
