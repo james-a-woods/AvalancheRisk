@@ -105,7 +105,7 @@ public class ConsiderableHazardHigherTest extends TestCase {
 		assertIsSafe(risk);
 	}
 
-	public void test_moderately_steep_avoid_north_SECTOR_tracked() {
+	public void test_moderately_steep_avoid_north_sector_tracked() {
 		params.steepness = Steepness.MODERATELY_STEEP;
 		params.where = Where.AVOID_NORTH_SECTOR;
 		params.terrain = Terrain.TRACKED;
