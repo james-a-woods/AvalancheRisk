@@ -67,13 +67,6 @@ public class ModerateHazardTest extends TestCase {
 		assertIsSafe(risk);
 	}
 
-	public void test_steep() {
-		params.steepness = Steepness.STEEP;
-
-		BigDecimal risk = calculator.process(params);
-		assertIsNotSafe(risk);
-	}
-
 	public void test_steep_avoid_north_sector() {
 		params.steepness = Steepness.STEEP;
 		params.where = Where.AVOID_NORTH_SECTOR;
