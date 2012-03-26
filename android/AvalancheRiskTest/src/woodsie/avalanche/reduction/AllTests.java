@@ -19,6 +19,7 @@ public class AllTests {
 		suite.addTestSuite(LowHazardTest.class);
 		suite.addTestSuite(LowHazardHigherTest.class);
 		suite.addTestSuite(AllAspectsTest.class);
+		suite.addTestSuite(InverseTest.class);
 		//$JUnit-END$
 		return suite;
 	}
