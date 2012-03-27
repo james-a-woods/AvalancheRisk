@@ -6,14 +6,14 @@
     <string name="checklist_3x3_desc">The 3x3 Filter Method is a method developed by Werner Munter for assessing
         aspects contributing to the risk of an avalanche.  It provides three levels of checks for each of the 
         three decision making stages before and while on the mountain.  This application provides a reminder checklist 
-        to help you consider all the important aspects in your decisions.\n\n
-        It is important to fully understand each point on this screen through appropriate training
+        to help you consider important aspects for your decision making.\n\n
+        It is important to fully understand each point in this checklist through appropriate training
         and reading.  It is not this checklist that provides the safety, but the understanding of the factors
         behind the checklist.\n\n
         It is a good idea to work on memorising this checklist during the season, especially the zonal aspects.  It is
-        not always going to be practical to pull your phone out and work through this checklist while making decisions
+        not always practical to pull out your phone and work through this checklist while making decisions
         on the mountain.  This is especially the case in extreme conditions where you may need to make fast decisions
-        to adapt to changing conditions.    </string>
+        adapting to changing conditions.    </string>
     <string name="conditions">Snow and Weather Conditions</string>
     <string name="terrain">Terrain</string>
     <string name="human">Human Factor</string>
@@ -38,22 +38,22 @@
     <string name="local_cond_h">Is the bulletin correct?  Make changes in case of doubt</string>
     <string name="local_terrain_a">Slope steepness (including above and below), aspect(s), size</string>
     <string name="local_terrain_b">Are the tracks left by previous riders suitable for current conditions?</string>
-    <string name="local_human_a">Who is in my group?  How many?</string>
-    <string name="local_human_b">Transceiver check. Check other equipment: shovels, probes (harness?)</string>
-    <string name="local_human_c">Are other groups traveling on the same route?  Should I coordinate with them?</string>
-    <string name="local_human_d">Am I on time or is it getting too late?</string>
+    <string name="local_human_a">Who is in the group?  How many?</string>
+    <string name="local_human_b">Transceiver check. Check other equipment: shovels, probes (harnesses?)</string>
+    <string name="local_human_c">Are other groups traveling on the same route?  Do the different groups need coordinating?</string>
+    <string name="local_human_d">An time or is it getting too late?</string>
     <string name="zonal">Zonal\nCheck the slope in front of you</string>
     <string name="zonal_cond_a">How much new snow has fallen on the slope?</string>
     <string name="zonal_cond_b">Recent snow drift accumulations?</string>
     <string name="zonal_cond_c">Visibility.  Is bad weather closing in?</string>
     <string name="zonal_cond_d">Influence of solar radiation?</string>
-    <string name="zonal_cond_e">Where could a slab release and how big would it be?</string>
+    <string name="zonal_cond_e">Where could a slab release and how big could it be?</string>
     <string name="zonal_cond_f">Look at everything around; What is the overall picture?</string>
     <string name="zonal_terrain_a">What is above and below me? Other people?</string>
-    <string name="zonal_terrain_b">How steep is the steepest section? In Couloirs this is the sides, not the middle.</string>
+    <string name="zonal_terrain_b">How steep is the steepest section? In Couloirs this is usually the sides, not the middle.</string>
     <string name="zonal_terrain_c">Aspect? In Couloirs there can be multiple aspects.</string>
     <string name="zonal_terrain_d">Typical avalanche terrain: Steep, rocky slope; Steep leeward slope; Steep shaded forest glade</string>
-    <string name="zonal_terrain_e">Slope shape</string>
+    <string name="zonal_terrain_e">Slope shape; concave, convex, S-shape</string>
     <string name="zonal_terrain_f">Elevation</string>
     <string name="zonal_human_a">Ability, discipline, fatigue of group members</string>
     <string name="zonal_human_b">Is the slope frequently tracked?</string>
