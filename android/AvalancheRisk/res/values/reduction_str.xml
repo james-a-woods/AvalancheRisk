@@ -3,7 +3,7 @@
 
     <string name="reductionTab">Reduction</string>
     <string name="dangerLevel">Danger Level: %</string>
-    <string name="riskSafe">Hit the slopes!\nBut remember to assess local conditions and individual slopes using the 3x3 filter</string>
+    <string name="riskSafe">Hit the slopes!\nBut remember to assess local conditions and individual slopes. If you change plans, remember to recalculate.</string>
     <string name="riskDangerous">The avalanche danger is too high, you need to change your plans to bring the risk down. Somewhere less steep would be a good start.</string>
     <string name="riskExtreme">Seriously, the pub or the sofa is the only safe place today.</string>
     <string name="hazardLevel">What is the hazard level in the current avalanche bulletin?</string>
