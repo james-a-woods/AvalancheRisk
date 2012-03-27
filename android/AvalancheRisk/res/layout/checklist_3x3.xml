@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="match_parent" >
 
     <ScrollView
         android:id="@+id/checklistScroll"
@@ -36,8 +35,8 @@
                 <TextView
                     android:id="@+id/descriptionHeading"
                     style="@style/textMedium.heading"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                android:layout_gravity="center_vertical"
                     android:text="@string/checklist_3x3_heading" />
 
                 <ImageView
@@ -71,8 +70,8 @@
                 <TextView
                     android:id="@+id/regionalHeading"
                     style="@style/textMedium.heading"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                android:layout_gravity="center_vertical"
                     android:text="@string/regional" />
 
                 <ImageView
@@ -150,8 +149,8 @@
                 <TextView
                     android:id="@+id/localHeading"
                     style="@style/textMedium.heading"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                android:layout_gravity="center_vertical"
                     android:text="@string/local" />
 
                 <ImageView
@@ -249,8 +248,8 @@
                 <TextView
                     android:id="@+id/zonalHeading"
                     style="@style/textMedium.heading"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                android:layout_gravity="center_vertical"
                     android:text="@string/zonal" />
 
                 <ImageView
@@ -344,7 +343,7 @@
                     style="@style/textSmall"
                     android:text="@string/zonal_human_e" />
             </LinearLayout>
-
+
             <TextView
                 style="@style/textMedium.heading"
                 android:layout_gravity="center_vertical"
