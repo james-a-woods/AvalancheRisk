@@ -13,6 +13,7 @@
     <color name="transOrange">#EEFFDCCC</color>
     <color name="transYellow">#EEFFFFCC</color>
     <color name="transGreen">#EE00FFCC</color>
+    <color name="transBlue">#CC3377C8</color>
     <color name="stop">#FFFF7700</color>
     <color name="go">#FF00FFCC</color>
 
