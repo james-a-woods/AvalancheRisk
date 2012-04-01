@@ -41,7 +41,7 @@
     <string name="local_human_a">Who is in the group?  How many?</string>
     <string name="local_human_b">Transceiver check. Check other equipment: shovels, probes (harnesses?)</string>
     <string name="local_human_c">Are other groups traveling on the same route?  Do the different groups need coordinating?</string>
-    <string name="local_human_d">An time or is it getting too late?</string>
+    <string name="local_human_d">On time or is it getting too late?</string>
     <string name="zonal">Zonal\nCheck the slope in front of you</string>
     <string name="zonal_cond_a">How much new snow has fallen on the slope?</string>
     <string name="zonal_cond_b">Recent snow drift accumulations?</string>
