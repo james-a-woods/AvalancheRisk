@@ -19,7 +19,7 @@
     <string name="verySteep">35° - 39° (less than 40°)</string>
     <string name="steep">Around 35°</string>
     <string name="moderatelySteep">30°-34° (less than 35°)</string>
-    <string name="notSteep">30° or flatter</string>
+    <string name="notSteep">29° or flatter</string>
     <string name="secondClass">Second class reduction factors</string>
     <string name="allAspectsDanger">Does the avalanche bulletin declare all aspects to be dangerous?</string>
     <string name="inverse">Does the avalanche bulletin declare that southern aspects are more dangerous than northern aspects?</string>
@@ -28,7 +28,7 @@
     <string name="avoidNorthSector">Avoiding the northern sector: (northwest to north-northeast aspects)</string>
     <string name="avoidNorthHalf">Avoiding the \"northern half\" of the compass: (west-northwest to east-southeast aspects)</string>
     <string name="avoidCritical">Avoiding critical aspects and elevations as defined in the current avalanche bulletin</string>
-    <string name="tracked">Regularly tracked-out (highly frequented) slopes</string>
+    <string name="tracked">Regularly tracked-out (highly frequented) slopes.  (This should not be used for wet snow or critical amounts of new snow)</string>
     <string name="thirdClass">Third class reduction factors</string>
     <string name="who">Who will you be riding with?</string>
     <string name="largeGroup">A large group (more than 4 members)</string>
