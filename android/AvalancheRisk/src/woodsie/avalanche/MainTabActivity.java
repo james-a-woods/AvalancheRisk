@@ -22,13 +22,13 @@ public class MainTabActivity extends TabActivity {
 
 		intent = new Intent().setClass(this, ReductionActivity.class);
 		spec = tabHost.newTabSpec("reduction")
-		        .setIndicator(getResources().getString(R.string.reductionTab))
+		        .setIndicator(getResources().getString(R.string.reductionTab), getResources().getDrawable(R.drawable.calc))
 		        .setContent(intent);
 		tabHost.addTab(spec);
 
 		intent = new Intent().setClass(this, Checklist3x3Activity.class);
 		spec = tabHost.newTabSpec("checklist3x3")
-		        .setIndicator(getResources().getString(R.string.checklist3x3Tab))
+		        .setIndicator(getResources().getString(R.string.checklist3x3Tab), getResources().getDrawable(R.drawable.checklist3x3))
 		        .setContent(intent);
 		tabHost.addTab(spec);
 
