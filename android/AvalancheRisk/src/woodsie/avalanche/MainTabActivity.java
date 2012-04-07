@@ -34,7 +34,7 @@ public class MainTabActivity extends TabActivity {
 
 		intent = new Intent().setClass(this, InfoActivity.class);
 		spec = tabHost.newTabSpec("info")
-		        .setIndicator(getResources().getString(R.string.infoTab))
+		        .setIndicator(getResources().getString(R.string.infoTab), getResources().getDrawable(R.drawable.info))
 		        .setContent(intent);
 		tabHost.addTab(spec);
 
