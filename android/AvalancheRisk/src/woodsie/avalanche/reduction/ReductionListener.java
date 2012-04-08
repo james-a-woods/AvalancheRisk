@@ -152,7 +152,6 @@ public class ReductionListener implements OnClickListener {
 
 	private void showOrHideInputFields(ReductionParams params) {
 		RadioGroup where = (RadioGroup) activity.findViewById(R.id.where);
-		CheckBox tracked = (CheckBox) activity.findViewById(R.id.tracked);
 		RadioButton avoidNorthSector = (RadioButton) activity.findViewById(R.id.avoidNorthSector);
 		RadioButton avoidNorthHalf = (RadioButton) activity.findViewById(R.id.avoidNorthHalf);
 
@@ -161,11 +160,9 @@ public class ReductionListener implements OnClickListener {
 			avoidNorthHalf.setVisibility(VISIBLE);
 
 			where.setVisibility(GONE);
-			tracked.setVisibility(GONE);
 
 		} else if (params.inverse) {
 			where.setVisibility(VISIBLE);
-			tracked.setVisibility(VISIBLE);
 
 			avoidNorthSector.setVisibility(GONE);
 			avoidNorthHalf.setVisibility(GONE);
@@ -174,7 +171,6 @@ public class ReductionListener implements OnClickListener {
 			where.setVisibility(VISIBLE);
 			avoidNorthSector.setVisibility(VISIBLE);
 			avoidNorthHalf.setVisibility(VISIBLE);
-			tracked.setVisibility(VISIBLE);
 		}
 
 	}

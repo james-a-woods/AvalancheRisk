@@ -32,9 +32,9 @@ public class ReductionCalculator {
 					reductionFactor *= params.where.getReductionFactor();
 				}
 
-				reductionFactor *= params.terrain.getReductionFactor();
 			}
 
+			reductionFactor *= params.terrain.getReductionFactor();
 			reductionFactor *= params.groupSize.getReductionFactor();
 		}
 

@@ -41,7 +41,7 @@ public class AllAspectsTest extends TestCase {
 		params.terrain = Terrain.TRACKED;
 
 		BigDecimal risk = calculator.process(params);
-		assertIsNotSafe(risk);
+		assertIsSafe(risk);
 	}
 
 	public void test_high_not_steep_avoid_critical() {
@@ -84,7 +84,7 @@ public class AllAspectsTest extends TestCase {
 		params.groupSize = GroupSize.SMALL;
 
 		BigDecimal risk = calculator.process(params);
-		assertIsNotSafe(risk);
+		assertIsSafe(risk);
 	}
 
 	public void test_very_steep_all_aspects_tracked_small_spaced_group() {
