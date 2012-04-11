@@ -201,11 +201,12 @@ public final class R {
         public static final int zonal_terrain_f=0x7f04002b;
     }
     public static final class style {
-        public static final int button=0x7f060007;
+        public static final int button=0x7f060008;
         public static final int textLarge=0x7f060001;
         public static final int textMedium=0x7f060002;
         public static final int textMedium_heading=0x7f060005;
         public static final int textSmall=0x7f060003;
+        public static final int textSmall_block=0x7f060007;
         public static final int textSmall_warning=0x7f060006;
         public static final int textVeryLarge=0x7f060000;
         public static final int textVerySmall=0x7f060004;
