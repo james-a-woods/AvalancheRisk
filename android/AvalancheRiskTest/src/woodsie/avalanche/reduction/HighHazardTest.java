@@ -33,116 +33,116 @@ public class HighHazardTest extends TestCase {
 	}
 
 	public void test_steep_1() {
-		params.steepness = Steepness.VERY_VERY_STEEP;
-		params.where = Where.AVOID_CRITICAL;
-		params.terrain = Terrain.TRACKED;
-		params.groupSize = GroupSize.SMALL_SPACED;
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
+		params.setTerrain(Terrain.TRACKED);
+		params.setGroupSize(GroupSize.SMALL_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_steep_2() {
-		params.steepness = Steepness.VERY_STEEP;
-		params.where = Where.AVOID_CRITICAL;
-		params.terrain = Terrain.TRACKED;
-		params.groupSize = GroupSize.SMALL_SPACED;
+		params.setSteepness(Steepness.VERY_STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
+		params.setTerrain(Terrain.TRACKED);
+		params.setGroupSize(GroupSize.SMALL_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_steep_3() {
-		params.steepness = Steepness.STEEP;
-		params.where = Where.AVOID_CRITICAL;
-		params.terrain = Terrain.TRACKED;
-		params.groupSize = GroupSize.SMALL_SPACED;
+		params.setSteepness(Steepness.STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
+		params.setTerrain(Terrain.TRACKED);
+		params.setGroupSize(GroupSize.SMALL_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_steep_4() {
-		params.steepness = Steepness.MODERATELY_STEEP;
-		params.where = Where.AVOID_CRITICAL;
-		params.terrain = Terrain.TRACKED;
-		params.groupSize = GroupSize.SMALL_SPACED;
+		params.setSteepness(Steepness.MODERATELY_STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
+		params.setTerrain(Terrain.TRACKED);
+		params.setGroupSize(GroupSize.SMALL_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_steep_5() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_CRITICAL;
-		params.terrain = Terrain.TRACKED;
-		params.groupSize = GroupSize.SMALL_SPACED;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
+		params.setTerrain(Terrain.TRACKED);
+		params.setGroupSize(GroupSize.SMALL_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_not_steep() {
-		params.steepness = Steepness.NOT_STEEP;
+		params.setSteepness(Steepness.NOT_STEEP);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_not_steep_avoid_north_half() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setWhere(Where.AVOID_NORTH_HALF);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_not_steep_avoid_critical() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_CRITICAL;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_not_steep_avoid_north_half_tracked() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
-		params.terrain = Terrain.TRACKED;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setWhere(Where.AVOID_NORTH_HALF);
+		params.setTerrain(Terrain.TRACKED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_not_steep_avoid_north_sector_large_spaced_group() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
-		params.groupSize = GroupSize.LARGE_SPACED;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setWhere(Where.AVOID_NORTH_HALF);
+		params.setGroupSize(GroupSize.LARGE_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_not_steep_all_aspects_large_spaced_group() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.groupSize = GroupSize.LARGE_SPACED;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setGroupSize(GroupSize.LARGE_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_not_steep_all_aspects_small_spaced_group() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.groupSize = GroupSize.SMALL_SPACED;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setGroupSize(GroupSize.SMALL_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_not_steep_all_aspects_tracked_small_spaced_group() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.terrain = Terrain.TRACKED;
-		params.groupSize = GroupSize.SMALL_SPACED;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setTerrain(Terrain.TRACKED);
+		params.setGroupSize(GroupSize.SMALL_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);

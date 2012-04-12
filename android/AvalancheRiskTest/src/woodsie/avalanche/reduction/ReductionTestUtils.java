@@ -18,14 +18,14 @@ public class ReductionTestUtils {
 
 	public static ReductionParams getDefaultParams(Hazard hazardLevel, boolean higherHazard) {
 		ReductionParams params = new ReductionParams();
-		params.hazardLevel = hazardLevel;
-		params.higherHazard = higherHazard;
-		params.steepness = Steepness.VERY_VERY_STEEP;
-		params.allAspects = false;
-		params.inverse = false;
-		params.where = Where.ALL_ASPECTS;
-		params.terrain = Terrain.UNTRACKED;
-		params.groupSize = GroupSize.LARGE;
+		params.setHazardLevel(hazardLevel);
+		params.setHigherHazard(higherHazard);
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
+		params.setAllAspects(false);
+		params.setInverse(false);
+		params.setWhere(Where.ALL_ASPECTS);
+		params.setTerrain(Terrain.UNTRACKED);
+		params.setGroupSize(GroupSize.LARGE);
 
 		return params;
 	}

@@ -61,89 +61,89 @@ public class ReductionListener implements OnClickListener {
 		RadioGroup hazard = (RadioGroup) activity.findViewById(R.id.hazard);
 		switch (hazard.getCheckedRadioButtonId()) {
 		case R.id.low:
-			params.hazardLevel = LOW;
+			params.setHazardLevel(LOW);
 			break;
 		case R.id.moderate:
-			params.hazardLevel = MODERATE;
+			params.setHazardLevel(MODERATE);
 			break;
 		case R.id.considerable:
-			params.hazardLevel = CONSIDERABLE;
+			params.setHazardLevel(CONSIDERABLE);
 			break;
 		case R.id.high:
-			params.hazardLevel = HIGH;
+			params.setHazardLevel(HIGH);
 			break;
 		case R.id.veryHigh:
 		default:
-			params.hazardLevel = VERY_HIGH;
+			params.setHazardLevel(VERY_HIGH);
 			break;
 		}
 
 		CheckBox higherHazard = (CheckBox) activity.findViewById(R.id.higherHazard);
-		params.higherHazard = higherHazard.isChecked();
+		params.setHigherHazard(higherHazard.isChecked());
 
 		// First class
 		RadioGroup steepness = (RadioGroup) activity.findViewById(R.id.steepness);
 		switch (steepness.getCheckedRadioButtonId()) {
 		case R.id.notSteep:
-			params.steepness = NOT_STEEP;
+			params.setSteepness(NOT_STEEP);
 			break;
 		case R.id.moderatelySteep:
-			params.steepness = MODERATELY_STEEP;
+			params.setSteepness(MODERATELY_STEEP);
 			break;
 		case R.id.steep:
-			params.steepness = STEEP;
+			params.setSteepness(STEEP);
 			break;
 		case R.id.verySteep:
-			params.steepness = VERY_STEEP;
+			params.setSteepness(VERY_STEEP);
 			break;
 		case R.id.veryVerySteep:
 		default:
-			params.steepness = VERY_VERY_STEEP;
+			params.setSteepness(VERY_VERY_STEEP);
 			break;
 		}
 
 		// Second class
 		CheckBox allAspects = (CheckBox) activity.findViewById(R.id.allAspectsDanger);
-		params.allAspects = allAspects.isChecked();
+		params.setAllAspects(allAspects.isChecked());
 
 		CheckBox inverse = (CheckBox) activity.findViewById(R.id.inverse);
-		params.inverse = inverse.isChecked();
+		params.setInverse(inverse.isChecked());
 
 		RadioGroup where = (RadioGroup) activity.findViewById(R.id.where);
 		switch (where.getCheckedRadioButtonId()) {
 		case R.id.allAspects:
-			params.where = ALL_ASPECTS;
+			params.setWhere(ALL_ASPECTS);
 			break;
 		case R.id.avoidNorthSector:
-			params.where = AVOID_NORTH_SECTOR;
+			params.setWhere(AVOID_NORTH_SECTOR);
 			break;
 		case R.id.avoidNorthHalf:
-			params.where = AVOID_NORTH_SECTOR;
+			params.setWhere(AVOID_NORTH_SECTOR);
 			break;
 		case R.id.avoidCritical:
 		default:
-			params.where = AVOID_CRITICAL;
+			params.setWhere(AVOID_CRITICAL);
 			break;
 		}
 
 		CheckBox tracked = (CheckBox) activity.findViewById(R.id.tracked);
-		params.terrain = tracked.isChecked() ? TRACKED : UNTRACKED;
+		params.setTerrain(tracked.isChecked() ? TRACKED : UNTRACKED);
 
 		// Third class
 		RadioGroup groupSize = (RadioGroup) activity.findViewById(R.id.groupSize);
 		switch (groupSize.getCheckedRadioButtonId()) {
 		case R.id.smallGroupSpaced:
-			params.groupSize = SMALL_SPACED;
+			params.setGroupSize(SMALL_SPACED);
 			break;
 		case R.id.smallGroup:
-			params.groupSize = SMALL;
+			params.setGroupSize(SMALL);
 			break;
 		case R.id.largeGroupSpaced:
-			params.groupSize = LARGE_SPACED;
+			params.setGroupSize(LARGE_SPACED);
 			break;
 		case R.id.largeGroup:
 		default:
-			params.groupSize = LARGE;
+			params.setGroupSize(LARGE);
 			break;
 		}
 
@@ -155,13 +155,13 @@ public class ReductionListener implements OnClickListener {
 		RadioButton avoidNorthSector = (RadioButton) activity.findViewById(R.id.avoidNorthSector);
 		RadioButton avoidNorthHalf = (RadioButton) activity.findViewById(R.id.avoidNorthHalf);
 
-		if (params.allAspects) {
+		if (params.isAllAspects()) {
 			avoidNorthSector.setVisibility(VISIBLE);
 			avoidNorthHalf.setVisibility(VISIBLE);
 
 			where.setVisibility(GONE);
 
-		} else if (params.inverse) {
+		} else if (params.isInverse()) {
 			where.setVisibility(VISIBLE);
 
 			avoidNorthSector.setVisibility(GONE);

@@ -32,34 +32,34 @@ public class HighHazardHigherTest extends TestCase {
 	}
 
 	public void test_2() {
-		params.steepness = Steepness.NOT_STEEP;
+		params.setSteepness(Steepness.NOT_STEEP);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_3() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_CRITICAL;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_4() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_CRITICAL;
-		params.terrain = Terrain.TRACKED;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
+		params.setTerrain(Terrain.TRACKED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_5() {
-		params.steepness = Steepness.NOT_STEEP;
-		params.where = Where.AVOID_CRITICAL;
-		params.terrain = Terrain.TRACKED;
-		params.groupSize = GroupSize.SMALL_SPACED;
+		params.setSteepness(Steepness.NOT_STEEP);
+		params.setWhere(Where.AVOID_CRITICAL);
+		params.setTerrain(Terrain.TRACKED);
+		params.setGroupSize(GroupSize.SMALL_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);

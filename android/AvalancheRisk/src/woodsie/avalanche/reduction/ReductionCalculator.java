@@ -12,30 +12,30 @@ public class ReductionCalculator {
 	public static final BigDecimal EXTREME = BigDecimal.valueOf(100);
 
 	public BigDecimal process(ReductionParams params) {
-		if (params.hazardLevel == Hazard.VERY_HIGH) {
+		if (params.getHazardLevel() == Hazard.VERY_HIGH) {
 			return EXTREME;
 		}
 
-		BigDecimal dangerPotential = new BigDecimal(params.hazardLevel.getDangerPotential(params.higherHazard), MathContext.DECIMAL32);
+		BigDecimal dangerPotential = new BigDecimal(params.getHazardLevel().getDangerPotential(params.isHigherHazard()), MathContext.DECIMAL32);
 
 		int reductionFactor = 1;
 
-		if ((params.hazardLevel.getDangerPotential(params.higherHazard) < Hazard.CONSIDERABLE.getDangerPotential(false))
-		        || (params.hazardLevel == Hazard.HIGH && params.steepness == Steepness.NOT_STEEP)
-		        || (params.hazardLevel == Hazard.CONSIDERABLE && params.steepness.getReductionFactor() > 1)) {
-			reductionFactor *= params.steepness.getReductionFactor();
+		if ((params.getHazardLevel().getDangerPotential(params.isHigherHazard()) < Hazard.CONSIDERABLE.getDangerPotential(false))
+		        || (params.getHazardLevel() == Hazard.HIGH && params.getSteepness() == Steepness.NOT_STEEP)
+		        || (params.getHazardLevel() == Hazard.CONSIDERABLE && params.getSteepness().getReductionFactor() > 1)) {
+			reductionFactor *= params.getSteepness().getReductionFactor();
 
-			if (!params.allAspects) {
+			if (!params.isAllAspects()) {
 
-				if (!params.inverse
-				        || (params.inverse && params.where == Where.AVOID_CRITICAL)) {
-					reductionFactor *= params.where.getReductionFactor();
+				if (!params.isInverse()
+				        || (params.isInverse() && params.getWhere() == Where.AVOID_CRITICAL)) {
+					reductionFactor *= params.getWhere().getReductionFactor();
 				}
 
 			}
 
-			reductionFactor *= params.terrain.getReductionFactor();
-			reductionFactor *= params.groupSize.getReductionFactor();
+			reductionFactor *= params.getTerrain().getReductionFactor();
+			reductionFactor *= params.getGroupSize().getReductionFactor();
 		}
 
 		return dangerPotential.divide(new BigDecimal(reductionFactor), MathContext.DECIMAL32);

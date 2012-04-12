@@ -33,109 +33,109 @@ public class LowHazardTest extends TestCase {
 	}
 
 	public void test_steep_1() {
-		params.steepness = Steepness.VERY_VERY_STEEP;
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_steep_2() {
-		params.steepness = Steepness.VERY_STEEP;
+		params.setSteepness(Steepness.VERY_STEEP);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_steep_3() {
-		params.steepness = Steepness.STEEP;
+		params.setSteepness(Steepness.STEEP);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_steep_4() {
-		params.steepness = Steepness.MODERATELY_STEEP;
+		params.setSteepness(Steepness.MODERATELY_STEEP);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_steep_5() {
-		params.steepness = Steepness.NOT_STEEP;
+		params.setSteepness(Steepness.NOT_STEEP);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_steep_avoid_north_sector() {
-		params.steepness = Steepness.STEEP;
-		params.where = Where.AVOID_NORTH_SECTOR;
+		params.setSteepness(Steepness.STEEP);
+		params.setWhere(Where.AVOID_NORTH_SECTOR);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_steep_north_half() {
-		params.steepness = Steepness.STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
+		params.setSteepness(Steepness.STEEP);
+		params.setWhere(Where.AVOID_NORTH_HALF);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_very_very_steep_avoid_north_sector() {
-		params.steepness = Steepness.VERY_VERY_STEEP;
-		params.where = Where.AVOID_NORTH_SECTOR;
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
+		params.setWhere(Where.AVOID_NORTH_SECTOR);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_very_very_steep_avoid_north_half() {
-		params.steepness = Steepness.VERY_VERY_STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
+		params.setWhere(Where.AVOID_NORTH_HALF);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_very_very_steep_avoid_north_half_tracked() {
-		params.steepness = Steepness.VERY_VERY_STEEP;
-		params.where = Where.AVOID_NORTH_HALF;
-		params.terrain = Terrain.TRACKED;
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
+		params.setWhere(Where.AVOID_NORTH_HALF);
+		params.setTerrain(Terrain.TRACKED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_very_very_steep_all_aspects_large_group() {
-		params.steepness = Steepness.VERY_VERY_STEEP;
-		params.groupSize = GroupSize.LARGE;
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
+		params.setGroupSize(GroupSize.LARGE);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsNotSafe(risk);
 	}
 
 	public void test_very_steep_all_aspects_large_group() {
-		params.steepness = Steepness.VERY_STEEP;
-		params.groupSize = GroupSize.LARGE;
+		params.setSteepness(Steepness.VERY_STEEP);
+		params.setGroupSize(GroupSize.LARGE);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_very_very_steep_all_aspects_large_spaced_group() {
-		params.steepness = Steepness.VERY_VERY_STEEP;
-		params.groupSize = GroupSize.LARGE_SPACED;
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
+		params.setGroupSize(GroupSize.LARGE_SPACED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
 	}
 
 	public void test_very_very_steep_all_aspects_large_group_tracked() {
-		params.steepness = Steepness.VERY_VERY_STEEP;
-		params.groupSize = GroupSize.LARGE;
-		params.terrain = Terrain.TRACKED;
+		params.setSteepness(Steepness.VERY_VERY_STEEP);
+		params.setGroupSize(GroupSize.LARGE);
+		params.setTerrain(Terrain.TRACKED);
 
 		BigDecimal risk = calculator.process(params);
 		assertIsSafe(risk);
