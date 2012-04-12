@@ -2,6 +2,7 @@ package woodsie.avalanche.data;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
+import lombok.Getter;
 import woodsie.avalanche.R;
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
@@ -10,10 +11,11 @@ import android.widget.ImageView;
 
 public class CollapsableSection {
 
-	private enum State {
+	public enum State {
 		OPEN, CLOSED
 	}
 
+	@Getter
 	private State state;
 
 	private final Drawable arrowUp;
@@ -25,15 +27,13 @@ public class CollapsableSection {
 	private final View sectionLayout;
 
 	public CollapsableSection(Activity activity, ImageView arrowImage, View sectionLayout) {
-		state = State.CLOSED;
+		state = sectionLayout.getVisibility() == VISIBLE ? State.OPEN : State.CLOSED;
 
 		arrowUp = activity.getResources().getDrawable(R.drawable.arrow_up);
 		arrowDown = activity.getResources().getDrawable(R.drawable.arrow_down);
 
 		this.arrowImage = arrowImage;
 		this.sectionLayout = sectionLayout;
-
-		close();
 	}
 
 	public void open() {

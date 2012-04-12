@@ -1,5 +1,6 @@
 package woodsie.avalanche.checklist;
 
+import static woodsie.avalanche.data.CollapsableSection.State.OPEN;
 import woodsie.avalanche.R;
 import woodsie.avalanche.data.CollapsableSection;
 import android.app.Activity;
@@ -29,6 +30,8 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 		View heading = findViewById(R.id.descriptionHeading);
 		ImageView arrow = (ImageView) findViewById(R.id.descriptionArrow);
 		View layout = findViewById(R.id.descriptionLayout);
+		if (savedInstanceState != null && savedInstanceState.getBoolean("description"))
+			layout.setVisibility(View.VISIBLE);
 		description = new CollapsableSection(this, arrow, layout);
 		heading.setOnClickListener(this);
 		arrow.setOnClickListener(this);
@@ -36,6 +39,8 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 		heading = findViewById(R.id.regionalHeading);
 		arrow = (ImageView) findViewById(R.id.regionalArrow);
 		layout = findViewById(R.id.regionalLayout);
+		if (savedInstanceState != null && savedInstanceState.getBoolean("regional"))
+			layout.setVisibility(View.VISIBLE);
 		regional = new CollapsableSection(this, arrow, layout);
 		heading.setOnClickListener(this);
 		arrow.setOnClickListener(this);
@@ -43,6 +48,8 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 		heading = findViewById(R.id.localHeading);
 		arrow = (ImageView) findViewById(R.id.localArrow);
 		layout = findViewById(R.id.localLayout);
+		if (savedInstanceState != null && savedInstanceState.getBoolean("local"))
+			layout.setVisibility(View.VISIBLE);
 		local = new CollapsableSection(this, arrow, layout);
 		heading.setOnClickListener(this);
 		arrow.setOnClickListener(this);
@@ -50,6 +57,8 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 		heading = findViewById(R.id.zonalHeading);
 		arrow = (ImageView) findViewById(R.id.zonalArrow);
 		layout = findViewById(R.id.zonalLayout);
+		if (savedInstanceState != null && savedInstanceState.getBoolean("zonal"))
+			layout.setVisibility(View.VISIBLE);
 		zonal = new CollapsableSection(this, arrow, layout);
 		heading.setOnClickListener(this);
 		arrow.setOnClickListener(this);
@@ -58,6 +67,16 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 		button.setOnClickListener(this);
 		button = findViewById(R.id.resetBottom);
 		button.setOnClickListener(this);
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+
+		outState.putBoolean("description", description.getState() == OPEN);
+		outState.putBoolean("regional", regional.getState() == OPEN);
+		outState.putBoolean("local", local.getState() == OPEN);
+		outState.putBoolean("zonal", zonal.getState() == OPEN);
 	}
 
 	public void onClick(View view) {

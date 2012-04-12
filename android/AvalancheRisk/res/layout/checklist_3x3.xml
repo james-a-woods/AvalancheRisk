@@ -52,12 +52,12 @@
                 android:id="@+id/descriptionLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
-
+                android:orientation="vertical"
+                android:visibility="gone" >
+
                 <TextView
                     style="@style/textSmall.block"
                     android:text="@string/checklist_3x3_desc" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -88,7 +88,8 @@
                 android:id="@+id/regionalLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:visibility="gone" >
 
                 <TextView
                     style="@style/textMedium.heading"
@@ -167,7 +168,8 @@
                 android:id="@+id/localLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:visibility="gone" >
 
                 <TextView
                     style="@style/textMedium.heading"
@@ -266,7 +268,8 @@
                 android:id="@+id/zonalLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:visibility="gone" >
 
                 <TextView
                     style="@style/textMedium.heading"
