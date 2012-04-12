@@ -169,7 +169,7 @@ public final class R {
         public static final int riskExtreme=0x7f040037;
         public static final int riskSafe=0x7f040035;
         public static final int secondClass=0x7f040046;
-        public static final int secondClassNote=0x7f040047;
+        public static final int secondClassHemisphere=0x7f040047;
         public static final int smallGroup=0x7f040054;
         public static final int smallGroupSpaced=0x7f040055;
         public static final int steep=0x7f040043;

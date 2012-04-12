@@ -3,8 +3,8 @@
 
     <string name="reductionTab">Reduction</string>
     <string name="dangerLevel">Danger Level: %</string>
-    <string name="riskSafe">Hit the slopes!\nRemember to assess local conditions and individual slopes. A change of plans changes the risk.</string>
-    <string name="riskDangerous">The avalanche danger is too high, you need to change your plans to reduce the risk.</string>
+    <string name="riskSafe">Hit the slopes!\nBut assess local conditions and slopes. Changing plans also changes risk.</string>
+    <string name="riskDangerous">The avalanche danger is too high, you need to change plans to reduce risk.</string>
     <string name="riskExtreme">Seriously, the pub or the sofa is the only safe place today.</string>
     <string name="hazardLevel">What is the hazard level in the current avalanche bulletin?</string>
     <string name="veryHigh">Very High - 5</string>
@@ -21,7 +21,7 @@
     <string name="moderatelySteep">30°-34° (less than 35°)</string>
     <string name="notSteep">29° or flatter</string>
     <string name="secondClass">Second class reduction factors</string>
-    <string name="secondClassNote">This is written for the northern hemisphere.  North and South should be reversed for the southern hemisphere.</string>
+    <string name="secondClassHemisphere">This is written for the northern hemisphere.  North and south should be reversed for the southern hemisphere.</string>
     <string name="allAspectsDanger">Does the avalanche bulletin declare all aspects to be dangerous?</string>
     <string name="inverse">Are southern aspects are more dangerous than northern aspects in the avalanche bulletin?</string>
     <string name="where">Where will you be riding?</string>
@@ -29,7 +29,7 @@
     <string name="avoidNorthSector">Avoiding the northern sector: (northwest to north-northeast aspects)</string>
     <string name="avoidNorthHalf">Avoiding the \"northern half\" of the compass: (west-northwest to east-southeast aspects)</string>
     <string name="avoidCritical">Avoiding critical aspects and elevations as defined in the avalanche bulletin</string>
-    <string name="tracked">Regularly tracked-out slopes.\n(Not for wet snow or large amounts of new snow)</string>
+    <string name="tracked">Regularly tracked-out slopes.\n(Not wet snow or lots of new snow)</string>
     <string name="thirdClass">Third class reduction factors</string>
     <string name="who">Who will you be riding with?</string>
     <string name="largeGroup">A large group (more than 4 members)</string>

@@ -147,6 +147,10 @@
                         android:background="@color/transOrange"
                         android:text="@string/secondClass" />
 
+                    <TextView
+                        style="@style/textSmall"
+                        android:text="@string/secondClassHemisphere" />
+
                     <CheckBox
                         android:id="@+id/allAspectsDanger"
                         style="@style/textSmall"
