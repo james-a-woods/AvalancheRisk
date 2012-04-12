@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
 
-public class CollapsableSection {
+public class CollapsibleSection {
 
 	public enum State {
 		OPEN, CLOSED
@@ -26,7 +26,7 @@ public class CollapsableSection {
 
 	private final View sectionLayout;
 
-	public CollapsableSection(Activity activity, ImageView arrowImage, View sectionLayout) {
+	public CollapsibleSection(Activity activity, ImageView arrowImage, View sectionLayout) {
 		state = sectionLayout.getVisibility() == VISIBLE ? State.OPEN : State.CLOSED;
 
 		arrowUp = activity.getResources().getDrawable(R.drawable.arrow_up);
