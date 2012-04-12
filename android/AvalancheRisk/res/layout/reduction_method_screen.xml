@@ -30,6 +30,13 @@
                 android:background="@color/transWhite"
                 android:orientation="vertical" >
 
+                <Button
+                    android:id="@+id/resetTop"
+                    style="@style/button"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/resetButton" />
+
                 <!-- Hazard Level -->
 
                 <LinearLayout
@@ -242,6 +249,13 @@
                             android:text="@string/smallGroupSpaced" />
                     </RadioGroup>
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/resetBottom"
+                    style="@style/button"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/resetButton" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
