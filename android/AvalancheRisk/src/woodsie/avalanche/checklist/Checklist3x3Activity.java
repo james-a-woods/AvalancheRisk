@@ -33,7 +33,7 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 		sectionMap.put("local", new CollapsibleSection(this, R.id.localHeading, R.id.localArrow, R.id.localLayout));
 		sectionMap.put("zonal", new CollapsibleSection(this, R.id.zonalHeading, R.id.zonalArrow, R.id.zonalLayout));
 
-		CollapsibleSectionListener sectionListener = new CollapsibleSectionListener(sectionMap, (ScrollView) findViewById(R.id.checklistScroll));
+		CollapsibleSectionListener sectionListener = new CollapsibleSectionListener(sectionMap, (ScrollView) findViewById(R.id.checklistScroller));
 
 		for (Entry<String, CollapsibleSection> entry : sectionMap.entrySet()) {
 			CollapsibleSection value = entry.getValue();
@@ -44,8 +44,8 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 			value.getArrowImage().setOnClickListener(sectionListener);
 		}
 
-		findViewById(R.id.resetTop).setOnClickListener(this);
-		findViewById(R.id.resetBottom).setOnClickListener(this);
+		findViewById(R.id.checklist3x3ResetTop).setOnClickListener(this);
+		findViewById(R.id.checklist3x3ResetBottom).setOnClickListener(this);
 	}
 
 	@Override
@@ -65,7 +65,7 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 
 		recursiveReset(findViewById(R.id.checklist3x3Form));
 
-		((ScrollView) findViewById(R.id.checklistScroll)).scrollTo(0, 0);
+		((ScrollView) findViewById(R.id.checklistScroller)).scrollTo(0, 0);
 	}
 
 	private void recursiveReset(View view) {

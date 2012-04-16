@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.ScrollView;
 
-public class ReductionActivity extends Activity {
+public class ReductionActivity extends Activity implements OnClickListener {
 	private final ReductionListener listener = new ReductionListener(this);
 
 	/** Called when the activity is first created. */
@@ -18,6 +21,9 @@ public class ReductionActivity extends Activity {
 
 		View topLevel = findViewById(R.id.reductionForm);
 		setRecursiveOnClickListener(topLevel, listener);
+
+		findViewById(R.id.reductionResetTop).setOnClickListener(this);
+		findViewById(R.id.reductionResetBottom).setOnClickListener(this);
 	}
 
 	@Override
@@ -38,4 +44,27 @@ public class ReductionActivity extends Activity {
 			view.setOnClickListener(listener);
 		}
 	}
+
+	public void onClick(View view) {
+		reset(findViewById(R.id.reductionForm));
+
+		((ScrollView) findViewById(R.id.reductionScroller)).scrollTo(0, 0);
+
+	}
+
+	private void reset(View view) {
+
+		((RadioButton) findViewById(R.id.veryHigh)).setChecked(true);
+		((RadioButton) findViewById(R.id.veryVerySteep)).setChecked(true);
+		((RadioButton) findViewById(R.id.allAspects)).setChecked(true);
+		((RadioButton) findViewById(R.id.largeGroup)).setChecked(true);
+
+		((CheckBox) findViewById(R.id.higherHazard)).setChecked(false);
+		((CheckBox) findViewById(R.id.allAspectsDanger)).setChecked(false);
+		((CheckBox) findViewById(R.id.inverse)).setChecked(false);
+		((CheckBox) findViewById(R.id.tracked)).setChecked(false);
+
+		listener.onClick(null);
+	}
+
 }
