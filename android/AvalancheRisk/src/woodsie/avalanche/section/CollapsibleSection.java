@@ -1,4 +1,4 @@
-package woodsie.avalanche.data;
+package woodsie.avalanche.section;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
@@ -18,22 +18,29 @@ public class CollapsibleSection {
 	@Getter
 	private State state;
 
+	@Getter
+	private final View heading;
+
+	@Getter
+	private final ImageView arrowImage;
+
+	@Getter
+	private final View sectionLayout;
+
 	private final Drawable arrowUp;
 
 	private final Drawable arrowDown;
 
-	private final ImageView arrowImage;
+	public CollapsibleSection(Activity activity, int headingId, int arrowImageId, int sectionLayoutId) {
+		heading = activity.findViewById(headingId);
+		arrowImage = (ImageView) activity.findViewById(arrowImageId);
+		sectionLayout = activity.findViewById(sectionLayoutId);
 
-	private final View sectionLayout;
-
-	public CollapsibleSection(Activity activity, ImageView arrowImage, View sectionLayout) {
 		state = sectionLayout.getVisibility() == VISIBLE ? State.OPEN : State.CLOSED;
 
 		arrowUp = activity.getResources().getDrawable(R.drawable.arrow_up);
 		arrowDown = activity.getResources().getDrawable(R.drawable.arrow_down);
 
-		this.arrowImage = arrowImage;
-		this.sectionLayout = sectionLayout;
 	}
 
 	public void open() {

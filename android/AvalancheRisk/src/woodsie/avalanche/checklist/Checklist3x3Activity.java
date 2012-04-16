@@ -1,128 +1,69 @@
 package woodsie.avalanche.checklist;
 
-import static woodsie.avalanche.data.CollapsibleSection.State.OPEN;
+import static woodsie.avalanche.section.CollapsibleSection.State.OPEN;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
 import woodsie.avalanche.R;
-import woodsie.avalanche.data.CollapsibleSection;
+import woodsie.avalanche.section.CollapsibleSection;
+import woodsie.avalanche.section.CollapsibleSectionListener;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.ScrollView;
 
 public class Checklist3x3Activity extends Activity implements OnClickListener {
 
-	private CollapsibleSection description;
-
-	private CollapsibleSection regional;
-
-	private CollapsibleSection local;
-
-	private CollapsibleSection zonal;
+	private Map<String, CollapsibleSection> sectionMap;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.checklist_3x3);
 
-		View heading = findViewById(R.id.descriptionHeading);
-		ImageView arrow = (ImageView) findViewById(R.id.descriptionArrow);
-		View layout = findViewById(R.id.descriptionLayout);
-		if (savedInstanceState != null && savedInstanceState.getBoolean("description"))
-			layout.setVisibility(View.VISIBLE);
-		description = new CollapsibleSection(this, arrow, layout);
-		heading.setOnClickListener(this);
-		arrow.setOnClickListener(this);
+		sectionMap = new LinkedHashMap<String, CollapsibleSection>();
 
-		heading = findViewById(R.id.regionalHeading);
-		arrow = (ImageView) findViewById(R.id.regionalArrow);
-		layout = findViewById(R.id.regionalLayout);
-		if (savedInstanceState != null && savedInstanceState.getBoolean("regional"))
-			layout.setVisibility(View.VISIBLE);
-		regional = new CollapsibleSection(this, arrow, layout);
-		heading.setOnClickListener(this);
-		arrow.setOnClickListener(this);
+		sectionMap.put("description", new CollapsibleSection(this, R.id.descriptionHeading, R.id.descriptionArrow, R.id.descriptionLayout));
+		sectionMap.put("regional", new CollapsibleSection(this, R.id.regionalHeading, R.id.regionalArrow, R.id.regionalLayout));
+		sectionMap.put("local", new CollapsibleSection(this, R.id.localHeading, R.id.localArrow, R.id.localLayout));
+		sectionMap.put("zonal", new CollapsibleSection(this, R.id.zonalHeading, R.id.zonalArrow, R.id.zonalLayout));
 
-		heading = findViewById(R.id.localHeading);
-		arrow = (ImageView) findViewById(R.id.localArrow);
-		layout = findViewById(R.id.localLayout);
-		if (savedInstanceState != null && savedInstanceState.getBoolean("local"))
-			layout.setVisibility(View.VISIBLE);
-		local = new CollapsibleSection(this, arrow, layout);
-		heading.setOnClickListener(this);
-		arrow.setOnClickListener(this);
+		CollapsibleSectionListener sectionListener = new CollapsibleSectionListener(sectionMap, (ScrollView) findViewById(R.id.checklistScroll));
 
-		heading = findViewById(R.id.zonalHeading);
-		arrow = (ImageView) findViewById(R.id.zonalArrow);
-		layout = findViewById(R.id.zonalLayout);
-		if (savedInstanceState != null && savedInstanceState.getBoolean("zonal"))
-			layout.setVisibility(View.VISIBLE);
-		zonal = new CollapsibleSection(this, arrow, layout);
-		heading.setOnClickListener(this);
-		arrow.setOnClickListener(this);
+		for (Entry<String, CollapsibleSection> entry : sectionMap.entrySet()) {
+			CollapsibleSection value = entry.getValue();
+			if (savedInstanceState != null && savedInstanceState.getBoolean(entry.getKey())) {
+				value.getSectionLayout().setVisibility(View.VISIBLE);
+			}
+			value.getHeading().setOnClickListener(sectionListener);
+			value.getArrowImage().setOnClickListener(sectionListener);
+		}
 
-		View button = findViewById(R.id.resetTop);
-		button.setOnClickListener(this);
-		button = findViewById(R.id.resetBottom);
-		button.setOnClickListener(this);
+		findViewById(R.id.resetTop).setOnClickListener(this);
+		findViewById(R.id.resetBottom).setOnClickListener(this);
 	}
 
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 
-		outState.putBoolean("description", description.getState() == OPEN);
-		outState.putBoolean("regional", regional.getState() == OPEN);
-		outState.putBoolean("local", local.getState() == OPEN);
-		outState.putBoolean("zonal", zonal.getState() == OPEN);
+		for (Entry<String, CollapsibleSection> entry : sectionMap.entrySet()) {
+			outState.putBoolean(entry.getKey(), entry.getValue().getState() == OPEN);
+		}
 	}
 
 	public void onClick(View view) {
-		switch (view.getId()) {
-		case R.id.descriptionHeading:
-		case R.id.descriptionArrow:
-			description.toggle();
-			regional.close();
-			local.close();
-			zonal.close();
-			break;
 
-		case R.id.regionalHeading:
-		case R.id.regionalArrow:
-			description.close();
-			regional.toggle();
-			local.close();
-			zonal.close();
-			break;
-
-		case R.id.localHeading:
-		case R.id.localArrow:
-			description.close();
-			regional.close();
-			local.toggle();
-			zonal.close();
-			break;
-
-		case R.id.zonalHeading:
-		case R.id.zonalArrow:
-			description.close();
-			regional.close();
-			local.close();
-			zonal.toggle();
-			break;
-
-		case R.id.resetTop:
-		case R.id.resetBottom:
-			description.close();
-			regional.close();
-			local.close();
-			zonal.close();
-
-			recursiveReset(findViewById(R.id.checklist3x3Form));
-			break;
+		for (CollapsibleSection section : sectionMap.values()) {
+			section.close();
 		}
+
+		recursiveReset(findViewById(R.id.checklist3x3Form));
 
 		((ScrollView) findViewById(R.id.checklistScroll)).scrollTo(0, 0);
 	}
