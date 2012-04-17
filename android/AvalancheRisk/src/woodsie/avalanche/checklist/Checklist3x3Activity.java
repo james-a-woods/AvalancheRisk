@@ -2,13 +2,13 @@ package woodsie.avalanche.checklist;
 
 import static woodsie.avalanche.section.CollapsibleSection.State.OPEN;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Map.Entry;
+import java.util.ArrayList;
+import java.util.List;
 
+import lombok.Getter;
 import woodsie.avalanche.R;
 import woodsie.avalanche.section.CollapsibleSection;
-import woodsie.avalanche.section.CollapsibleSectionListener;
+import woodsie.avalanche.section.CollapsibleSectionParent;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,33 +17,31 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ScrollView;
 
-public class Checklist3x3Activity extends Activity implements OnClickListener {
+public class Checklist3x3Activity extends Activity implements CollapsibleSectionParent, OnClickListener {
 
-	private Map<String, CollapsibleSection> sectionMap;
+	private static final String OPEN_SECTION = "openSection";
+
+	@Getter
+	private List<CollapsibleSection> sectionList;
+
+	@Getter
+	private ScrollView scroller;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.checklist_3x3);
 
-		sectionMap = new LinkedHashMap<String, CollapsibleSection>();
+		sectionList = new ArrayList<CollapsibleSection>();
+		scroller = (ScrollView) findViewById(R.id.checklistScroller);
 
-		sectionMap.put("description", new CollapsibleSection(this, R.id.descriptionHeading, R.id.descriptionArrow, R.id.descriptionLayout));
-		sectionMap.put("regional", new CollapsibleSection(this, R.id.regionalHeading, R.id.regionalArrow, R.id.regionalLayout));
-		sectionMap.put("local", new CollapsibleSection(this, R.id.localHeading, R.id.localArrow, R.id.localLayout));
-		sectionMap.put("zonal", new CollapsibleSection(this, R.id.zonalHeading, R.id.zonalArrow, R.id.zonalLayout));
+		sectionList.add(new CollapsibleSection(this, R.id.descriptionHeading, R.id.descriptionArrow, R.id.descriptionLayout));
+		sectionList.add(new CollapsibleSection(this, R.id.regionalHeading, R.id.regionalArrow, R.id.regionalLayout));
+		sectionList.add(new CollapsibleSection(this, R.id.localHeading, R.id.localArrow, R.id.localLayout));
+		sectionList.add(new CollapsibleSection(this, R.id.zonalHeading, R.id.zonalArrow, R.id.zonalLayout));
 
-		CollapsibleSectionListener sectionListener = new CollapsibleSectionListener(sectionMap, (ScrollView) findViewById(R.id.checklistScroller));
-
-		for (Entry<String, CollapsibleSection> entry : sectionMap.entrySet()) {
-			CollapsibleSection section = entry.getValue();
-			if (savedInstanceState != null && savedInstanceState.getBoolean(entry.getKey())) {
-				section.open();
-			} else {
-				section.close();
-			}
-			section.getHeading().setOnClickListener(sectionListener);
-			section.getArrowImage().setOnClickListener(sectionListener);
+		if (savedInstanceState != null && savedInstanceState.containsKey(OPEN_SECTION)) {
+			sectionList.get(savedInstanceState.getInt(OPEN_SECTION)).open();
 		}
 
 		findViewById(R.id.checklist3x3ResetTop).setOnClickListener(this);
@@ -54,14 +52,15 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 
-		for (Entry<String, CollapsibleSection> entry : sectionMap.entrySet()) {
-			outState.putBoolean(entry.getKey(), entry.getValue().getState() == OPEN);
+		for (int i = 0; i < sectionList.size(); i++) {
+			if (sectionList.get(i).getState() == OPEN)
+				outState.putInt(OPEN_SECTION, i);
 		}
 	}
 
 	public void onClick(View view) {
 
-		for (CollapsibleSection section : sectionMap.values()) {
+		for (CollapsibleSection section : sectionList) {
 			section.close();
 		}
 

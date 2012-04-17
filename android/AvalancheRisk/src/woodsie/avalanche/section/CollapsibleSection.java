@@ -2,6 +2,8 @@ package woodsie.avalanche.section;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
+import lombok.AccessLevel;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import woodsie.avalanche.R;
 import android.app.Activity;
@@ -9,6 +11,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
 
+@EqualsAndHashCode
 public class CollapsibleSection {
 
 	public enum State {
@@ -18,28 +21,31 @@ public class CollapsibleSection {
 	@Getter
 	private State state;
 
-	@Getter
+	@Getter(value = AccessLevel.PACKAGE)
 	private final View heading;
 
-	@Getter
+	@Getter(value = AccessLevel.PACKAGE)
 	private final ImageView arrowImage;
 
-	@Getter
 	private final View sectionLayout;
 
 	private final Drawable arrowUp;
 
 	private final Drawable arrowDown;
 
-	public CollapsibleSection(Activity activity, int headingId, int arrowImageId, int sectionLayoutId) {
-		heading = activity.findViewById(headingId);
-		arrowImage = (ImageView) activity.findViewById(arrowImageId);
-		sectionLayout = activity.findViewById(sectionLayoutId);
+	public <T extends Activity & CollapsibleSectionParent> CollapsibleSection(T parent, int headingId, int arrowImageId, int sectionLayoutId) {
+		heading = parent.findViewById(headingId);
+		arrowImage = (ImageView) parent.findViewById(arrowImageId);
+		sectionLayout = parent.findViewById(sectionLayoutId);
+
+		arrowUp = parent.getResources().getDrawable(R.drawable.arrow_up);
+		arrowDown = parent.getResources().getDrawable(R.drawable.arrow_down);
 
 		state = sectionLayout.getVisibility() == VISIBLE ? State.OPEN : State.CLOSED;
 
-		arrowUp = activity.getResources().getDrawable(R.drawable.arrow_up);
-		arrowDown = activity.getResources().getDrawable(R.drawable.arrow_down);
+		CollapsibleSectionListener sectionListener = CollapsibleSectionListener.getInstance(parent);
+		heading.setOnClickListener(sectionListener);
+		arrowImage.setOnClickListener(sectionListener);
 
 	}
 

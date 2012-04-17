@@ -1,33 +1,50 @@
 package woodsie.avalanche.section;
 
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ScrollView;
 
-public class CollapsibleSectionListener implements OnClickListener {
+class CollapsibleSectionListener implements OnClickListener {
 
-	private final Map<String, CollapsibleSection> sectionMap;
+	private static final Map<CollapsibleSectionParent, CollapsibleSectionListener> INSTANCE_MAP =
+	        new HashMap<CollapsibleSectionParent, CollapsibleSectionListener>();
 
-	private final ScrollView scrollView;
+	private final Collection<CollapsibleSection> sectionList;
 
-	public CollapsibleSectionListener(Map<String, CollapsibleSection> sectionMap, ScrollView scrollView) {
-		this.sectionMap = sectionMap;
-		this.scrollView = scrollView;
+	private final ScrollView scroller;
+
+	private CollapsibleSectionListener(CollapsibleSectionParent parent) {
+		sectionList = parent.getSectionList();
+		scroller = parent.getScroller();
+	}
+
+	static CollapsibleSectionListener getInstance(CollapsibleSectionParent parent) {
+		if (!INSTANCE_MAP.containsKey(parent)) {
+			synchronized (INSTANCE_MAP) {
+				if (!INSTANCE_MAP.containsKey(parent)) {
+					INSTANCE_MAP.put(parent, new CollapsibleSectionListener(parent));
+				}
+			}
+		}
+
+		return INSTANCE_MAP.get(parent);
 	}
 
 	public void onClick(View view) {
 
-		for (CollapsibleSection section : sectionMap.values()) {
-			if (view.equals(section.getHeading()) || view.equals(section.getArrowImage())) {
+		for (CollapsibleSection section : sectionList) {
+			if (view == section.getHeading() || view == section.getArrowImage()) {
 				section.toggle();
 			} else {
 				section.close();
 			}
 		}
 
-		scrollView.scrollTo(0, 0);
+		scroller.scrollTo(0, 0);
 	}
 
 }
