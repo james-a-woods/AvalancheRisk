@@ -36,12 +36,14 @@ public class Checklist3x3Activity extends Activity implements OnClickListener {
 		CollapsibleSectionListener sectionListener = new CollapsibleSectionListener(sectionMap, (ScrollView) findViewById(R.id.checklistScroller));
 
 		for (Entry<String, CollapsibleSection> entry : sectionMap.entrySet()) {
-			CollapsibleSection value = entry.getValue();
+			CollapsibleSection section = entry.getValue();
 			if (savedInstanceState != null && savedInstanceState.getBoolean(entry.getKey())) {
-				value.getSectionLayout().setVisibility(View.VISIBLE);
+				section.open();
+			} else {
+				section.close();
 			}
-			value.getHeading().setOnClickListener(sectionListener);
-			value.getArrowImage().setOnClickListener(sectionListener);
+			section.getHeading().setOnClickListener(sectionListener);
+			section.getArrowImage().setOnClickListener(sectionListener);
 		}
 
 		findViewById(R.id.checklist3x3ResetTop).setOnClickListener(this);
