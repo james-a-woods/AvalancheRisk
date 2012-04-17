@@ -13,5 +13,6 @@
     <string name="whyNoSnowMobiles">Snowmobiles put extra load on the snow pack and can trigger an avalanche in conditions where a skier or snowboarder would be safe.</string>
     <string name="continueButton">Continue</string>
     <string name="resetButton">Reset</string>
+    <string name="sectionHelp">Tap on arrow to open or close a section</string>
 
 </resources>
