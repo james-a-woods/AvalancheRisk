@@ -5,7 +5,7 @@
     android:background="@drawable/background" >
 
     <ScrollView
-        android:id="@+id/infoScroll"
+        android:id="@+id/infoScroller"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
@@ -17,6 +17,47 @@
             android:layout_height="wrap_content"
             android:background="@color/transWhite"
             android:orientation="vertical" >
+
+            <TextView
+                style="@style/textSmall"
+                android:gravity="center_horizontal"
+                android:text="@string/sectionHelp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/transBlue"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/threex3Heading"
+                    style="@style/textMedium.heading"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/threex3_heading" />
+
+                <ImageView
+                    android:id="@+id/threex3Arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="0"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/threex3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/textSmall.block"
+                    android:text="@string/threex3_desc" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

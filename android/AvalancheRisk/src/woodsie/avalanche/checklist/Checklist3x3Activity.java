@@ -1,5 +1,6 @@
 package woodsie.avalanche.checklist;
 
+import static woodsie.avalanche.section.CollapsibleSection.OPEN_SECTION;
 import static woodsie.avalanche.section.CollapsibleSection.State.OPEN;
 
 import java.util.ArrayList;
@@ -18,8 +19,6 @@ import android.widget.CheckBox;
 import android.widget.ScrollView;
 
 public class Checklist3x3Activity extends Activity implements CollapsibleSectionParent, OnClickListener {
-
-	private static final String OPEN_SECTION = "openSection";
 
 	@Getter
 	private List<CollapsibleSection> sectionList;

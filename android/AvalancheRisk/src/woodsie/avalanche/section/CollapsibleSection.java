@@ -14,6 +14,8 @@ import android.widget.ImageView;
 @EqualsAndHashCode
 public class CollapsibleSection {
 
+	public static final String OPEN_SECTION = "openSection";
+
 	public enum State {
 		OPEN, CLOSED
 	}
