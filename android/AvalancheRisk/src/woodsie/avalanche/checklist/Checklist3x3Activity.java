@@ -34,7 +34,6 @@ public class Checklist3x3Activity extends Activity implements CollapsibleSection
 		sectionList = new ArrayList<CollapsibleSection>();
 		scroller = (ScrollView) findViewById(R.id.checklistScroller);
 
-		sectionList.add(new CollapsibleSection(this, R.id.descriptionHeading, R.id.descriptionArrow, R.id.descriptionLayout));
 		sectionList.add(new CollapsibleSection(this, R.id.regionalHeading, R.id.regionalArrow, R.id.regionalLayout));
 		sectionList.add(new CollapsibleSection(this, R.id.localHeading, R.id.localArrow, R.id.localLayout));
 		sectionList.add(new CollapsibleSection(this, R.id.zonalHeading, R.id.zonalArrow, R.id.zonalLayout));
