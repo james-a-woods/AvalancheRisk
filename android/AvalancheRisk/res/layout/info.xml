@@ -62,8 +62,8 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:text="@string/low" 
-                    android:background="@color/transGreen" />"
+                    android:background="@color/transGreen"
+                    android:text="@string/low" />
 
                 <TextView
                     style="@style/textSmall.block"
@@ -71,8 +71,8 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:text="@string/moderate" 
-                    android:background="@color/transYellow" />
+                    android:background="@color/transYellow"
+                    android:text="@string/moderate" />
 
                 <TextView
                     style="@style/textSmall.block"
@@ -80,8 +80,8 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:text="@string/considerable" 
-                    android:background="@color/transOrange" />
+                    android:background="@color/transOrange"
+                    android:text="@string/considerable" />
 
                 <TextView
                     style="@style/textSmall.block"
@@ -89,8 +89,8 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:text="@string/high" 
-                    android:background="@color/transRed" />
+                    android:background="@color/transRed"
+                    android:text="@string/high" />
 
                 <TextView
                     style="@style/textSmall.block"
@@ -98,13 +98,51 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:text="@string/veryHigh" 
-                    android:textColor="@color/white"
-                    android:background="@color/transBlack" />
+                    android:background="@color/transBlack"
+                    android:text="@string/veryHigh"
+                    android:textColor="@color/white" />
 
                 <TextView
                     style="@style/textSmall.block"
                     android:text="@string/hazard_level_5_desc" />
+            </LinearLayout>
+
+            <!-- reduction method -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/transBlue"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/reductionHeading"
+                    style="@style/textMedium.heading"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/reduction_heading" />
+
+                <ImageView
+                    android:id="@+id/reductionArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="0"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reductionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/textSmall.block"
+                    android:text="@string/reduction_desc" />
             </LinearLayout>
 
             <!-- 3x3 method -->

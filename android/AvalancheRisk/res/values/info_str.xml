@@ -3,7 +3,13 @@
 
     <string name="infoTab">Info</string>
     <string name="hazard_heading">Hazard levels</string>
-    <string name="hazard_desc"></string>
+    <string name="hazard_desc">
+        The hazard level used in the avalanche bulletin is an internationally recognised standard for identifying the general
+        risk level from avalanches in the mountains.  This is a combination of snow pack stability and the probability of 
+        triggering an avalanche.  This is then broken up into five hazard levels.
+        These hazard levels only give a general indication of the chances of being caught in an avalanche and should always
+        be used in conjunction with the detailed information provided in the avalanche bulletin.
+    </string>
     <string name="hazard_level_1_desc">
         The snowpack as a whole is secure. Naturally triggered avalanches are unlikely other than smaller slides on steep slopes. 
         Even on extremely steep slopes, high levels of additional stress are required to trigger an avalanche.
@@ -33,6 +39,9 @@
         Naturally and human triggered avalanches are certain, and are likely to be large.
         Even travel in flat terrain is risky if avalanche runout areas are not carefully avoided.
     </string>
+    <string name="reduction_heading">Reduction Method</string>
+    <string name="reduction_desc">
+	</string>
     <string name="threex3_heading">3x3 Filter Method</string>
     <string name="threex3_desc">The 3x3 Filter Method is a method developed by Werner Munter for assessing
         aspects contributing to the risk of an avalanche.  It provides three levels of checks for each of the 
