@@ -29,7 +29,7 @@
     <string name="avoidNorthSector">Avoiding the northern sector: (northwest to north-northeast aspects)</string>
     <string name="avoidNorthHalf">Avoiding the \"northern half\" of the compass: (west-northwest to east-southeast aspects)</string>
     <string name="avoidCritical">Avoiding critical aspects and elevations as defined in the avalanche bulletin</string>
-    <string name="tracked">Regularly tracked-out slopes.\n(Not wet snow or lots of new snow)</string>
+    <string name="tracked">Regularly tracked-out slopes.\n(Not for wet snow or lots of new snow)</string>
     <string name="thirdClass">Third class reduction factors</string>
     <string name="who">Who will you be riding with?</string>
     <string name="largeGroup">A large group (more than 4 members)</string>
