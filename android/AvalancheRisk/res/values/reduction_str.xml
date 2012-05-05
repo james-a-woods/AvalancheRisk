@@ -7,11 +7,11 @@
     <string name="riskDangerous">The avalanche danger is too high, you need to change plans to reduce risk.</string>
     <string name="riskExtreme">Seriously, the pub or the sofa is the only safe place today.</string>
     <string name="hazardLevel">What is the hazard level in the current avalanche bulletin?</string>
-    <string name="veryHigh">Very High - 5</string>
-    <string name="high">High - 4</string>
-    <string name="considerable">Considerable - 3</string>
-    <string name="moderate">Moderate - 2</string>
-    <string name="low">Low - 1</string>
+    <string name="veryHigh">Level 5: Extreme</string>
+    <string name="high">Level 4: High</string>
+    <string name="considerable">Level 3: Considerable</string>
+    <string name="moderate">Level 2: Moderate</string>
+    <string name="low">Level 1: Low</string>
     <string name="higherHazard">In your assessment is the hazard higher than in the avalanche bulletin?</string>
     <string name="firstClass">First class reduction factors</string>
     <string name="howSteep">What is the steepest slope you will be riding (including slopes above you)?</string>

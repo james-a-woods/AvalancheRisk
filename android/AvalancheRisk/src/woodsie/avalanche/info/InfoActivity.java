@@ -30,6 +30,7 @@ public class InfoActivity extends Activity implements CollapsibleSectionParent {
 		sectionList = new ArrayList<CollapsibleSection>();
 		scroller = (ScrollView) findViewById(R.id.infoScroller);
 
+		sectionList.add(new CollapsibleSection(this, R.id.hazardHeading, R.id.hazardArrow, R.id.hazardLayout));
 		sectionList.add(new CollapsibleSection(this, R.id.threex3Heading, R.id.threex3Arrow, R.id.threex3Layout));
 
 		if (savedInstanceState != null && savedInstanceState.containsKey(OPEN_SECTION)) {

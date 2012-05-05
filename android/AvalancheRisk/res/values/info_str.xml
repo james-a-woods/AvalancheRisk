@@ -2,6 +2,37 @@
 <resources>
 
     <string name="infoTab">Info</string>
+    <string name="hazard_heading">Hazard levels</string>
+    <string name="hazard_desc"></string>
+    <string name="hazard_level_1_desc">
+        The snowpack as a whole is secure. Naturally triggered avalanches are unlikely other than smaller slides on steep slopes. 
+        Even on extremely steep slopes, high levels of additional stress are required to trigger an avalanche.
+        Off piste and back country conditions are generally regarded as being safe, with danger zones being rare and 
+        easily identified.
+    </string>
+    <string name="hazard_level_2_desc">
+        The snowpack is only moderately bonded on some steep slopes which are described in the avalanche bulletin.
+        Naturally triggered avalanches are unlikely and for carefully chosen routes conditions are predominantley favourable.
+        Nevertheless, there is still a possibility of triggering an avalanche, especially under higher stress such as a group
+        riding or ascending close together.  Steep slopes with unfavourable snow conditions have the possibility of being
+        triggered by an individual rider.  On highly trafficed routes and controlled off piste conditions are generally safe.
+    </string>
+    <string name="hazard_level_3_desc">
+        The snowpack is moderately or poorly bonded on most steep slopes, especially those described in the avalanche bulletin.
+        Medium sized naturally triggered avalanches are possible and on rare occassions may be large.
+        Off piste and back country routes require extensive experience and caution.  
+        Even a single rider can trigger an avalanche in these conditions, especially on steep slopes.
+    </string>
+    <string name="hazard_level_4_desc">
+        The snowpack is poorly bonded on most steep slopes.
+        Naturally and human triggered avalanches are likely, and can be large.
+        Travel in avalanche terrain is not recommended. 
+    </string>
+    <string name="hazard_level_5_desc">
+        The snowpack is extremely unstable and can form large slabs.
+        Naturally and human triggered avalanches are certain, and are likely to be large.
+        Even travel in flat terrain is risky if avalanche runout areas are not carefully avoided.
+    </string>
     <string name="threex3_heading">3x3 Filter Method</string>
     <string name="threex3_desc">The 3x3 Filter Method is a method developed by Werner Munter for assessing
         aspects contributing to the risk of an avalanche.  It provides three levels of checks for each of the 
@@ -13,6 +44,6 @@
         It is a good idea to work on memorising this checklist during the season, especially the zonal aspects.  It is
         not always practical to pull out your phone and work through this checklist while making decisions
         on the mountain.  This is especially the case in extreme conditions where you may need to make fast decisions
-        adapting to changing conditions.</string>
+        adapting to changing conditions.	</string>
 
 </resources>
