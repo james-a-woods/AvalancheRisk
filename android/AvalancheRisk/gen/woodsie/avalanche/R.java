@@ -12,19 +12,16 @@ public final class R {
     }
     public static final class color {
         public static final int black=0x7f050000;
-        public static final int blue=0x7f050003;
-        public static final int darkGreen=0x7f050004;
-        public static final int darkOrange=0x7f050006;
-        public static final int darkYellow=0x7f050005;
-        public static final int go=0x7f05000e;
-        public static final int red=0x7f050002;
-        public static final int stop=0x7f05000d;
-        public static final int transBlue=0x7f05000c;
-        public static final int transGreen=0x7f05000b;
-        public static final int transOrange=0x7f050009;
-        public static final int transRed=0x7f050008;
-        public static final int transWhite=0x7f050007;
-        public static final int transYellow=0x7f05000a;
+        public static final int blue=0x7f050008;
+        public static final int go=0x7f05000b;
+        public static final int red=0x7f050003;
+        public static final int stop=0x7f05000a;
+        public static final int transBlue=0x7f050009;
+        public static final int transGreen=0x7f050007;
+        public static final int transOrange=0x7f050005;
+        public static final int transRed=0x7f050004;
+        public static final int transWhite=0x7f050002;
+        public static final int transYellow=0x7f050006;
         public static final int white=0x7f050001;
     }
     public static final class drawable {

@@ -57,32 +57,27 @@
                             android:id="@+id/veryHigh"
                             style="@style/textMedium"
                             android:checked="true"
-                            android:text="@string/veryHigh"
-                            android:textColor="@color/black" />
+                            android:text="@string/veryHigh" />
 
                         <RadioButton
                             android:id="@+id/high"
                             style="@style/textMedium"
-                            android:text="@string/high"
-                            android:textColor="@color/red" />
+                            android:text="@string/high" />
 
                         <RadioButton
                             android:id="@+id/considerable"
                             style="@style/textMedium"
-                            android:text="@string/considerable"
-                            android:textColor="@color/darkOrange" />
+                            android:text="@string/considerable" />
 
                         <RadioButton
                             android:id="@+id/moderate"
                             style="@style/textMedium"
-                            android:text="@string/moderate"
-                            android:textColor="@color/darkYellow" />
+                            android:text="@string/moderate" />
 
                         <RadioButton
                             android:id="@+id/low"
                             style="@style/textMedium"
-                            android:text="@string/low"
-                            android:textColor="@color/darkGreen" />
+                            android:text="@string/low" />
                     </RadioGroup>
 
                     <CheckBox
