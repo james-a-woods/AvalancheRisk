@@ -13,6 +13,6 @@
     <color name="blue">#FF3377C8</color>
     <color name="transBlue">#663377C8</color>
     <color name="stop">#FFFF6666</color>
-    <color name="go">#FF66FFFF</color>
+    <color name="go">#6666FFFF</color>
 
 </resources>
