@@ -12,33 +12,32 @@ public final class R {
     }
     public static final class color {
         public static final int black=0x7f050000;
-        public static final int blue=0x7f050009;
-        public static final int go=0x7f05000c;
-        public static final int red=0x7f050004;
-        public static final int stop=0x7f05000b;
-        public static final int transBlack=0x7f050001;
-        public static final int transBlue=0x7f05000a;
-        public static final int transGreen=0x7f050008;
-        public static final int transOrange=0x7f050006;
-        public static final int transRed=0x7f050005;
-        public static final int transWhite=0x7f050003;
-        public static final int transYellow=0x7f050007;
-        public static final int white=0x7f050002;
+        public static final int blue=0x7f050004;
+        public static final int red=0x7f050003;
+        public static final int transWhite=0x7f050002;
+        public static final int white=0x7f050001;
     }
     public static final class drawable {
         public static final int arrow_down=0x7f020000;
         public static final int arrow_up=0x7f020001;
         public static final int background=0x7f020002;
-        public static final int button=0x7f020003;
-        public static final int button_disabled=0x7f020004;
-        public static final int button_disabled_focused=0x7f020005;
-        public static final int button_normal=0x7f020006;
-        public static final int button_pressed=0x7f020007;
-        public static final int button_selected=0x7f020008;
-        public static final int calc=0x7f020009;
-        public static final int checklist3x3=0x7f02000a;
-        public static final int ic_launcher_snowflake=0x7f02000b;
-        public static final int info=0x7f02000c;
+        public static final int black_hgradient=0x7f020003;
+        public static final int blue_hgradient=0x7f020004;
+        public static final int button=0x7f020005;
+        public static final int button_disabled=0x7f020006;
+        public static final int button_disabled_focused=0x7f020007;
+        public static final int button_normal=0x7f020008;
+        public static final int button_pressed=0x7f020009;
+        public static final int button_selected=0x7f02000a;
+        public static final int calc=0x7f02000b;
+        public static final int checklist3x3=0x7f02000c;
+        public static final int cyan_hgradient=0x7f02000d;
+        public static final int green_hgradient=0x7f02000e;
+        public static final int ic_launcher_snowflake=0x7f02000f;
+        public static final int info=0x7f020010;
+        public static final int orange_hgradient=0x7f020011;
+        public static final int red_hgradient=0x7f020012;
+        public static final int yellow_hgradient=0x7f020013;
     }
     public static final class id {
         public static final int allAspects=0x7f070058;

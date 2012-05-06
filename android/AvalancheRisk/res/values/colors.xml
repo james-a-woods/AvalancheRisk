@@ -2,17 +2,9 @@
 <resources>
 
     <color name="black">#FF000000</color>
-    <color name="transBlack">#CC000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transWhite">#CCFFFFFF</color>
     <color name="red">#FFFF0000</color>
-    <color name="transRed">#66FF0000</color>
-    <color name="transOrange">#66FF9900</color>
-    <color name="transYellow">#66FFFF00</color>
-    <color name="transGreen">#6600FF00</color>
     <color name="blue">#FF3377C8</color>
-    <color name="transBlue">#663377C8</color>
-    <color name="stop">#FFFF6666</color>
-    <color name="go">#6666FFFF</color>
 
 </resources>

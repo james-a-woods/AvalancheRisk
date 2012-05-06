@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
-                android:background="@color/transBlue"
+                android:background="@drawable/blue_hgradient"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -62,7 +62,7 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:background="@color/transGreen"
+                    android:background="@drawable/green_hgradient"
                     android:text="@string/low" />
 
                 <TextView
@@ -71,7 +71,7 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:background="@color/transYellow"
+                    android:background="@drawable/yellow_hgradient"
                     android:text="@string/moderate" />
 
                 <TextView
@@ -80,7 +80,7 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:background="@color/transOrange"
+                    android:background="@drawable/orange_hgradient"
                     android:text="@string/considerable" />
 
                 <TextView
@@ -89,7 +89,7 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:background="@color/transRed"
+                    android:background="@drawable/red_hgradient"
                     android:text="@string/high" />
 
                 <TextView
@@ -98,7 +98,7 @@
 
                 <TextView
                     style="@style/textMedium.heading"
-                    android:background="@color/transBlack"
+                    android:background="@drawable/black_hgradient"
                     android:text="@string/veryHigh"
                     android:textColor="@color/white" />
 
@@ -114,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
-                android:background="@color/transBlue"
+                android:background="@drawable/blue_hgradient"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -152,7 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
-                android:background="@color/transBlue"
+                android:background="@drawable/blue_hgradient"
                 android:orientation="horizontal" >
 
                 <TextView
