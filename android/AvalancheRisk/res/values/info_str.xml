@@ -6,7 +6,7 @@
     <string name="hazard_desc">
         The hazard level used in the avalanche bulletin is an internationally recognised standard for identifying the general
         risk level from avalanches in the mountains.  This is a combination of snow pack stability and the probability of 
-        triggering an avalanche.  This is then broken up into five hazard levels.\n\n
+        triggering an avalanche.  This is then broken up into five hazard levels.
         These hazard levels only give a general indication of the chances of being caught in an avalanche and should always
         be used in conjunction with the detailed information provided in the avalanche bulletin.
     </string>
@@ -41,18 +41,6 @@
     </string>
     <string name="reduction_heading">Reduction Method</string>
     <string name="reduction_desc">
-        It is never possible to be 100% sure that it is safe to ride a certain slope without triggering an avalanche.
-        The reduction method is a formula that was developed by Werner Munter to reduce the risk of triggering an avalance
-        to an acceptable level.  It combines the danger level in the avalanche bulleting with a number of safety measures, 
-        or reduction factors, to produce an estimate of the risk of triggering an avalanche.\n\n
-        This formula assigns a number to the avalanche risk level in the avalanche bulletin, called the danger potential.
-        It then also assigns numbers to various reduction factors that you can use to reduce the risk.  Multiplying all the
-        reduction factors together must produce a number greater than the danger potential for the risk to be at an 
-        acceptable level to proceed with your intended plan.
-        This only produces an estimate for the general conditions of the trip and should be used in conjunction with training
-        and knowledge of avalanche risk and the 3x3 Filter Method described below.\n\n
-        This description is only a brief overview of the reduction method and is not a substitute for training provided
-        by an avalanche professional.
 	</string>
     <string name="threex3_heading">3x3 Filter Method</string>
     <string name="threex3_desc">The 3x3 Filter Method is a method developed by Werner Munter for assessing
@@ -65,8 +53,6 @@
         It is a good idea to work on memorising this checklist during the season, especially the zonal aspects.  It is
         not always practical to pull out your phone and work through this checklist while making decisions
         on the mountain.  This is especially the case in extreme conditions where you may need to make fast decisions
-        adapting to changing conditions.        This description is only a brief overview of the 3x3 Filter Method and is not a substitute for training provided
-        by an avalanche professional.
-	</string>
+        adapting to changing conditions.	</string>
 
 </resources>

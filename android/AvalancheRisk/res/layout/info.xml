@@ -18,6 +18,11 @@
             android:background="@color/transWhite"
             android:orientation="vertical" >
 
+            <TextView
+                style="@style/textSmall"
+                android:gravity="center_horizontal"
+                android:text="@string/sectionHelp" />
+
             <!-- Hazard levels -->
 
             <LinearLayout
