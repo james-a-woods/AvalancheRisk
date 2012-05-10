@@ -18,11 +18,6 @@
             android:background="@color/transWhite"
             android:orientation="vertical" >
 
-            <TextView
-                style="@style/textSmall"
-                android:gravity="center_horizontal"
-                android:text="@string/sectionHelp" />
-
             <Button
                 android:id="@+id/checklist3x3ResetTop"
                 style="@style/button"
