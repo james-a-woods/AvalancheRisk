@@ -52,7 +52,7 @@
                 android:visibility="gone" >
 
                 <TextView
-                    style="@style/textSmall.block"
+                    style="@style/textMedium.block"
                     android:text="@string/hazard_desc" />
 
                 <TextView
@@ -61,7 +61,7 @@
                     android:text="@string/low" />
 
                 <TextView
-                    style="@style/textSmall.block"
+                    style="@style/textMedium.block"
                     android:text="@string/hazard_level_1_desc" />
 
                 <TextView
@@ -70,7 +70,7 @@
                     android:text="@string/moderate" />
 
                 <TextView
-                    style="@style/textSmall.block"
+                    style="@style/textMedium.block"
                     android:text="@string/hazard_level_2_desc" />
 
                 <TextView
@@ -79,7 +79,7 @@
                     android:text="@string/considerable" />
 
                 <TextView
-                    style="@style/textSmall.block"
+                    style="@style/textMedium.block"
                     android:text="@string/hazard_level_3_desc" />
 
                 <TextView
@@ -88,7 +88,7 @@
                     android:text="@string/high" />
 
                 <TextView
-                    style="@style/textSmall.block"
+                    style="@style/textMedium.block"
                     android:text="@string/hazard_level_4_desc" />
 
                 <TextView
@@ -98,7 +98,7 @@
                     android:textColor="@color/white" />
 
                 <TextView
-                    style="@style/textSmall.block"
+                    style="@style/textMedium.block"
                     android:text="@string/hazard_level_5_desc" />
             </LinearLayout>
 
@@ -136,7 +136,7 @@
                 android:visibility="gone" >
 
                 <TextView
-                    style="@style/textSmall.block"
+                    style="@style/textMedium.block"
                     android:text="@string/reduction_desc" />
             </LinearLayout>
 
@@ -174,7 +174,7 @@
                 android:visibility="gone" >
 
                 <TextView
-                    style="@style/textSmall.block"
+                    style="@style/textMedium.block"
                     android:text="@string/threex3_desc" />
             </LinearLayout>
         </LinearLayout>

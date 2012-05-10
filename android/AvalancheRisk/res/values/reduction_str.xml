@@ -26,15 +26,15 @@
     <string name="inverse">Are southern aspects are more dangerous than northern aspects in the avalanche bulletin?</string>
     <string name="where">Where will you be riding?</string>
     <string name="allAspects">All aspects</string>
-    <string name="avoidNorthSector">Avoiding the northern sector: (northwest to north-northeast aspects)</string>
-    <string name="avoidNorthHalf">Avoiding the \"northern half\" of the compass: (west-northwest to east-southeast aspects)</string>
+    <string name="avoidNorthSector">Avoiding the northern sector\n(northwest to north-northeast aspects)</string>
+    <string name="avoidNorthHalf">Avoiding the \"northern half\" of the compass\n(west-northwest to east-southeast aspects)</string>
     <string name="avoidCritical">Avoiding critical aspects and elevations as defined in the avalanche bulletin</string>
     <string name="tracked">Regularly tracked-out slopes.\n(Not for wet snow or lots of new snow)</string>
     <string name="thirdClass">Third class reduction factors</string>
     <string name="who">Who will you be riding with?</string>
     <string name="largeGroup">A large group (more than 4 members)</string>
-    <string name="largeGroupSpaced">A large group (more than 4 members) keeping a safe distance</string>
+    <string name="largeGroupSpaced">A large group (more than 4 members)\nkeeping a safe distance</string>
     <string name="smallGroup">A small group (2–4 members)</string>
-    <string name="smallGroupSpaced">A small group (2–4 members) keeping a safe distance</string>
+    <string name="smallGroupSpaced">A small group (2–4 members)\nkeeping a safe distance</string>
 
 </resources>

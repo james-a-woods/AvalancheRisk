@@ -55,34 +55,34 @@
 
                         <RadioButton
                             android:id="@+id/veryHigh"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:checked="true"
                             android:text="@string/veryHigh" />
 
                         <RadioButton
                             android:id="@+id/high"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/high" />
 
                         <RadioButton
                             android:id="@+id/considerable"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/considerable" />
 
                         <RadioButton
                             android:id="@+id/moderate"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/moderate" />
 
                         <RadioButton
                             android:id="@+id/low"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/low" />
                     </RadioGroup>
 
                     <CheckBox
                         android:id="@+id/higherHazard"
-                        style="@style/textSmall"
+                        style="@style/textMedium"
                         android:text="@string/higherHazard" />
                 </LinearLayout>
 
@@ -110,28 +110,28 @@
 
                         <RadioButton
                             android:id="@+id/veryVerySteep"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:checked="true"
                             android:text="@string/veryVerySteep" />
 
                         <RadioButton
                             android:id="@+id/verySteep"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/verySteep" />
 
                         <RadioButton
                             android:id="@+id/steep"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/steep" />
 
                         <RadioButton
                             android:id="@+id/moderatelySteep"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/moderatelySteep" />
 
                         <RadioButton
                             android:id="@+id/notSteep"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/notSteep" />
                     </RadioGroup>
                 </LinearLayout>
@@ -155,12 +155,12 @@
 
                     <CheckBox
                         android:id="@+id/allAspectsDanger"
-                        style="@style/textSmall"
+                        style="@style/textMedium"
                         android:text="@string/allAspectsDanger" />
 
                     <CheckBox
                         android:id="@+id/inverse"
-                        style="@style/textSmall"
+                        style="@style/textMedium"
                         android:text="@string/inverse" />
 
                     <TextView
@@ -174,29 +174,29 @@
 
                         <RadioButton
                             android:id="@+id/allAspects"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:checked="true"
                             android:text="@string/allAspects" />
 
                         <RadioButton
                             android:id="@+id/avoidNorthSector"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/avoidNorthSector" />
 
                         <RadioButton
                             android:id="@+id/avoidNorthHalf"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/avoidNorthHalf" />
 
                         <RadioButton
                             android:id="@+id/avoidCritical"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/avoidCritical" />
                     </RadioGroup>
 
                     <CheckBox
                         android:id="@+id/tracked"
-                        style="@style/textSmall"
+                        style="@style/textMedium"
                         android:text="@string/tracked" />
                 </LinearLayout>
 
@@ -224,23 +224,23 @@
 
                         <RadioButton
                             android:id="@+id/largeGroup"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:checked="true"
                             android:text="@string/largeGroup" />
 
                         <RadioButton
                             android:id="@+id/largeGroupSpaced"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/largeGroupSpaced" />
 
                         <RadioButton
                             android:id="@+id/smallGroup"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/smallGroup" />
 
                         <RadioButton
                             android:id="@+id/smallGroupSpaced"
-                            style="@style/textSmall"
+                            style="@style/textMedium"
                             android:text="@string/smallGroupSpaced" />
                     </RadioGroup>
                 </LinearLayout>
