@@ -23,7 +23,7 @@
     <string name="secondClass">Second class reduction factors</string>
     <string name="secondClassHemisphere">This is written for the northern hemisphere.  North and south should be reversed for the southern hemisphere.</string>
     <string name="allAspectsDanger">Does the avalanche bulletin declare all aspects to be dangerous?</string>
-    <string name="inverse">Are southern aspects are more dangerous than northern aspects in the avalanche bulletin?</string>
+    <string name="inverse">Are southern aspects more dangerous than northern aspects in the avalanche bulletin?</string>
     <string name="where">Where will you be riding?</string>
     <string name="allAspects">All aspects</string>
     <string name="avoidNorthSector">Avoiding the northern sector\n(northwest to north-northeast aspects)</string>
