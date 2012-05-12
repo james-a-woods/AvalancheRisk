@@ -15,7 +15,7 @@
     <string name="regional_human_a">Who is planning to come?\nLevel of experience, skill, physical fitness, mental strength</string>
     <string name="regional_human_b">Check equipment.\nTransceiver, shovel, probe (harness?)</string>
     <string name="regional_human_c">Is there a designated leader?</string>
-    <string name="local">Local\nWithin range of vision.  Selection of route and alternatives</string>
+    <string name="local">Local\nWithin range of vision. Selection of route and alternatives</string>
     <string name="local_cond_a">Wind loading.\nRipples, dunes or sastrugi from Wind</string>
     <string name="local_cond_b">Signs of danger.\nSnow condition. Recent avalanche activity</string>
     <string name="local_cond_c">Amount of new snow</string>
@@ -48,6 +48,6 @@
     <string name="zonal_human_c">Safety distance.\nOne at a time. Follow the same path</string>
     <string name="zonal_human_d">Identify "Islands of safety" as meeting points</string>
     <string name="zonal_human_e">Avoid dangerous areas and risky routes</string>
-    <string name="lastCheck">Last check\nTo go or not to go.  Does everybody in the group agree with a go decision?</string>
+    <string name="lastCheck">Last check\nTo go or not to go. Does everybody in the group agree with a go decision?</string>
 
 </resources>

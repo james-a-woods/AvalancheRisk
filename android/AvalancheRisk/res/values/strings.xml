@@ -6,9 +6,9 @@
     <string name="author">by Woodsie</string>
     <string name="asIs">This application is provided as is.\nYour safety is your own responsibility.</string>
     <string name="disclaimer">This is a tool for assisting with the calculation of avalanche risk using methods 
-        developed by Werner Munter.  This is in no way a replacement for training and experience in the assessment
-         of avalanche danger.  The use of this application must be used together with an assessment of local 
-         conditions and route choices.  If in doubt, hire a qualified mountain guide.</string>
+        developed by Werner Munter. This is in no way a replacement for training and experience in the assessment
+         of avalanche danger. The use of this application must be used together with an assessment of local 
+         conditions and route choices. If in doubt, hire a qualified mountain guide.</string>
     <string name="noSnowMobiles">Not for use with Snowmobiles</string>
     <string name="whyNoSnowMobiles">Snowmobiles put extra load on the snow pack and can trigger an avalanche in conditions where a skier or snowboarder would be safe.</string>
     <string name="continueButton">Continue</string>
