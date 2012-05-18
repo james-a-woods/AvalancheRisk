@@ -26,7 +26,9 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/blue_hgradient"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
 
                 <TextView
                     android:id="@+id/hazardHeading"
@@ -58,6 +60,8 @@
                 <TextView
                     style="@style/textMedium.heading"
                     android:background="@drawable/green_hgradient"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/low" />
 
                 <TextView
@@ -67,6 +71,8 @@
                 <TextView
                     style="@style/textMedium.heading"
                     android:background="@drawable/yellow_hgradient"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/moderate" />
 
                 <TextView
@@ -76,6 +82,8 @@
                 <TextView
                     style="@style/textMedium.heading"
                     android:background="@drawable/orange_hgradient"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/considerable" />
 
                 <TextView
@@ -85,6 +93,8 @@
                 <TextView
                     style="@style/textMedium.heading"
                     android:background="@drawable/red_hgradient"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/high" />
 
                 <TextView
@@ -94,6 +104,8 @@
                 <TextView
                     style="@style/textMedium.heading"
                     android:background="@drawable/black_hgradient"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
                     android:text="@string/veryHigh"
                     android:textColor="@color/white" />
 
@@ -110,7 +122,9 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/blue_hgradient"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
 
                 <TextView
                     android:id="@+id/reductionHeading"
@@ -148,7 +162,9 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/blue_hgradient"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
 
                 <TextView
                     android:id="@+id/threex3Heading"
