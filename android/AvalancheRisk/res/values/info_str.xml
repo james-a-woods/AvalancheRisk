@@ -6,69 +6,72 @@
     <string name="hazard_desc">
         The hazard level used in the avalanche bulletin is an internationally recognised standard for identifying the general
         risk level of avalanches in the mountains. This is a combination of snow pack stability and the probability of 
-        triggering an avalanche. This is then broken up into five hazard levels.\n\n
-        These hazard levels only give a general guide of the chances of triggering an avalanche and should always
+        triggering an avalanche. This is then broken up into five hazard levels.
+        \n\nThese hazard levels only give a general guide of the chances of triggering an avalanche and should always
         be used in conjunction with experience and the detailed information provided in the avalanche bulletin.
     </string>
     <string name="hazard_level_1_desc">
         The snowpack as a whole is secure. Naturally triggered avalanches are unlikely other than smaller slides on steep slopes. 
-        Even on extremely steep slopes, high levels of additional stress are required to trigger an avalanche.\n\n
-        Off piste and back country conditions are generally regarded as being safe, with danger zones being rare and 
+        Even on extremely steep slopes, high levels of additional stress are required to trigger an avalanche.
+        \n\nOff piste and back country conditions are generally regarded as being safe, with danger zones being rare and 
         easily identified.
     </string>
     <string name="hazard_level_2_desc">
         The snowpack on some steep slopes is only moderately bonded, as described in the avalanche bulletin.
         Naturally triggered avalanches are unlikely and, for carefully chosen routes, conditions are predominantley favourable.
-        Nevertheless, there is still a possibility of triggering an avalanche, especially under higher stress such as a group
+        Nevertheless, there is still a possibility of triggering an avalanche, especially under higher loads such as a group
         riding or ascending close together. Steep slopes with unfavourable snow conditions have the possibility of being
-        triggered by an individual rider.\n\n
-        Highly trafficed routes and controlled off piste conditions are generally safe.
+        triggered by an individual rider.
+        \n\nHighly trafficed routes and controlled off piste conditions are generally safe.
     </string>
     <string name="hazard_level_3_desc">
         The snowpack is moderately or poorly bonded on most steep slopes, especially those described in the avalanche bulletin.
         Medium sized naturally triggered avalanches are possible and on rare occassions may be large.
-        Off piste and back country routes require extensive experience and caution.\n\n
-        Even a single rider can trigger an avalanche in these conditions, especially on steep slopes.
+        Off piste and back country routes require extensive experience and caution.
+        \n\nEven a single rider can trigger an avalanche in these conditions, especially on steep slopes.
     </string>
     <string name="hazard_level_4_desc">
         The snowpack is poorly bonded on most steep slopes.
-        Natural and human triggered avalanches are likely, and can be large.\n\n
-        Travel in avalanche terrain is not recommended. 
+        Natural and human triggered avalanches are likely, and can be large.
+        \n\nTravel in avalanche terrain is not recommended. 
     </string>
     <string name="hazard_level_5_desc">
         The snowpack is extremely unstable and can form large slabs.
-        Natural and human triggered avalanches are certain, and are likely to be large.\n\n
-        Even travel in flat terrain is risky if avalanche runout areas are not carefully avoided.
+        Natural and human triggered avalanches are certain, and are likely to be large.
+        \n\nEven travel in flat terrain is risky if avalanche runout areas are not carefully avoided.
     </string>
     <string name="reduction_heading">Reduction Method</string>
     <string name="reduction_desc">
         It is never possible to be 100% sure that it is safe to ride a certain slope without triggering an avalanche.
         The reduction method is a formula that was developed by Werner Munter to help reduce the risk of triggering an avalanche
-        to an acceptable level. It combines the danger level in the avalanche bulleting with a number of safety measures, 
-        or reduction factors, to produce an estimate of the risk of an avalanche.\n\n
-        This formula assigns a number to the avalanche risk level in the avalanche bulletin, called the danger potential.
+        to an acceptable level. It combines the danger level in the avalanche bulletin with a number of safety measures, 
+        or reduction factors, to produce an estimate of the risk of an avalanche.
+        \n\nThis formula assigns a number to the avalanche risk level in the avalanche bulletin, called the danger potential.
         It then assigns numbers to various reduction factors that you can use to reduce the risk.
-        For the risk level to be acceptable, ultiplying all the reduction factors together must produce a number greater than 
-        the danger potential.\n\n
-        This is intended as a planning tool to help determine if your planned route is appropriate for the current avalanche
+        For the risk level to be acceptable, multiplying all the reduction factors together must produce a number greater than 
+        the danger potential.
+        \n\nThis is intended as a planning tool to help determine if your planned route is appropriate for the current avalanche
         conditions. It only produces an estimate for the general conditions of the trip and should be used in conjunction 
-        with training, knowledge and experience of avalanche risk. It should be used in conjunction with the 3x3 Filter Method.\n\n
-        This description is only a brief overview of the reduction method and is not a substitute for reading expert literature
-        and training provided by an avalanche professional.
+        with training, knowledge and experience of avalanche risk. It should be used in conjunction with the 3x3 Filter Method.
+        \n\nThis description is only a brief overview of the reduction method and is not a substitute for reading expert literature
+        and attending training provided by avalanche professionals.
 	</string>
     <string name="threex3_heading">3x3 Filter Method</string>
     <string name="threex3_desc">The 3x3 Filter Method is a method developed by Werner Munter to help with assessing
         aspects contributing to the risk of an avalanche. It provides three stages of checks, with three types of factors,
-        to be used in the three decision making stages before and while on the mountain. This application provides a 
-        reminder checklist to help you consider important aspects in decision making while travelling in avalanche terrain.\n\n
-        This checklist is just that, a checklist. It is important to fully understand each point in this checklist through 
-        appropriate training and reading. It is not this ticking off items on this checklist that provides the safety, but 
-        understanding of the factors behind the checklist items.\n\n
-        It is a good idea to work on memorising this checklist during the season, especially the zonal aspects. It won\'t
-        not always practical to pull out your phone and work through this checklist while making decisions
+        to be used in the decision making process before and while on the mountain. This application provides a 
+        reminder checklist to remind you to consider important factors for making decisions before and while travelling in
+        avalanche terrain.
+        \n\nThis checklist is just that, merely a checklist. It is important to fully understand each point in this checklist through 
+        appropriate training and reading. It is not ticking off items on this checklist that provides the safety, but having
+        a thorough understanding of the factors behind the each and every checklist.
+        \n\nIt is a good idea to work on memorising this checklist during the season, especially the zonal aspects. It won\'t
+        always be practical to pull out your phone and work through this checklist while making decisions
         on the mountain. This is especially the case in extreme conditions where you may need to make fast decisions
-        adapting to changing conditions, or when you and your mates are excited about hitting up fresh tracks.\n\n        This description is only a brief overview of the 3x3 Filter Method and is not a substitute for reading expert literature
-        and training provided by an avalanche professional.
+        adapting to changing conditions, or when you and your mates are excited about hitting up fresh tracks as quickly as
+        possible.  It should be your ambition to know and understand deeply and instictively enough that this phone application
+        becomes unecessary.        \n\nThis description is only a brief overview of the 3x3 Filter Method and is not a substitute for reading expert literature
+        and attending training provided by avalanche professionals.
 	</string>
 
 </resources>
