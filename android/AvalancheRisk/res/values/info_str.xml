@@ -50,13 +50,6 @@
         It then assigns numbers to various reduction factors that you can use to reduce the risk.
         For the risk level to be acceptable, multiplying all the reduction factors together must produce a number greater than 
         the danger potential.
-        \n\nThe danger potentials assigned to the various avalanche hazard levels are:
-	</string>
-	<string name="danger_potential_level_1">Danger Potential = 2\nElevated Danger Potential=3</string>
-	<string name="danger_potential_level_2">Danger Potential = 4\nElevated Danger Potential=6</string>
-	<string name="danger_potential_level_3">Danger Potential = 8\nElevated Danger Potential=12</string>
-	<string name="danger_potential_level_4">Danger Potential = 16</string>
-    <string name="reduction_desc_end">
         \n\nThis is intended as a planning tool to help determine if your planned route is appropriate for the current avalanche
         conditions. It only produces an estimate for the general conditions of the trip and should be used in conjunction 
         with training, knowledge and experience of avalanche risk. It should be used in conjunction with the 3x3 Filter Method.
