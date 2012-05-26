@@ -26,9 +26,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/blue_hgradient"
-                android:orientation="horizontal"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp" >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/hazardHeading"
@@ -39,10 +37,7 @@
 
                 <ImageView
                     android:id="@+id/hazardArrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|right"
-                    android:layout_weight="0"
+                    style="@style/arrowButton"
                     android:src="@drawable/arrow_down" />
             </LinearLayout>
 
@@ -122,9 +117,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/blue_hgradient"
-                android:orientation="horizontal"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp" >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/reductionHeading"
@@ -135,10 +128,7 @@
 
                 <ImageView
                     android:id="@+id/reductionArrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|right"
-                    android:layout_weight="0"
+                    style="@style/arrowButton"
                     android:src="@drawable/arrow_down" />
             </LinearLayout>
 
@@ -162,9 +152,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/blue_hgradient"
-                android:orientation="horizontal"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp" >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/threex3Heading"
@@ -175,10 +163,7 @@
 
                 <ImageView
                     android:id="@+id/threex3Arrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|right"
-                    android:layout_weight="0"
+                    style="@style/arrowButton"
                     android:src="@drawable/arrow_down" />
             </LinearLayout>
 

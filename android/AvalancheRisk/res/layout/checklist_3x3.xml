@@ -30,9 +30,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/red_hgradient"
-                android:orientation="horizontal"
-                android:paddingLeft="5dp" 
-                android:paddingRight="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/regionalHeading"
@@ -43,10 +41,7 @@
 
                 <ImageView
                     android:id="@+id/regionalArrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|right"
-                    android:layout_weight="0"
+                    style="@style/arrowButton"
                     android:src="@drawable/arrow_down" />
             </LinearLayout>
 
@@ -55,8 +50,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="5dp" 
-                android:paddingRight="5dp"
                 android:visibility="gone" >
 
                 <TextView
@@ -65,17 +58,17 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_rca"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_cond_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_rcb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_cond_b" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_rcc"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_cond_c" />
 
                 <TextView
@@ -84,17 +77,17 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_rta"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_terrain_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_rtb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_terrain_b" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_rtc"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_terrain_c" />
 
                 <TextView
@@ -103,17 +96,17 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_rha"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_human_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_rhb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_human_b" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_rhc"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/regional_human_c" />
             </LinearLayout>
 
@@ -123,9 +116,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/orange_hgradient"
-                android:orientation="horizontal"
-                android:paddingLeft="5dp" 
-                android:paddingRight="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/localHeading"
@@ -136,10 +127,7 @@
 
                 <ImageView
                     android:id="@+id/localArrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|right"
-                    android:layout_weight="0"
+                    style="@style/arrowButton"
                     android:src="@drawable/arrow_down" />
             </LinearLayout>
 
@@ -148,8 +136,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="5dp" 
-                android:paddingRight="5dp"
                 android:visibility="gone" >
 
                 <TextView
@@ -158,42 +144,42 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_lca"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_cond_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lcb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_cond_b" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lcc"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_cond_c" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lcd"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_cond_d" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lce"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_cond_e" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lcf"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_cond_f" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lcg"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_cond_g" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lch"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_cond_h" />
 
                 <TextView
@@ -202,12 +188,12 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_lta"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_terrain_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_ltb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_terrain_b" />
 
                 <TextView
@@ -216,22 +202,22 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_lha"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_human_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lhb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_human_b" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lhc"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_human_c" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_lhd"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/local_human_d" />
             </LinearLayout>
 
@@ -241,9 +227,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/yellow_hgradient"
-                android:orientation="horizontal"
-                android:paddingLeft="5dp" 
-                android:paddingRight="5dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/zonalHeading"
@@ -254,10 +238,7 @@
 
                 <ImageView
                     android:id="@+id/zonalArrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|right"
-                    android:layout_weight="0"
+                    style="@style/arrowButton"
                     android:src="@drawable/arrow_down" />
             </LinearLayout>
 
@@ -266,8 +247,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="5dp" 
-                android:paddingRight="5dp"
                 android:visibility="gone" >
 
                 <TextView
@@ -276,32 +255,32 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_zca"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_cond_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zcb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_cond_b" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zcc"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_cond_c" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zcd"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_cond_d" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zce"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_cond_e" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zcf"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_cond_f" />
 
                 <TextView
@@ -310,32 +289,32 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_zta"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_terrain_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_ztb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_terrain_b" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_ztc"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_terrain_c" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_ztd"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_terrain_d" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zte"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_terrain_e" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_ztf"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_terrain_f" />
 
                 <TextView
@@ -344,27 +323,27 @@
 
                 <CheckBox
                     android:id="@+id/cb3x3_zha"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_human_a" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zhb"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_human_b" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zhc"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_human_c" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zhd"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_human_d" />
 
                 <CheckBox
                     android:id="@+id/cb3x3_zhe"
-                    style="@style/textMedium"
+                    style="@style/checkBox"
                     android:text="@string/zonal_human_e" />
             </LinearLayout>
 
@@ -374,9 +353,6 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/green_hgradient"
-                android:paddingLeft="5dp" 
-                android:paddingRight="5dp"
-                
                 android:text="@string/lastCheck" />
 
             <Button
