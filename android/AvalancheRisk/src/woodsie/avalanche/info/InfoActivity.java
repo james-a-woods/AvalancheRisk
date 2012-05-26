@@ -33,6 +33,8 @@ public class InfoActivity extends Activity implements CollapsibleSectionParent {
 		sectionList.add(new CollapsibleSection(this, R.id.hazardHeading, R.id.hazardArrow, R.id.hazardLayout));
 		sectionList.add(new CollapsibleSection(this, R.id.reductionHeading, R.id.reductionArrow, R.id.reductionLayout));
 		sectionList.add(new CollapsibleSection(this, R.id.threex3Heading, R.id.threex3Arrow, R.id.threex3Layout));
+		sectionList.add(new CollapsibleSection(this, R.id.booksHeading, R.id.booksArrow, R.id.booksLayout));
+		sectionList.add(new CollapsibleSection(this, R.id.linksHeading, R.id.linksArrow, R.id.linksLayout));
 
 		if (savedInstanceState != null && savedInstanceState.containsKey(OPEN_SECTION)) {
 			sectionList.get(savedInstanceState.getInt(OPEN_SECTION)).open();

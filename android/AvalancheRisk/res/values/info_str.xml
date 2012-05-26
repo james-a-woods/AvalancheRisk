@@ -75,4 +75,12 @@
         and attending training provided by avalanche professionals.
 	</string>
 
+	<string name="books_heading">Book References</string>
+    <string name="books_desc">
+	</string>
+
+	<string name="links_heading">Links</string>
+    <string name="links_desc">
+	</string>
+
 </resources>
