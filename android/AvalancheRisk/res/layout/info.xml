@@ -151,7 +151,7 @@
 
                 <TextView
                     style="@style/textMedium.block"
-                    android:text="@string/reduction_desc_begin" />
+                    android:text="@string/reduction_desc" />
             </LinearLayout>
 
             <!-- 3x3 method -->
