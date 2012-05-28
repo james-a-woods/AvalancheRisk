@@ -214,8 +214,20 @@
                 android:visibility="gone" >
 
                 <TextView
-                    style="@style/textMedium.block"
-                    android:text="@string/books_desc" />
+                    style="@style/textMedium.heading"
+                    android:text="@string/threex3LawinenBook_title" />
+
+                <TextView
+                    style="@style/textMedium"
+                    android:text="@string/threex3LawinenBook" />
+
+                <TextView
+                    style="@style/textMedium.heading"
+                    android:text="@string/PowderGuideBook_title" />
+
+                <TextView
+                    style="@style/textMedium"
+                    android:text="@string/PowderGuideBook" />
             </LinearLayout>
 
             <!-- Links -->
