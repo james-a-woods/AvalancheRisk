@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Getter;
+import woodsie.avalanche.AbstractPersistentActivity;
 import woodsie.avalanche.R;
 import woodsie.avalanche.section.CollapsibleSection;
 import woodsie.avalanche.section.CollapsibleSectionParent;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ScrollView;
 
-public class Checklist3x3Activity extends Activity implements CollapsibleSectionParent, OnClickListener {
+public class Checklist3x3Activity extends AbstractPersistentActivity implements CollapsibleSectionParent, OnClickListener {
 
 	@Getter
 	private List<CollapsibleSection> sectionList;
@@ -47,9 +47,7 @@ public class Checklist3x3Activity extends Activity implements CollapsibleSection
 	}
 
 	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
-
+	protected void updateSaveInstanceState(Bundle outState) {
 		for (int i = 0; i < sectionList.size(); i++) {
 			if (sectionList.get(i).getState() == OPEN)
 				outState.putInt(OPEN_SECTION, i);

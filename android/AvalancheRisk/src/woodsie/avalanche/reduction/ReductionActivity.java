@@ -1,7 +1,7 @@
 package woodsie.avalanche.reduction;
 
+import woodsie.avalanche.AbstractPersistentActivity;
 import woodsie.avalanche.R;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 
-public class ReductionActivity extends Activity implements OnClickListener {
+public class ReductionActivity extends AbstractPersistentActivity implements OnClickListener {
 	private final ReductionListener listener = new ReductionListener(this);
 
 	/** Called when the activity is first created. */
@@ -65,6 +65,11 @@ public class ReductionActivity extends Activity implements OnClickListener {
 		((CheckBox) findViewById(R.id.tracked)).setChecked(false);
 
 		listener.onClick(null);
+	}
+
+	@Override
+	protected void updateSaveInstanceState(Bundle outState) {
+		// Do nothing
 	}
 
 }
