@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Getter;
-import woodsie.avalanche.AbstractPersistentActivity;
 import woodsie.avalanche.R;
 import woodsie.avalanche.section.CollapsibleSection;
 import woodsie.avalanche.section.CollapsibleSectionParent;
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ScrollView;
 
-public class InfoActivity extends AbstractPersistentActivity implements CollapsibleSectionParent {
+public class InfoActivity extends Activity implements CollapsibleSectionParent {
 
 	@Getter
 	private List<CollapsibleSection> sectionList;
@@ -43,7 +43,9 @@ public class InfoActivity extends AbstractPersistentActivity implements Collapsi
 	}
 
 	@Override
-	protected void updateSaveInstanceState(Bundle outState) {
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+
 		for (int i = 0; i < sectionList.size(); i++) {
 			if (sectionList.get(i).getState() == OPEN)
 				outState.putInt(OPEN_SECTION, i);
