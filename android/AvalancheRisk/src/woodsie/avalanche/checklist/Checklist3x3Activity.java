@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Getter;
+import woodsie.avalanche.AbstractPersistedStateActivity;
 import woodsie.avalanche.R;
 import woodsie.avalanche.section.CollapsibleSection;
 import woodsie.avalanche.section.CollapsibleSectionParent;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ScrollView;
 
-public class Checklist3x3Activity extends Activity implements CollapsibleSectionParent, OnClickListener {
+public class Checklist3x3Activity extends AbstractPersistedStateActivity implements CollapsibleSectionParent, OnClickListener {
 
 	@Getter
 	private List<CollapsibleSection> sectionList;
@@ -30,6 +30,8 @@ public class Checklist3x3Activity extends Activity implements CollapsibleSection
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.checklist_3x3);
+
+		restoreStateFromFile();
 
 		sectionList = new ArrayList<CollapsibleSection>();
 		scroller = (ScrollView) findViewById(R.id.checklistScroller);
@@ -54,6 +56,8 @@ public class Checklist3x3Activity extends Activity implements CollapsibleSection
 			if (sectionList.get(i).getState() == OPEN)
 				outState.putInt(OPEN_SECTION, i);
 		}
+
+		saveStateToFile(findViewById(R.id.checklist3x3Form));
 	}
 
 	public void onClick(View view) {
@@ -77,6 +81,7 @@ public class Checklist3x3Activity extends Activity implements CollapsibleSection
 		} else if (view instanceof CheckBox) {
 			((CheckBox) view).setChecked(false);
 		}
+
 	}
 
 }

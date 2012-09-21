@@ -1,7 +1,7 @@
 package woodsie.avalanche.reduction;
 
+import woodsie.avalanche.AbstractPersistedStateActivity;
 import woodsie.avalanche.R;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 
-public class ReductionActivity extends Activity implements OnClickListener {
+public class ReductionActivity extends AbstractPersistedStateActivity implements OnClickListener {
 	private final ReductionListener listener = new ReductionListener(this);
 
 	/** Called when the activity is first created. */
@@ -19,11 +19,20 @@ public class ReductionActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.reduction_method_screen);
 
+		restoreStateFromFile();
+
 		View topLevel = findViewById(R.id.reductionForm);
 		setRecursiveOnClickListener(topLevel, listener);
 
 		findViewById(R.id.reductionResetTop).setOnClickListener(this);
 		findViewById(R.id.reductionResetBottom).setOnClickListener(this);
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+
+		saveStateToFile(findViewById(R.id.checklist3x3Form));
 	}
 
 	@Override
