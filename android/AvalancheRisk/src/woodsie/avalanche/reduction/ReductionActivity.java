@@ -32,7 +32,7 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 
-		saveStateToFile(findViewById(R.id.checklist3x3Form));
+		saveStateToFile(findViewById(R.id.reductionForm));
 	}
 
 	@Override
