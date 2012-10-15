@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">AviRisk</string>
-    <string name="appLongName">Avalanche Risk Pro</string>
+    <string name="appLongName">Avalanche Risk</string>
     <string name="author">by Woodsie</string>
     <string name="asIs">This application is provided as is.\nYour safety is your own responsibility.</string>
     <string name="disclaimer">This is a tool for assisting with the calculation of avalanche risk using methods 
