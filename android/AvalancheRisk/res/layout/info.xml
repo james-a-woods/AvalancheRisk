@@ -261,10 +261,108 @@
                 android:orientation="vertical"
                 android:visibility="gone" >
 
-                <TextView
-                    style="@style/textMedium.block"
-                    android:text="@string/links_desc" />
-            </LinearLayout>
+                 <TextView
+                    style="@style/textMedium.heading"
+                    android:background="@drawable/blue_hgradient"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/nationalAviInfoLinks" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/CHELink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/AUTLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/FRALink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/ITALink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/DEULink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/NORLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/SWELink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/CANLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/USALink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/NZLLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/ARGLink" />
+
+                 <TextView
+                    style="@style/textMedium.heading"
+                    android:background="@drawable/blue_hgradient"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/equipmentLinks" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/mammutLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/piepsLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/bcaLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/ortovoxLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/blackDiamondLink" />
+
+                 <TextView
+                    style="@style/textMedium.heading"
+                    android:background="@drawable/blue_hgradient"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/interestingLinks" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/SAALink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/aviGlossaryLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/shovelingLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/aviResearchLink" />
+
+                 </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

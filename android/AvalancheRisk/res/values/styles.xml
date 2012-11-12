@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="text">
         <item name="android:layout_width">fill_parent</item>
@@ -45,6 +45,10 @@
 
     <style name="textMedium.block">
         <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="textMedium.link">
+        <item name="android:autoLink">web</item>
     </style>
 
     <style name="checkBox" parent="textDefaultSize">

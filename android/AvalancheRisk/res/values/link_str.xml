@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="nationalAviInfoLinks">National avalanche information centres</string>
+    <string name="CHELink">Schweiz - Suisse - Svizzera - Switzerland\nhttp://www.slf.ch</string>
+    <string name="AUTLink">Österreich - Austria - Autriche\nhttp://www.lawine.at</string>
+    <string name="FRALink">France - Frankreich - Francia\nhttp://france.meteofrance.com/france/montagne</string>
+    <string name="ITALink">Italia - Italy - Italien - Italie\nhttp://www.sian.it/infoMeteo</string>
+    <string name="DEULink">Deutschland - Germany - Allemagne - Germania\nhttp://www.lawinenwarndienst-bayern.de</string>
+    <string name="NORLink">Norge - Norway - Norwegen - Norvège - Norvegia\nhttp://www.ngi.no/no/snoskred</string>
+    <string name="SWELink">Sverige - Sweden - Schweden - Suède - Svezia\nhttp://www.fjallsakerhetsradet.se/fjallvader/Lavinprognoser</string>
+    <string name="CANLink">Canada - Kanada\nhttp://www.avalanche.ca/</string>
+    <string name="USALink">USA\nhttp://www.avalanche.org</string>
+    <string name="NZLLink">New Zealand - Neu Seeland - Nouvelle Zélande - Nuova Zelanda\nhttp://www.avalanche.net.nz</string>
+    <string name="ARGLink">Argentina - Argentinien - Argentine\nhttp://www.clubandino.org/</string>
+    
+    <string name="equipmentLinks">Avalanche Equipment</string>
+    <string name="mammutLink">Mammut\nhttp://www.mammut.ch</string>
+    <string name="piepsLink">Pieps\nhttp://www.pieps.com</string>
+    <string name="bcaLink">Backcountry Access\nhttp://www.backcountryaccess.com</string>
+    <string name="ortovoxLink">Ortovox\nhttp://www.ortovox.com</string>
+    <string name="blackDiamondLink">Black Diamond\nhttp://www.blackdiamondequipment.com</string>
+
+    <string name="interestingLinks">Interesting links</string>
+    <string name="SAALink">Swiss Alpine Adventure\nhttp://www.swissalpineadventure.com/</string>
+    <string name="aviGlossaryLink">Avalanche Glossary\nhttp://fsavalanche.org/Encyclopedia/index.htm</string>
+    <string name="shovelingLink">Shoveling Conveyor Belt\nhttp://beaconreviews.com/transceivers/Shoveling-Conveyor-Belt.asp</string>
+    <string name="aviResearchLink">Avalanche Research\nhttp://www.backcountryaccess.com/education-research/avi-research-and-papers/</string>
+</resources>
