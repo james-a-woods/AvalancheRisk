@@ -48,11 +48,19 @@
                         style="@style/textMedium"
                         android:text="@string/hazardLevel" />
 
+                    <TextView
+                        android:id="@+id/hazardDummy"
+                        style="@style/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/veryHigh" />
+
                     <RadioGroup
                         android:id="@+id/hazard"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" >
-
+
+
                         <RadioButton
                             android:id="@+id/veryHigh"
                             style="@style/radioButton"

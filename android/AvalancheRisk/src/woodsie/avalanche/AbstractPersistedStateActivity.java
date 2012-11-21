@@ -8,13 +8,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import android.app.Activity;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 
-public abstract class AbstractPersistedStateActivity extends Activity {
+public abstract class AbstractPersistedStateActivity extends FragmentActivity {
 
 	protected void saveStateToFile(View mainFormView) {
 
@@ -59,16 +59,16 @@ public abstract class AbstractPersistedStateActivity extends Activity {
 		try {
 			reader = new BufferedReader(new InputStreamReader(openFileInput(getStateFilename())));
 
-			int versionCode = new Integer(reader.readLine());
+			int versionCode = Integer.valueOf(reader.readLine());
 			if (versionCode != getVersionCode())
 				return;
 
 			String line;
 			while ((line = reader.readLine()) != null) {
 				String[] fields = line.split("=", 2);
-				View view = findViewById(new Integer(fields[0]));
+				View view = findViewById(Integer.valueOf(fields[0]));
 				if (view != null && view instanceof CompoundButton) {
-					((CompoundButton) view).setChecked(new Boolean(fields[1]));
+					((CompoundButton) view).setChecked(Boolean.valueOf(fields[1]));
 				}
 			}
 

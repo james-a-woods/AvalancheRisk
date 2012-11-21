@@ -2,6 +2,7 @@ package woodsie.avalanche.reduction;
 
 import woodsie.avalanche.AbstractPersistedStateActivity;
 import woodsie.avalanche.R;
+import woodsie.avalanche.reduction.HazardFragment.HazardDialogListener;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -9,9 +10,12 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
-public class ReductionActivity extends AbstractPersistedStateActivity implements OnClickListener {
+public class ReductionActivity extends AbstractPersistedStateActivity implements OnClickListener, HazardDialogListener {
 	private final ReductionListener listener = new ReductionListener(this);
+
+	private int hazardLevel = 0;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -26,6 +30,11 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 
 		findViewById(R.id.reductionResetTop).setOnClickListener(this);
 		findViewById(R.id.reductionResetBottom).setOnClickListener(this);
+		findViewById(R.id.hazardDummy).setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				new HazardFragment().show(getSupportFragmentManager(), "hazard");
+			}
+		});
 	}
 
 	@Override
@@ -74,6 +83,15 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 		((CheckBox) findViewById(R.id.tracked)).setChecked(false);
 
 		listener.onClick(null);
+	}
+
+	public void OnDialogClick(HazardFragment dialog, int which) {
+		hazardLevel = which;
+		((TextView) findViewById(R.id.hazardDummy)).setText(getResources().getStringArray(R.array.hazardLevelValues)[which]);
+	}
+
+	public int getInitialValue(HazardFragment dialog) {
+		return hazardLevel;
 	}
 
 }
