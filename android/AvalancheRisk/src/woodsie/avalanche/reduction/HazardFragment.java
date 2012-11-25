@@ -21,13 +21,12 @@ public class HazardFragment extends DialogFragment {
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-		builder.setTitle(R.string.hazardLevel).setSingleChoiceItems(R.array.hazardLevelValues, listener.getInitialValue(HazardFragment.this),
-				new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int which) {
-						listener.OnDialogClick(HazardFragment.this, which);
-						dismiss();
-					}
-				});
+		builder.setTitle(R.string.hazardLevel).setItems(R.array.hazardLevelValues, new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				listener.OnDialogClick(HazardFragment.this, which);
+				dismiss();
+			}
+		});
 		return builder.create();
 	}
 
