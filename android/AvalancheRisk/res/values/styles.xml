@@ -50,6 +50,12 @@
     <style name="textMedium.link">
         <item name="android:autoLink">web</item>
     </style>
+    
+    <style name="selectBox" parent="textDefaultSize">
+        <item name="android:background">@color/transWhite2</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
 
     <style name="checkBox" parent="textDefaultSize">
     </style>

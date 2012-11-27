@@ -15,9 +15,10 @@ public final class R {
     }
     public static final class color {
         public static final int black=0x7f050000;
-        public static final int blue=0x7f050004;
-        public static final int red=0x7f050003;
+        public static final int blue=0x7f050005;
+        public static final int red=0x7f050004;
         public static final int transWhite=0x7f050002;
+        public static final int transWhite2=0x7f050003;
         public static final int white=0x7f050001;
     }
     public static final class drawable {
@@ -96,7 +97,7 @@ public final class R {
         public static final int checklist3x3ResetBottom=0x7f080034;
         public static final int checklist3x3ResetTop=0x7f080002;
         public static final int checklistScroller=0x7f080000;
-        public static final int considerable=0x7f080050;
+        public static final int considerable=0x7f080051;
         public static final int dangerLevelText=0x7f080048;
         public static final int disclaimerScreen=0x7f080047;
         public static final int firstClass=0x7f080054;
@@ -107,7 +108,7 @@ public final class R {
         public static final int hazardDummy=0x7f08004c;
         public static final int hazardHeading=0x7f080038;
         public static final int hazardLayout=0x7f08003a;
-        public static final int high=0x7f08004f;
+        public static final int high=0x7f080050;
         public static final int higherHazard=0x7f080053;
         public static final int infoForm=0x7f080037;
         public static final int infoScroller=0x7f080036;
@@ -121,7 +122,7 @@ public final class R {
         public static final int localHeading=0x7f08000f;
         public static final int localLayout=0x7f080011;
         public static final int low=0x7f080052;
-        public static final int moderate=0x7f080051;
+        public static final int moderate=0x7f08004f;
         public static final int moderatelySteep=0x7f080059;
         public static final int notSteep=0x7f08005a;
         public static final int reductionArrow=0x7f08003c;
@@ -296,10 +297,11 @@ public final class R {
         public static final int zonal_terrain_f=0x7f040029;
     }
     public static final class style {
-        public static final int arrowButton=0x7f07000e;
-        public static final int button=0x7f07000d;
-        public static final int checkBox=0x7f07000b;
-        public static final int radioButton=0x7f07000c;
+        public static final int arrowButton=0x7f07000f;
+        public static final int button=0x7f07000e;
+        public static final int checkBox=0x7f07000c;
+        public static final int radioButton=0x7f07000d;
+        public static final int selectBox=0x7f07000b;
         public static final int text=0x7f070000;
         public static final int textDefaultSize=0x7f070001;
         public static final int textLarge=0x7f070003;

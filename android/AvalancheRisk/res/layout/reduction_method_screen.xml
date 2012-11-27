@@ -48,13 +48,11 @@
                         style="@style/textMedium"
                         android:text="@string/hazardLevel" />
 
-                        <Button
+                        <TextView
                             android:id="@+id/hazardDummy"
-                            style="@style/textMedium"
+                            style="@style/selectBox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="15dp"
                             android:text="@string/veryHigh" />
 
                      <RadioGroup
@@ -70,6 +68,11 @@
                             android:text="@string/veryHigh" />
 
                         <RadioButton
+                            android:id="@+id/moderate"
+                            style="@style/radioButton"
+                            android:text="@string/moderate" />
+
+                        <RadioButton
                             android:id="@+id/high"
                             style="@style/radioButton"
                             android:text="@string/high" />
@@ -78,11 +81,6 @@
                             android:id="@+id/considerable"
                             style="@style/radioButton"
                             android:text="@string/considerable" />
-
-                        <RadioButton
-                            android:id="@+id/moderate"
-                            style="@style/radioButton"
-                            android:text="@string/moderate" />
 
                         <RadioButton
                             android:id="@+id/low"
