@@ -5,7 +5,8 @@
     <string name="conditions">Snow and Weather Conditions</string>
     <string name="terrain">Terrain</string>
     <string name="human">Human Factor</string>
-    <string name="regional">Regional\nPre-departure preparation, including alternatives</string>
+    <string name="regional">Regional
+        \nPre-departure preparation, including alternatives</string>
     <string name="regional_cond_a">Avalanche bulletin.\nNational, local and automatic</string>
     <string name="regional_cond_b">Weather forecast</string>
     <string name="regional_cond_c">Expert opinions and information</string>
