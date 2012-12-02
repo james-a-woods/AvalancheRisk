@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="links_heading">Links</string>
 
     <string name="nationalAviInfoLinks">National avalanche information centres</string>
-    <string name="CHELink">Schweiz - Suisse - Svizzera - Switzerland\nhttp://www.slf.ch</string>
-    <string name="AUTLink">Österreich - Austria - Autriche\nhttp://www.lawine.at</string>
-    <string name="FRALink">France - Frankreich - Francia\nhttp://france.meteofrance.com/france/montagne</string>
-    <string name="ITALink">Italia - Italy - Italien - Italie\nhttp://www.sian.it/infoMeteo</string>
-    <string name="DEULink">Deutschland - Germany - Allemagne - Germania\nhttp://www.lawinenwarndienst-bayern.de</string>
-    <string name="NORLink">Norge - Norway - Norwegen - Norvège - Norvegia\nhttp://www.ngi.no/no/snoskred</string>
-    <string name="SWELink">Sverige - Sweden - Schweden - Suède - Svezia\nhttp://www.fjallsakerhetsradet.se/fjallvader/Lavinprognoser</string>
-    <string name="CANLink">Canada - Kanada\nhttp://www.avalanche.ca/</string>
-    <string name="USALink">USA\nhttp://www.avalanche.org</string>
-    <string name="NZLLink">New Zealand - Neu Seeland - Nouvelle Zélande - Nuova Zelanda\nhttp://www.avalanche.net.nz</string>
-    <string name="ARGLink">Argentina - Argentinien - Argentine\nhttp://www.clubandino.org/</string>
+    <string name="CHELink" translatable="false">Schweiz - Suisse - Svizzera - Switzerland\nhttp://www.slf.ch</string>
+    <string name="AUTLink" translatable="false">Österreich - Austria - Autriche\nhttp://www.lawine.at</string>
+    <string name="FRALink" translatable="false">France - Frankreich - Francia\nhttp://france.meteofrance.com/france/montagne</string>
+    <string name="ITALink" translatable="false">Italia - Italy - Italien - Italie\nhttp://www.sian.it/infoMeteo</string>
+    <string name="DEULink" translatable="false">Deutschland - Germany - Allemagne - Germania\nhttp://www.lawinenwarndienst-bayern.de</string>
+    <string name="NORLink" translatable="false">Norge - Norway - Norwegen - Norvège - Norvegia\nhttp://www.ngi.no/no/snoskred</string>
+    <string name="SWELink" translatable="false">Sverige - Sweden - Schweden - Suède - Svezia\nhttp://www.fjallsakerhetsradet.se/fjallvader/Lavinprognoser</string>
+    <string name="CANLink" translatable="false">Canada - Kanada\nhttp://www.avalanche.ca/</string>
+    <string name="USALink" translatable="false">USA\nhttp://www.avalanche.org</string>
+    <string name="NZLLink" translatable="false">New Zealand - Neu Seeland - Nouvelle Zélande - Nuova Zelanda\nhttp://www.avalanche.net.nz</string>
+    <string name="ARGLink" translatable="false">Argentina - Argentinien - Argentine\nhttp://www.clubandino.org/</string>
     
     <string name="equipmentLinks">Avalanche Equipment</string>
-    <string name="mammutLink">Mammut\nhttp://www.mammut.ch</string>
-    <string name="piepsLink">Pieps\nhttp://www.pieps.com</string>
-    <string name="bcaLink">Backcountry Access\nhttp://www.backcountryaccess.com</string>
-    <string name="ortovoxLink">Ortovox\nhttp://www.ortovox.com</string>
-    <string name="blackDiamondLink">Black Diamond\nhttp://www.blackdiamondequipment.com</string>
+    <string name="mammutLink" translatable="false">Mammut\nhttp://www.mammut.ch</string>
+    <string name="piepsLink" translatable="false">Pieps\nhttp://www.pieps.com</string>
+    <string name="bcaLink" translatable="false">Backcountry Access\nhttp://www.backcountryaccess.com</string>
+    <string name="ortovoxLink" translatable="false">Ortovox\nhttp://www.ortovox.com</string>
+    <string name="blackDiamondLink" translatable="false">Black Diamond\nhttp://www.blackdiamondequipment.com</string>
 
     <string name="interestingLinks">Interesting links</string>
-    <string name="aviGlossary1Link">\nhttp://www.avalanches.org/basics/glossar-en</string>
-    <string name="aviGlossary2Link">Glossary snow and avalanches\nhttp://fsavalanche.org/Encyclopedia/index.htm</string>
-    <string name="shovelingLink">Shoveling Conveyor Belt\nhttp://beaconreviews.com/transceivers/Shoveling-Conveyor-Belt.asp</string>
-    <string name="aviResearchLink">Avalanche Research\nhttp://www.backcountryaccess.com/education-research/avi-research-and-papers/</string>
-    <string name="SAALink">Swiss Alpine Adventure\nhttp://www.swissalpineadventure.com/</string>
+    <string name="aviGlossary1Link">Glossary snow and avalanches\nhttp://www.avalanches.org/basics/glossar-en</string>
+    <string name="aviGlossary2Link" translatable="false">Glossary snow and avalanches\nhttp://fsavalanche.org/Encyclopedia/index.htm</string>
+    <string name="shovelingLink" translatable="false">Shoveling Conveyor Belt\nhttp://beaconreviews.com/transceivers/Shoveling-Conveyor-Belt.asp</string>
+    <string name="aviResearchLink" translatable="false">Avalanche Research\nhttp://www.backcountryaccess.com/education-research/avi-research-and-papers/</string>
+    <string name="SAALink" translatable="false">Swiss Alpine Adventure\nhttp://www.swissalpineadventure.com/</string>
         
 </resources>

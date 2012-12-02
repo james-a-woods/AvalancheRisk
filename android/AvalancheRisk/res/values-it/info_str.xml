@@ -35,8 +35,6 @@
 
 	<string name="books_heading">"Fonti"</string>
     <string name="threex3LawinenBook_title">"3x3 Lawinen (Tedesco)"</string>
-	<string name="threex3LawinenBook">"\tWerner Munter\n\t© 2009 Verlag Pohl &amp; Schellhammer\n\tISBN 3-00-010520-4"</string>
     <string name="PowderGuideBook_title">"Powder Guide (Inglese)"</string>
-    <string name="PowderGuideBook">"\tTobias Kurzeder and Holger Feist\n\t© 2003 Mountain Sports Press\n\tISBN 0-9724827-3-3"</string>
     
 </resources>

@@ -348,10 +348,6 @@
 
                  <TextView
                     style="@style/textMedium.link"
-                    android:text="@string/SAALink" />
-
-                 <TextView
-                    style="@style/textMedium.link"
                     android:text="@string/aviGlossary1Link" />
 
                  <TextView
@@ -365,6 +361,10 @@
                  <TextView
                     style="@style/textMedium.link"
                     android:text="@string/aviResearchLink" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/SAALink" />
 
                  </LinearLayout>
         </LinearLayout>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="links_heading">Links</string>
+    
     <string name="nationalAviInfoLinks">Valanghe nazionale centri di informazione</string>
     
     <string name="equipmentLinks">Attrezzatura per valanghe</string>

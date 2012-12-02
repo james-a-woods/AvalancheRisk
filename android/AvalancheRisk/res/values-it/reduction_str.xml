@@ -33,7 +33,7 @@
     <string name="who">"Con chi scieresti?"</string>
     <string name="largeGroup">"Un grande gruppo (più di 4 persone)"</string>
     <string name="largeGroupSpaced">"Un grande gruppo (più di 4 persone)\nche mantiene le distanze di sicurezza"</string>
-    <string name="smallGroup">"Un piccolo gruppo (2-4 persone)"</string>
-    <string name="smallGroupSpaced">"Un piccolo gruppo (2-4 persone)\nche mantiene le distanze di sicurezza"</string>
+    <string name="smallGroup">"Un piccolo gruppo (2&#8211;4 persone)"</string>
+    <string name="smallGroupSpaced">"Un piccolo gruppo (2&#8211;4 persone)\nche mantiene le distanze di sicurezza"</string>
 
 </resources>

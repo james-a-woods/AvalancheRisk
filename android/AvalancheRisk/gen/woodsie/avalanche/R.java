@@ -256,7 +256,6 @@ public final class R {
         public static final int riskSafe=0x7f04005c;
         public static final int secondClass=0x7f04006d;
         public static final int secondClassHemisphere=0x7f04006e;
-        public static final int sectionHelp=0x7f040086;
         public static final int shovelingLink=0x7f040057;
         public static final int smallGroup=0x7f04007b;
         public static final int smallGroupSpaced=0x7f04007c;
