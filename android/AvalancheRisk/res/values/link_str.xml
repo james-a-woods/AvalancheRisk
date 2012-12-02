@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="links_heading">Links</string>
+
     <string name="nationalAviInfoLinks">National avalanche information centres</string>
     <string name="CHELink">Schweiz - Suisse - Svizzera - Switzerland\nhttp://www.slf.ch</string>
     <string name="AUTLink">Österreich - Austria - Autriche\nhttp://www.lawine.at</string>
@@ -22,12 +24,10 @@
     <string name="blackDiamondLink">Black Diamond\nhttp://www.blackdiamondequipment.com</string>
 
     <string name="interestingLinks">Interesting links</string>
-    <string name="SAALink">Swiss Alpine Adventure\nhttp://www.swissalpineadventure.com/</string>
-    <string name="aviGlossaryLink">Avalanche Glossary\nhttp://fsavalanche.org/Encyclopedia/index.htm</string>
+    <string name="aviGlossary1Link">\nhttp://www.avalanches.org/basics/glossar-en</string>
+    <string name="aviGlossary2Link">Glossary snow and avalanches\nhttp://fsavalanche.org/Encyclopedia/index.htm</string>
     <string name="shovelingLink">Shoveling Conveyor Belt\nhttp://beaconreviews.com/transceivers/Shoveling-Conveyor-Belt.asp</string>
     <string name="aviResearchLink">Avalanche Research\nhttp://www.backcountryaccess.com/education-research/avi-research-and-papers/</string>
-    
-    <string name="links_heading">Links</string>
-
-    
+    <string name="SAALink">Swiss Alpine Adventure\nhttp://www.swissalpineadventure.com/</string>
+        
 </resources>

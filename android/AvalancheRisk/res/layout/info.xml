@@ -352,7 +352,11 @@
 
                  <TextView
                     style="@style/textMedium.link"
-                    android:text="@string/aviGlossaryLink" />
+                    android:text="@string/aviGlossary1Link" />
+
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/aviGlossary2Link" />
 
                  <TextView
                     style="@style/textMedium.link"
