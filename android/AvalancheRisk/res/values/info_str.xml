@@ -80,10 +80,8 @@
 
 	<string name="books_heading">Book References</string>
     <string name="threex3LawinenBook_title">3x3 Lawinen (German)</string>
-	<string name="threex3LawinenBook">\tWerner Munter\n\t&#169; 2009 Verlag Pohl &amp; Schellhammer\n\tISBN 3-00-010520-4</string>
+	<string name="threex3LawinenBook">\tWerner Munter\n\t&#169; 2009 Verlag Pohl &amp; Schellhammer\n\tISBN 3&#8211;00&#8211;010520&#8211;4</string>
     <string name="PowderGuideBook_title">Powder Guide (English)</string>
-    <string name="PowderGuideBook">\tTobias Kurzeder and Holger Feist\n\t&#169; 2003 Mountain Sports Press\n\tISBN 0-9724827-3-3</string>
+    <string name="PowderGuideBook">\tTobias Kurzeder and Holger Feist\n\t&#169; 2003 Mountain Sports Press\n\tISBN 0&#8211;9724827&#8211;3&#8211;3</string>
     
-	<string name="links_heading">Links</string>
-
 </resources>

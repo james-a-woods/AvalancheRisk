@@ -26,4 +26,8 @@
     <string name="aviGlossaryLink">Avalanche Glossary\nhttp://fsavalanche.org/Encyclopedia/index.htm</string>
     <string name="shovelingLink">Shoveling Conveyor Belt\nhttp://beaconreviews.com/transceivers/Shoveling-Conveyor-Belt.asp</string>
     <string name="aviResearchLink">Avalanche Research\nhttp://www.backcountryaccess.com/education-research/avi-research-and-papers/</string>
+    
+    <string name="links_heading">Links</string>
+
+    
 </resources>
