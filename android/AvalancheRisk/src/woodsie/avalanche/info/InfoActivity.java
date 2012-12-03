@@ -11,6 +11,8 @@ import woodsie.avalanche.R;
 import woodsie.avalanche.section.CollapsibleSection;
 import woodsie.avalanche.section.CollapsibleSectionParent;
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ScrollView;
 
@@ -52,4 +54,18 @@ public class InfoActivity extends Activity implements CollapsibleSectionParent {
 		}
 	}
 
+	@Override
+	public void startActivity(Intent intent) {
+		try {
+
+			super.startActivity(intent);
+		} catch (ActivityNotFoundException e) {
+			e.printStackTrace(System.err);
+			/*
+			 * Probably an HTC broken by evil Apple patents. This is not perfect, but better then
+			 * crashing the whole application.
+			 */
+			super.startActivity(Intent.createChooser(intent, null));
+		}
+	}
 }
