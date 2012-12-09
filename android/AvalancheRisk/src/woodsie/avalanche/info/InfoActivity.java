@@ -57,12 +57,14 @@ public class InfoActivity extends Activity implements CollapsibleSectionParent {
 	@Override
 	public void startActivity(Intent intent) {
 		try {
-
+			/* First attempt at fixing an HTC broken by evil Apple patents. */
+			if (intent.getComponent() != null && ".HtcLinkifyDispatcherActivity".equals(intent.getComponent().getShortClassName()))
+				intent.setComponent(null);
 			super.startActivity(intent);
 		} catch (ActivityNotFoundException e) {
 			e.printStackTrace(System.err);
 			/*
-			 * Probably an HTC broken by evil Apple patents. This is not perfect, but better then
+			 * Probably an HTC broken by evil Apple patents. This is not perfect, but better than
 			 * crashing the whole application.
 			 */
 			super.startActivity(Intent.createChooser(intent, null));
