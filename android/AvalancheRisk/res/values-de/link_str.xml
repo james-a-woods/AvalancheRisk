@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="links_heading">Links</string>
+
+    <string name="nationalAviInfoLinks">National Lawinenwarndienste</string>
+    
+    <string name="equipmentLinks">Lawinenausrüstung</string>
+
+    <string name="interestingLinks">Interessante Links</string>
+    <string name="aviGlossary1Link">Glossar Schnee und Lawinen\nhttp://www.avalanches.org/basics/glossar-de</string>
+        
+</resources>

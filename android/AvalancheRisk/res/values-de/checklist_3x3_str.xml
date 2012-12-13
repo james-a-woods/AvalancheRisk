@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="checklist3x3Tab">Checkliste</string>
+    <string name="conditions">Schnee- und Wetterverhältnisse</string>
+    <string name="terrain">Gelände</string>
+    <string name="human">Mensch</string>
+    <string name="regional">Tourenplanung zu Hause</string>
+    <string name="regional_cond_a">Lawinenlagebericht</string>
+    <string name="regional_cond_b">Wetterprognose</string>
+    <string name="regional_cond_c">Expertenmeinung and weitere Informationen (z.B. Hüttenwirt)</string>
+    <string name="regional_terrain_a">genaue Karte 1:25.000, Steilheit messen</string>
+    <string name="regional_terrain_b">Tourenbeschreibung aus Literatur, Fotos</string>
+    <string name="regional_terrain_c">Checkpoints, Zeitplan, Alternativen, persönliche und örtliche Kenntnisse des Gebiets</string>
+    <string name="regional_human_a">Wer kommt mit?\nPersönliches Können und Konditionen, Teilnehmerzahl</string>
+    <string name="regional_human_b">Ausrüstung überprüfen.\nLVS-Gerät, Schaufel, Sonde, Rucksack</string>
+    <string name="regional_human_c">Wer führt die Gruppe?</string>
+    <string name="local">Beurteilung vor Ort\nim einsehbaren Bereich. Routenwahl und Varianten</string>
+    <string name="local_cond_a">Wind, Triebschnee.\nRippen, Wächten, Gangeln und Schneeverwehungen</string>
+    <string name="local_cond_b">Kritische Neuschneemenge\nallgem. Schneeverhältnisse</string>
+    <string name="local_cond_c">Alarmanzeichen</string>
+    <string name="local_cond_d">Invertierte Verhältnisse?\nNordhänge sicherer als Südhänge? Hohe Lagen sicherer als niedrige?</string>
+    <string name="local_cond_e">Durch Föhn oder Regen kann die Stabilität der Schneedecke rasch abnehmen.</string>
+    <string name="local_cond_f">Sicht, Wolken, Windgeschwindigkeit</string>
+    <string name="local_cond_g">Temperaturwechsel</string>
+    <string name="local_cond_h">Lawinenlagebericht überprüfen.</string>
+    <string name="local_terrain_a">Hang: Steilheit (auch was ist oberhalb und unterhalb), Größe</string>
+    <string name="local_terrain_b">Stimmen die Gegebenheiten vor Ort mit meiner Vorstellung überein?</string>
+    <string name="local_human_a">Wer ist in der Gruppe? \nWie viele?</string>
+    <string name="local_human_b">LVS-Check.\nWeitere Ausrüstung überprüfen (Schaufel, Sonde)</string>
+    <string name="local_human_c">Sind auch andere Gruppen unterwegs? Müssen die unterschiedlichen Gruppen koordiniert werden?</string>
+    <string name="local_human_d">Zeitplanung und körperlichen Verfassung überprüfen.</string>
+    <string name="zonal">Einzelhang\nCheckpoints</string>
+    <string name="zonal_cond_a">Kritische Neuscheemenge?</string>
+    <string name="zonal_cond_b">Frische Triebschneeansammlungen?</string>
+    <string name="zonal_cond_c">Sicht.\nKündigt sich schlechtes Wetter an?</string>
+    <string name="zonal_cond_d">Sonneneinstrahlung und Temperatur?</string>
+    <string name="zonal_cond_e">Schneebeschaffenheit?</string>
+    <string name="zonal_cond_f">Gesamteindruck?</string>
+    <string name="zonal_terrain_a">Wer ist über und unter mir?</string>
+    <string name="zonal_terrain_b">Steilheit, steilste Stelle?</string>
+    <string name="zonal_terrain_c">Exposition?</string>
+    <string name="zonal_terrain_d">Geländeform (Rinnen, Rücken, Mulden)?</string>
+    <string name="zonal_terrain_e">Wächten, Kammlage? Untergrund? Absturzgefahr?</string>
+    <string name="zonal_terrain_f">Alarmzeichen?</string>
+    <string name="zonal_human_a">Zustand und Können der Teilnehmer?</string>
+    <string name="zonal_human_b">Häufig befahren?</string>
+    <string name="zonal_human_c">Entlastungsabstände? Spurkorridor, gleiche Spur befahren?</string>
+    <string name="zonal_human_d">Sammelpunkt identifizieren?</string>
+    <string name="zonal_human_e">Sturzfreies Fahren?</string>
+    <string name="lastCheck">Letzter Check\nGehen oder nicht gehen? Sind alle Mitglieder der Gruppe einer Meinung?</string>
+
+</resources>

@@ -367,7 +367,31 @@
                     android:text="@string/SAALink" />
 
                  </LinearLayout>
-        </LinearLayout>
+                 
+            <TextView
+                style="@style/textMedium.heading"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:background="@drawable/blue_hgradient"
+                android:text="Thank you"
+                android:textColor="@color/white" />
+            
+            <TextView
+                style="@style/textMedium"
+                android:text="Giacomo Ghezzi\n\tItalian translation" />
+            
+            <TextView
+                style="@style/textMedium"
+                android:text="Peter Schnappauf\n\tGerman translation and advise" />
+            
+            <TextView
+                style="@style/textMedium"
+                android:text="Dave O'Riordan\n\tTesting and advise" />
+            
+            </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
