@@ -37,4 +37,9 @@
     <string name="threex3LawinenBook_title">"3x3 Lawinen (Tedesco)"</string>
     <string name="PowderGuideBook_title">"Powder Guide (Inglese)"</string>
     
+    <string name="thankyou">Grazie</string>
+    <string name="dave">Dave O\'Riordan\n\tTest e consigliare</string>
+    <string name="giac">Giacomo Ghezzi\n\tTraduzione italiana</string>
+    <string name="peter">Peter Schnappauf\n\tTraduzione tedesca e consigliare</string>
+    
 </resources>

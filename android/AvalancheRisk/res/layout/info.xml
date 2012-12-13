@@ -231,7 +231,8 @@
             </LinearLayout>
 
             <!-- Links -->
-
+<!-- 
+ -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -376,20 +377,21 @@
                 android:paddingBottom="15dp"
                 android:paddingTop="15dp"
                 android:background="@drawable/blue_hgradient"
-                android:text="Thank you"
+                android:text="@string/thankyou"
                 android:textColor="@color/white" />
             
             <TextView
                 style="@style/textMedium"
-                android:text="Giacomo Ghezzi\n\tItalian translation" />
+                android:text="@string/dave" />
             
             <TextView
                 style="@style/textMedium"
-                android:text="Peter Schnappauf\n\tGerman translation and advise" />
+                android:text="@string/giac" />
             
             <TextView
                 style="@style/textMedium"
-                android:text="Dave O'Riordan\n\tTesting and advise" />
+                android:layout_marginBottom="15dp"
+                android:text="@string/peter" />
             
             </LinearLayout>
     </ScrollView>

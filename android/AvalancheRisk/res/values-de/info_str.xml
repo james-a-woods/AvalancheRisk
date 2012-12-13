@@ -72,4 +72,9 @@
     <string name="threex3LawinenBook_title">3x3 Lawinen (Deutsch)</string>
     <string name="PowderGuideBook_title">Powder Guide (English)</string>
     
+    <string name="thankyou">Danke</string>
+    <string name="dave">Dave O\'Riordan\n\tTesting und beraten</string>
+    <string name="giac">Giacomo Ghezzi\n\tItalienische Übersetzung</string>
+    <string name="peter">Peter Schnappauf\n\tDeutsch Übersetzung und beraten</string>
+    
 </resources>
