@@ -1,13 +1,13 @@
 <resources>
 
-    <string name="app_name">"AviRisk"</string>
-    <string name="appLongName">"Rischio Valanghe"</string>
-    <string name="author">"by Woodsie"</string>
-    <string name="asIs">"Questa applicazione è fornita così com'è.\nLa tua sicurezza è la vostra responsabilità."</string>
-    <string name="disclaimer">"Questo è uno strumento per aiutare nel calcolo del rischio valanghe con i metodi sviluppati da Werner Munter. Non è in alcun modo un sostituto di corsi antivalanghe ed esperienza personale nella valutazione del pericolo di valanghe. Questa applicazione deve sempre essere utilizzata insieme ad una valutazione delle condizioni locali e una scelta accurata del percorso. In caso di dubbio, affittate una guida alpina."</string>
-    <string name="noSnowMobiles">"Da non utilizzare con Motoslitte"</string>
-    <string name="whyNoSnowMobiles">"Motoslitte esercitano un maggiore carico del manto nevoso, il che può innescare una valanga in condizioni considerate sicure per uno sciatore o snowboarder."</string>
-    <string name="continueButton">"Continua"</string>
-    <string name="resetButton">"Reset"</string>
+    <string name="app_name">AviRisk</string>
+    <string name="appLongName">Rischio Valanghe</string>
+    <string name="author">by Woodsie</string>
+    <string name="asIs">Questa applicazione è fornita così com\'è.\nLa tua sicurezza è la vostra responsabilità.</string>
+    <string name="disclaimer">Questo è uno strumento per aiutare nel calcolo del rischio valanghe con i metodi sviluppati da Werner Munter. Non è in alcun modo un sostituto di corsi antivalanghe ed esperienza personale nella valutazione del pericolo di valanghe. Questa applicazione deve sempre essere utilizzata insieme ad una valutazione delle condizioni locali e una scelta accurata del percorso. In caso di dubbio, affittate una guida alpina.</string>
+    <string name="noSnowMobiles">Da non utilizzare con Motoslitte</string>
+    <string name="whyNoSnowMobiles">Motoslitte esercitano un maggiore carico del manto nevoso, il che può innescare una valanga in condizioni considerate sicure per uno sciatore o snowboarder.</string>
+    <string name="continueButton">Continua</string>
+    <string name="resetButton">Reset</string>
 
 </resources>

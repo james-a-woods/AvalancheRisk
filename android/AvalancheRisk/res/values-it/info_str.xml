@@ -1,41 +1,41 @@
 <resources>
 
-    <string name="infoTab">"Informazione"</string>
-    <string name="hazard_heading">"Livelli di pericolo"</string>
-    <string name="hazard_desc">"Il grado di rischio utilizzato nel bollettino valanghe è uno standard riconosciuto a livello internazionale per identificare il livello generale di rischio di valanghe in montagna. È basato su una combinazione della stabilità del manto nevoso e la probabilità di innescare una valanga. È composto da cinque livelli di rischio.
-		\n\nQuesti livelli danno solo un un'idea generale delle possibilità di innescare una valanga e devono essere sempre utilizzati in combinazione con esperienza personale e le altre informazioni dettagliate fornite nel bollettino valanghe."
+    <string name="infoTab">Informazione</string>
+    <string name="hazard_heading">Livelli di pericolo</string>
+    <string name="hazard_desc">Il grado di rischio utilizzato nel bollettino valanghe è uno standard riconosciuto a livello internazionale per identificare il livello generale di rischio di valanghe in montagna. È basato su una combinazione della stabilità del manto nevoso e la probabilità di innescare una valanga. È composto da cinque livelli di rischio.
+		\n\nQuesti livelli danno solo un un\'idea generale delle possibilità di innescare una valanga e devono essere sempre utilizzati in combinazione con esperienza personale e le altre informazioni dettagliate fornite nel bollettino valanghe.
     </string>
-    <string name="hazard_level_1_desc">"Il manto nevoso nel suo complesso è ben consolidato e stabile. Il distacco è generalmente possibile solo con un forte sovraccarico su pochissimi pendii ripidi estremi. Sono possibili solo piccole valanghe spontanee (cosiddetti scaricamenti)
+    <string name="hazard_level_1_desc">Il manto nevoso nel suo complesso è ben consolidato e stabile. Il distacco è generalmente possibile solo con un forte sovraccarico su pochissimi pendii ripidi estremi. Sono possibili solo piccole valanghe spontanee (cosiddetti scaricamenti)
 		\n\nCondizioni generalmente sicure per le gite sciistiche. Le zone pericolose sono rare e facilmente identificabili."
     </string>
     <string name="hazard_level_2_desc">Il manto nevoso è moderatamente consolidato su alcuni pendii ripidi, per il resto è ben consolidato. Il distacco è possibile soprattutto con un forte sovraccarico sui pendii ripidi indicati del bollettino. Non sono da aspettarsi grandi valanghe spontanee.
 		\n\nCondizioni favorevoli per gite sciistiche ma occorre considerare adeguatamente locali zone pericolose."
     </string>
-    <string name="hazard_level_3_desc">"Il manto nevoso presenta un consolidamento da moderato a debole su molti pendii ripidi, in particolare quelli descritti nel bollettino valanghe. Il distacco è possibile con debole sovraccarico soprattutto sui pendii ripidi indicati. In alcune situazioni sono possibili valanghe spontanee di media grandezza e, in singoli casi, anche grandi valanghe
+    <string name="hazard_level_3_desc">Il manto nevoso presenta un consolidamento da moderato a debole su molti pendii ripidi, in particolare quelli descritti nel bollettino valanghe. Il distacco è possibile con debole sovraccarico soprattutto sui pendii ripidi indicati. In alcune situazioni sono possibili valanghe spontanee di media grandezza e, in singoli casi, anche grandi valanghe
 		\n\nLe possibilità per le gite sciistiche sono limitate ed è richiesta una buona capacità di valutazione locale."
     </string>
-    <string name="hazard_level_4_desc">"Il manto nevoso è debolmente consolidato sulla maggior parte dei pendii ripidi. Il distacco è probabile già con un debole sovraccarico su molti pendii ripidi. In alcune situazioni sono da aspettarsi molte valanghe spontanee di media grandezza e, talvolta, anche grandi valanghe.
+    <string name="hazard_level_4_desc">Il manto nevoso è debolmente consolidato sulla maggior parte dei pendii ripidi. Il distacco è probabile già con un debole sovraccarico su molti pendii ripidi. In alcune situazioni sono da aspettarsi molte valanghe spontanee di media grandezza e, talvolta, anche grandi valanghe.
 		\n\nLe possibilità per gite sciistiche sono fortemente limitate ed è richiesta una grande capacità di valutazione locale. "
     </string>
-    <string name="hazard_level_5_desc">"Il manto nevoso è in generale debolmente consolidato e per lo più instabile. Sono da aspettarsi molte grandi valanghe spontanee, anche su terreno moderatamente ripido.
-		\n\nLe gite sciistiche non sono generalmente possibili.    "</string>
-    <string name="reduction_heading">"Metodo delle riduzioni"</string>
-    <string name="reduction_desc">"Non si può mai essere sicuri al 100% di non provocare una valanga durante un'escursione sciistica fuoripista. Il metodo delle riduzioni è una formula che è stata proposta da Werner Munter per contribuire a ridurre il rischio di innescare una valanga ad un livello accettabile. Esso combina il grado di pericolo nel bollettino valanghe con una serie di misure di sicurezza, o fattori di riduzione, per produrre una stima del rischio che una valanga possa essere innescata.
+    <string name="hazard_level_5_desc">Il manto nevoso è in generale debolmente consolidato e per lo più instabile. Sono da aspettarsi molte grandi valanghe spontanee, anche su terreno moderatamente ripido.
+		\n\nLe gite sciistiche non sono generalmente possibili.    </string>
+    <string name="reduction_heading">Metodo delle riduzioni</string>
+    <string name="reduction_desc">Non si può mai essere sicuri al 100% di non provocare una valanga durante un\'escursione sciistica fuoripista. Il metodo delle riduzioni è una formula che è stata proposta da Werner Munter per contribuire a ridurre il rischio di innescare una valanga ad un livello accettabile. Esso combina il grado di pericolo nel bollettino valanghe con una serie di misure di sicurezza, o fattori di riduzione, per produrre una stima del rischio che una valanga possa essere innescata.
 		\n\nQuesta formula assegna un valore al livello di rischio valanghe del bollettino valanghe, chiamato il rischio potenziale. Poi assegna valori ai diversi fattori di riduzione che possono essere utilizzati per ridurre il rischio. Il livello di rischio è accettabile se il fattore di riduzione totale (tutti i singoli fattori di riduzione moltiplicati tra di loro) ha un valore maggiore del rischio potenziale.
-		\n\nQuesto metodo va inteso come uno strumento di pianificazione per determinare se il tragitto previsto è sicuro e appropriato date le condizioni di rischio valanghe attuali. Produce solo una stima delle condizioni generali per l'escursione e deve essere usato in combinazione con il metodo del 3x3, la propria esperienza e conoscenza personale del rischio di valanghe.
-		\n\nIl metodo di riduzione è stato progettato per essere utilizzato alle latitudini settentrionali tra il 35esimo e il 55 parallelo (area che copre le aree sciistiche più famose dell'Europa e del Nord America). Si prega perciò di prestare particolare attenzione nel caso si utilizzi questa applicazione nelle zone più settentrionali  del globo come l'Alaska e Scandinavia, in quanto, essendo le radiazioni solari in tali zone sensibilmente più deboli, il manto nevoso risulta sempre meno stabile. Inoltre, ulteriori modifiche e aggiustamenti sono necessari nel caso l'applicazione venga usata nell'emisfero meridionale.
-		\n\nQuesta descrizione è solo una breve panoramica del metodo di riduzione e non è da considerarsi un valido sostituto della lettura di libri dedicati al tema e della partecipazione a corsi specifici offerti da esperti di valanghe."
+		\n\nQuesto metodo va inteso come uno strumento di pianificazione per determinare se il tragitto previsto è sicuro e appropriato date le condizioni di rischio valanghe attuali. Produce solo una stima delle condizioni generali per l\'escursione e deve essere usato in combinazione con il metodo del 3x3, la propria esperienza e conoscenza personale del rischio di valanghe.
+		\n\nIl metodo di riduzione è stato progettato per essere utilizzato alle latitudini settentrionali tra il 35esimo e il 55 parallelo (area che copre le aree sciistiche più famose dell\'Europa e del Nord America). Si prega perciò di prestare particolare attenzione nel caso si utilizzi questa applicazione nelle zone più settentrionali  del globo come l\'Alaska e Scandinavia, in quanto, essendo le radiazioni solari in tali zone sensibilmente più deboli, il manto nevoso risulta sempre meno stabile. Inoltre, ulteriori modifiche e aggiustamenti sono necessari nel caso l\'applicazione venga usata nell\'emisfero meridionale.
+		\n\nQuesta descrizione è solo una breve panoramica del metodo di riduzione e non è da considerarsi un valido sostituto della lettura di libri dedicati al tema e della partecipazione a corsi specifici offerti da esperti di valanghe.
 	</string>
-	<string name="threex3_heading">"Metodo del 3x3"</string>
-    <string name="threex3_desc">"Il metodo del 3x3 è un metodo proposto da Werner Munter per aiutare a valutare gli aspetti che contribuiscono al potenziale rischio di valanghe. Esso prevede tre fasi di controllo, ognuna basata su tre diversi fattori, da utilizzare sia durante la pianificazione a tavolino dell'escursione che durante l'escursione vera e propria. Questa applicazione fornisce una checklist di promemoria dei fattori importanti da ricordarsi nel prendere decisioni prima e durante l'escursione in una zona a rischio valanghe.
+	<string name="threex3_heading">Metodo del 3x3</string>
+    <string name="threex3_desc">Il metodo del 3x3 è un metodo proposto da Werner Munter per aiutare a valutare gli aspetti che contribuiscono al potenziale rischio di valanghe. Esso prevede tre fasi di controllo, ognuna basata su tre diversi fattori, da utilizzare sia durante la pianificazione a tavolino dell\'escursione che durante l\'escursione vera e propria. Questa applicazione fornisce una checklist di promemoria dei fattori importanti da ricordarsi nel prendere decisioni prima e durante l\'escursione in una zona a rischio valanghe.
 		\n\nQuesta checklist è solo una semplice lista di promemoria. È importante comprendere appieno ogni punto di questa lista attraverso la lettura di manuali specifici e partecipazioni a corsi antivalanghe. Il semplice spuntare voci da questa lista non garantisce alcuna sicurezza e protezione dalle valanghe. È la conoscenza approfondita dei fattori che stanno dietro ad ogni suo singolo elemento che fa la differenza
-		\n\nÈ consigliabile memorizzare questa lista di controllo, in particolare gli aspetti zonali. Infatti, durante un'escursione, non sarà sempre pratico tirare fuori il telefono cellulare per controllare tale lista. In particolare, in condizioni estreme in cui potrebbe essere necessario prendere decisioni rapide dovute ad un cambio delle condizioni. Dovreste puntare ad avere una conoscenza di tutti questi fattori talmente approfondita e instintiva da non avere più bisogno di questa applicazione.
-		\n\nQuesto descrizione è solo una breve panoramica del metodo del 3x3 e non è da considerarsi un valido sostituto della lettura di libri dedicati al tema e della partecipazione a corsi specifici offerti da esperti di valanghe."
+		\n\nÈ consigliabile memorizzare questa lista di controllo, in particolare gli aspetti zonali. Infatti, durante un\'escursione, non sarà sempre pratico tirare fuori il telefono cellulare per controllare tale lista. In particolare, in condizioni estreme in cui potrebbe essere necessario prendere decisioni rapide dovute ad un cambio delle condizioni. Dovreste puntare ad avere una conoscenza di tutti questi fattori talmente approfondita e instintiva da non avere più bisogno di questa applicazione.
+		\n\nQuesto descrizione è solo una breve panoramica del metodo del 3x3 e non è da considerarsi un valido sostituto della lettura di libri dedicati al tema e della partecipazione a corsi specifici offerti da esperti di valanghe.
 	</string>
 
-	<string name="books_heading">"Fonti"</string>
-    <string name="threex3LawinenBook_title">"3x3 Lawinen (Tedesco)"</string>
-    <string name="PowderGuideBook_title">"Powder Guide (Inglese)"</string>
+	<string name="books_heading">Fonti</string>
+    <string name="threex3LawinenBook_title">3x3 Lawinen (Tedesco)</string>
+    <string name="PowderGuideBook_title">Powder Guide (Inglese)</string>
     
     <string name="thankyou">Grazie</string>
     <string name="dave">Dave O\'Riordan\n\tTest e consigliare</string>
