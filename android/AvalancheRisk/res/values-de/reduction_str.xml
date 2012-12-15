@@ -7,14 +7,14 @@
     <string name="riskDangerous">Das Lawinenrisiko ist zu hoch, ändere Deine Planung um das Risiko zu verringern.</string>
     <string name="riskExtreme">Im Ernst, die Kneippe oder das Sofa sind heute der einzig sichere Ort.</string>
     <string name="hazardLevel">Wie hoch ist die Gefahrenstufe im Lawinenlagebericht?</string>
-    <string name="veryHigh">Stufe 5: sehr groß</string>
-    <string name="high">Stufe 4: groß</string>
+    <string name="veryHigh">Stufe 5: sehr gross</string>
+    <string name="high">Stufe 4: gross</string>
     <string name="considerable">Stufe 3: erheblich</string>
-    <string name="moderate">Stufe 2: mäßig</string>
+    <string name="moderate">Stufe 2: mässig</string>
     <string name="low">Stufe 1: gering</string>
     <string name="higherHazard">Ist die Gefahrenstufe nahe der nächsthöheren Stufe (z.B. 3&#8211;4 statt 3) oder nach eigener Einschätzung höher?</string>
     <string name="firstClass">Erstklassige Reduktionsfaktoren</string>
-    <string name="howSteep">Wie steil ist die steilste Stelle (einschließlich Einzugsgebiet)?</string>
+    <string name="howSteep">Wie steil ist die steilste Stelle (einschliesslich Einzugsgebiet)?</string>
     <string name="veryVerySteep">40° und mehr</string>
     <string name="verySteep">35° - 39° (weniger als 40°)</string>
     <string name="steep">35°</string>
@@ -32,8 +32,8 @@
     <string name="tracked">Beschränkung auf häufig befahrene Hänge.\n(Nicht anwendbar bei Nasschschnee und sehr viel Neuschnee)</string>
     <string name="thirdClass">Drittklassige Reduktionsfaktoren</string>
     <string name="who">Wieviele sind in der Gruppe?</string>
-    <string name="largeGroup">Große Gruppe (mehr als 4 Personen)</string>
-    <string name="largeGroupSpaced">Große Gruppe (mehr als 4 Personen)\nmit Entlastungsabständen</string>
+    <string name="largeGroup">Grosse Gruppe (mehr als 4 Personen)</string>
+    <string name="largeGroupSpaced">Grosse Gruppe (mehr als 4 Personen)\nmit Entlastungsabständen</string>
     <string name="smallGroup">Kleine Gruppe (2&#8211;4 Personen)</string>
     <string name="smallGroupSpaced">Kleine Gruppe (2&#8211;4 Personen)\nmit Entlastungsabständen</string>
 

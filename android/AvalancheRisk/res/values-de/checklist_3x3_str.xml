@@ -24,7 +24,7 @@
     <string name="local_cond_f">Sicht, Wolken, Windgeschwindigkeit</string>
     <string name="local_cond_g">Temperaturwechsel</string>
     <string name="local_cond_h">Lawinenlagebericht überprüfen.</string>
-    <string name="local_terrain_a">Hang: Steilheit (auch was ist oberhalb und unterhalb), Größe</string>
+    <string name="local_terrain_a">Hang: Steilheit (auch was ist oberhalb und unterhalb), Grösse</string>
     <string name="local_terrain_b">Stimmen die Gegebenheiten vor Ort mit meiner Vorstellung überein?</string>
     <string name="local_human_a">Wer ist in der Gruppe? \nWie viele?</string>
     <string name="local_human_b">LVS-Check.\nWeitere Ausrüstung überprüfen (Schaufel, Sonde)</string>

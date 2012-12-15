@@ -2,7 +2,7 @@
 <resources>
 
     <string name="infoTab">Info</string>
-    <string name="hazard_heading">Gefahrenstufen gemäß Europäische Gefahrenskala</string>
+    <string name="hazard_heading">Gefahrenstufen gemäss Europäische Gefahrenskala</string>
     <string name="hazard_desc">
         Die im Lawinenlagebericht verwendeten Gefahrenstufen sind ein international anerkannter Standard (Europäische Gefahrenskala) 
         zur Beurteilung der Lawinengefahr in alpinem Gelände und ergibt sich u.a. aus der Schneebeschaffenheit, Schneedeckenaufbau, 
@@ -13,27 +13,27 @@
     </string>
     <string name="hazard_level_1_desc">
         Die Schneedecke ist allgemein gut verfestigt und stabil. 
-        \n\nEine Lawinenauslösung ist allgemein nur bei großer Zusatzbelastung (z.B. Skifahrergruppe ohne Abstände, Pistenfahrzeug, Fußgänger/Alpinist) 
+        \n\nEine Lawinenauslösung ist allgemein nur bei grosser Zusatzbelastung (z.B. Skifahrergruppe ohne Abstände, Pistenfahrzeug, Fussgänger/Alpinist) 
         an sehr wenigen, extremen Steilhängen möglich. Spontan sind nur kleine Lawinen (sogenannte Rutsche) möglich.
     </string>
     <string name="hazard_level_2_desc">
-        Die Schneedecke ist an einigen (im Lawinenlagebericht im allgemeinen näher beschriebenen) Steilhängen nur mäßig verfestigt, ansonsten allgemein gut verfestigt.
-        \n\nEine Lawinenauslösung ist insbesondere bei großer Zusatzbelastung (z.B. Skifahrergruppe ohne Abstände, Pistenfahrzeug, Fußgänger/Alpinist) vor allem an den angegebenen Steilhängen möglich. 
-        Größere spontane Lawinen sind nicht zu erwarten.
+        Die Schneedecke ist an einigen (im Lawinenlagebericht im allgemeinen näher beschriebenen) Steilhängen nur mässig verfestigt, ansonsten allgemein gut verfestigt.
+        \n\nEine Lawinenauslösung ist insbesondere bei grosser Zusatzbelastung (z.B. Skifahrergruppe ohne Abstände, Pistenfahrzeug, Fussgänger/Alpinist) vor allem an den angegebenen Steilhängen möglich. 
+        Grössere spontane Lawinen sind nicht zu erwarten.
     </string>
     <string name="hazard_level_3_desc">
-        Die Schneedecke ist an vielen (im Lawinenlagebericht im allgemeinen näher beschriebenen) Steilhängen nur mäßig bis schwach verfestigt.
+        Die Schneedecke ist an vielen (im Lawinenlagebericht im allgemeinen näher beschriebenen) Steilhängen nur mässig bis schwach verfestigt.
         \n\nEine Lawinenauslösung ist bereits bei geringer Zusatzbelastung (z.B. einzelner Skifahrer, Schneeschuhgeher) vor allem an den angegebenen Steilhängen möglich. 
-        Fallweise sind spontan einige mittlere, vereinzelt aber auch große Lawinen möglich.
+        Fallweise sind spontan einige mittlere, vereinzelt aber auch grosse Lawinen möglich.
     </string>
     <string name="hazard_level_4_desc">
         Die Schneedecke ist an den meisten Steilhängen (im Lawinenlagebericht im allgemeinen näher beschriebenen) schwach verfestigt.
         \n\nEine Lawinenauslösung ist bereits bei geringer Zusatzbelastung (z.B. einzelner Skifahrer, Schneeschuhgeher) an zahlreichen Steilhängen wahrscheinlich. 
-        Fallweise sind spontan viele mittlere, mehrfach auch große Lawinen zu erwarten.
+        Fallweise sind spontan viele mittlere, mehrfach auch grosse Lawinen zu erwarten.
     </string>
     <string name="hazard_level_5_desc">
         Die Schneedecke ist allgemein schwach verfestigt und weitgehend instabil.
-        \n\nSpontan sind zahlreiche große Lawinen, auch in mäßig steilem Gelände, zu erwarten.
+        \n\nSpontan sind zahlreiche grosse Lawinen, auch in mässig steilem Gelände, zu erwarten.
     </string>
     <string name="reduction_heading">Reduktionsmethode</string>
     <string name="reduction_desc">
@@ -45,7 +45,7 @@
         /n/nDie Reduktionsmethode ordnet der jeweiligen Gefahrenstufe aus dem Lawinenlagenbericht einen Zahlenwert, auch 
         Gefahrenpotential genannt, zu. Faktoren, die die Gefahr einer Lawine mindern können, auch Reduktionsfaktoren genannt, werden 
         ebenfalls mit entsprechenden Zahlenwerten belegt. Die Multiplikation der verschiedenen anwendbaren Reduktionsfaktoren muss 
-        dann einen Wert größer oder gleich dem Gefahrenpotential gemäß dem Lawinenlagebericht ergeben, um zu einem akzeptablen Restrisiko 
+        dann einen Wert grösser oder gleich dem Gefahrenpotential gemäss dem Lawinenlagebericht ergeben, um zu einem akzeptablen Restrisiko 
         zu gelangen.
         /n/nBei der Reduktionsmethode handelt es sich um eine Planungshilfe, um zu prüfen, ob die geplante Route geeignet ist 
         für die gegebene Lawinensituation. Es handelt sich dabei lediglich um eine Abschätzung und sollte daher zusammen mit der 
