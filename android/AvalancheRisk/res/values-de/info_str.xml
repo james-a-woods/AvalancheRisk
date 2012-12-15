@@ -5,8 +5,8 @@
     <string name="hazard_heading">Gefahrenstufen gemäss Europäische Gefahrenskala</string>
     <string name="hazard_desc">
         Die im Lawinenlagebericht verwendeten Gefahrenstufen sind ein international anerkannter Standard (Europäische Gefahrenskala) 
-        zur Beurteilung der Lawinengefahr in alpinem Gelände und ergibt sich u.a. aus der Schneebeschaffenheit, Schneedeckenaufbau, 
-        vergangenen und gegenwärtigen Wetterverhältnisse und der Auslösewahrscheinlichkeit einer Lawine. 
+        zur Beurteilung der Lawinengefahr in alpinem Gelände und ergeben sich u.a. aus der Schneebeschaffenheit, dem Schneedeckenaufbau, 
+        vergangenen und gegenwärtigen Wetterverhältnissen und der Auslösewahrscheinlichkeit einer Lawine. 
         Die Gefahrenskala ist aufgeteilt in fünf Gefahrenstufen.
         \n\nDiese Gefahrenstufen bieten lediglich einen allgemeinen Anhaltspunkt für die Wahrscheinlichkeit einer Lawine und 
         sollten stets in Verbindung mit dem eigenen Erfahrungsschatz und Hintergrundwissen sowie den detaillierten Informationen aus dem Lawinenlagebricht verwendet werden.
@@ -42,18 +42,18 @@
         der Auslösung einer Lawine auf ein akzeptables Minimum reduziert werden kann. Die Reduktionsmethode kombiniert die
         Gefahrenstufe aus dem Lawinenlagebericht mit sogenannten Reduktionsfaktoren und ermittelt daraus einen Wert zur Abschätzung
         der Wahrscheinlichkeit für eine Lawine.
-        /n/nDie Reduktionsmethode ordnet der jeweiligen Gefahrenstufe aus dem Lawinenlagenbericht einen Zahlenwert, auch 
+        \n\nDie Reduktionsmethode ordnet der jeweiligen Gefahrenstufe aus dem Lawinenlagenbericht einen Zahlenwert, auch 
         Gefahrenpotential genannt, zu. Faktoren, die die Gefahr einer Lawine mindern können, auch Reduktionsfaktoren genannt, werden 
         ebenfalls mit entsprechenden Zahlenwerten belegt. Die Multiplikation der verschiedenen anwendbaren Reduktionsfaktoren muss 
         dann einen Wert grösser oder gleich dem Gefahrenpotential gemäss dem Lawinenlagebericht ergeben, um zu einem akzeptablen Restrisiko 
         zu gelangen.
-        /n/nBei der Reduktionsmethode handelt es sich um eine Planungshilfe, um zu prüfen, ob die geplante Route geeignet ist 
+        \n\nBei der Reduktionsmethode handelt es sich um eine Planungshilfe, um zu prüfen, ob die geplante Route geeignet ist 
         für die gegebene Lawinensituation. Es handelt sich dabei lediglich um eine Abschätzung und sollte daher zusammen mit der 
         3x3-Filtermethode sowie dem jeweiligen eigenen Erfahrungsschatz und Wissen angewendet werden.
-        /n/nDie Reduktionsmethode ist für nördliche Breitengrade zwischen dem 35° and 55° Breitengrad ausgelegt (was die gängigen Skiregionen abdeckt).
+        \n\nDie Reduktionsmethode ist für nördliche Breitengrade zwischen dem 35° and 55° Breitengrad ausgelegt (was die gängigen Skiregionen abdeckt).
         Besondere Vorsicht gilt in sehr weit nördlich gelegenen Regionen (Skandinavien, Alaska), da durch die verminderte Einstrahlung der 
         Schneedeckenaufbau im Allgemeinen instabiler ist. Ebenso muss die Reduktionsmethode für die südliche Hemisphere angepasst werden.
-        /n/nDiese Beschreibung stellt nur einen kurzen Überblick dar. Für weiterführende Information wird auf die entsprechende Fachliteratur 
+        \n\nDiese Beschreibung stellt nur einen kurzen Überblick dar. Für weiterführende Information wird auf die entsprechende Fachliteratur 
         sowie entsprechendes praktisches Training, z.B im Rahmen eines professionellen Lehrgangs, verwiesen.
 	</string>
 	<string name="threex3_heading">3x3 Filtermethode</string>
@@ -61,10 +61,10 @@
         Lawinenrisikos unter der Berücksichtigung verschiedener Aspekte und Einflüsse auf die geplante Tour bzw. Route. Sie kombiniert drei Phasen der 
         Touren- bzw. Routenplanung (zu Hause, vor Ort, im Einzelhang) mit den drei Faktoren Wetter/Schnee, Gelände und Mensch. Die 3x3 Filtermethode
         soll den Entscheidungsfindungsprozess unterstützen. Diese Anwendung enthält eine Checkliste, um diese Faktoren und Entscheidungskriterien abzuprüfen.
-        /n/nEs handelt sich lediglich um eine Checkliste und setzt zwingend das zugrundeliegende Hintergrundwissen voraus. Auch sollte man es mehr als ein 
+        \n\nEs handelt sich lediglich um eine Checkliste und setzt zwingend das zugrundeliegende Hintergrundwissen voraus. Auch sollte man es mehr als ein 
         Trainingsinstrument zur Verinnerlichung der verschiedenen Faktoren begreifen und weniger als ein Tool, das man tatsächlich aktiv im Gelände einsetzt. 
-        Ziel sollte sein, dass man die gesamtem Zusammenhänge verinnerlicht und sie unmittelbar anwenden kann.
-        /n/nDiese Beschreibung stellt nur einen kurzen Überblick dar. Für weiterführende Information wird auf die entsprechende Fachliteratur 
+        Ziel sollte sein, dass man die gesamten Zusammenhänge verinnerlicht und sie unmittelbar anwenden kann.
+        \n\nDiese Beschreibung stellt nur einen kurzen Überblick dar. Für weiterführende Information wird auf die entsprechende Fachliteratur 
         sowie entsprechendes praktisches Training, z.B im Rahmen eines professionellen Lehrgangs, verwiesen.
 	</string>
 
@@ -73,8 +73,8 @@
     <string name="PowderGuideBook_title">Powder Guide (English)</string>
     
     <string name="thankyou">Danke</string>
-    <string name="dave">Dave O\'Riordan\n\tTesting und beraten</string>
+    <string name="dave">Dave O\'Riordan\n\tTesting und Beratung</string>
     <string name="giac">Giacomo Ghezzi\n\tItalienische Übersetzung</string>
-    <string name="peter">Peter Schnappauf\n\tDeutsch Übersetzung und beraten</string>
+    <string name="peter">Peter Schnappauf\n\tDeutsch Übersetzung und Beratung</string>
     
 </resources>
