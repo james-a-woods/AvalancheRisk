@@ -42,7 +42,7 @@
     </string>
     <string name="reduction_heading">Reduction Method</string>
     <string name="reduction_desc">
-        It is never possible to be 100%% sure that it is safe to ride a certain slope without triggering an avalanche.
+        It is never possible to be 100% sure that it is safe to ride a certain slope without triggering an avalanche.
         The reduction method is a formula that was developed by Werner Munter to help reduce the risk of triggering an avalanche
         to an acceptable level. It combines the danger level in the avalanche bulletin with a number of safety measures, 
         or reduction factors, to produce an estimate of the risk of an avalanche.
