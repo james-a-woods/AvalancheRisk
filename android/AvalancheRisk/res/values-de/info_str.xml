@@ -37,17 +37,17 @@
     </string>
     <string name="reduction_heading">Reduktionsmethode</string>
     <string name="reduction_desc">
-        Man kann niemals zu 100% sicher sein, dass man bei der Befahrung eines Hangs nicht in eine Lawine gerät.
-        Die von Werner Munter entwickelte Reduktionsmethode ist ein Rechenverfahren, mit dessen Hilfe die Wahrscheinlichkeit 
-        der Auslösung einer Lawine auf ein akzeptables Minimum reduziert werden kann. Die Reduktionsmethode kombiniert die
-        Gefahrenstufe aus dem Lawinenlagebericht mit sogenannten Reduktionsfaktoren und ermittelt daraus einen Wert zur Abschätzung
+        Man kann niemals zu 100% ausschliessen, bei der Befahrung oder Begehung eines Hangs in eine Lawine zu geraten.
+        Die von Werner Munter entwickelte Reduktionsmethode ist ein Verfahren, das Risiko einer Lawinenauslösung auf ein
+        akzeptables Minimum zu reduzieren. Die Reduktionsmethode kombiniert die
+        Gefahrenstufe aus dem Lawinenlagebericht (LLB) mit sogenannten Reduktionsfaktoren und ermittelt daraus einen Wert zur Abschätzung
         der Wahrscheinlichkeit für eine Lawine.
         \n\nDie Reduktionsmethode ordnet der jeweiligen Gefahrenstufe aus dem Lawinenlagenbericht einen Zahlenwert, auch 
         Gefahrenpotential genannt, zu. Faktoren, die die Gefahr einer Lawine mindern können, auch Reduktionsfaktoren genannt, werden 
         ebenfalls mit entsprechenden Zahlenwerten belegt. Die Multiplikation der verschiedenen anwendbaren Reduktionsfaktoren muss 
         dann einen Wert grösser oder gleich dem Gefahrenpotential gemäss dem Lawinenlagebericht ergeben, um zu einem akzeptablen Restrisiko 
         zu gelangen.
-        \n\nBei der Reduktionsmethode handelt es sich um eine Planungshilfe, um zu prüfen, ob die geplante Route geeignet ist 
+        \n\nBei der Reduktionsmethode handelt es sich um eine Planungs- und Kontrollinstrument, um zu prüfen, ob die geplante Route geeignet ist 
         für die gegebene Lawinensituation. Es handelt sich dabei lediglich um eine Abschätzung und sollte daher zusammen mit der 
         3x3-Filtermethode sowie dem jeweiligen eigenen Erfahrungsschatz und Wissen angewendet werden.
         \n\nDie Reduktionsmethode ist für nördliche Breitengrade zwischen dem 35° and 55° Breitengrad ausgelegt (was die gängigen Skiregionen abdeckt).
@@ -60,9 +60,9 @@
     <string name="threex3_desc">Die 3x3 Filtermethode ist ein von Werner Munter entwickeltes Verfahren zur Unterstützung bei der Beurteilung des 
         Lawinenrisikos unter der Berücksichtigung verschiedener Aspekte und Einflüsse auf die geplante Tour bzw. Route. Sie kombiniert drei Phasen der 
         Touren- bzw. Routenplanung (zu Hause, vor Ort, im Einzelhang) mit den drei Faktoren Wetter/Schnee, Gelände und Mensch. Die 3x3 Filtermethode
-        soll den Entscheidungsfindungsprozess unterstützen. Diese Anwendung enthält eine Checkliste, um diese Faktoren und Entscheidungskriterien abzuprüfen.
-        \n\nEs handelt sich lediglich um eine Checkliste und setzt zwingend das zugrundeliegende Hintergrundwissen voraus. Auch sollte man es mehr als ein 
-        Trainingsinstrument zur Verinnerlichung der verschiedenen Faktoren begreifen und weniger als ein Tool, das man tatsächlich aktiv im Gelände einsetzt. 
+        soll den Entscheidungsprozess unterstützen. Diese Anwendung enthält eine Checkliste, um diese Faktoren und Entscheidungskriterien abzuprüfen.
+        \n\nEs handelt sich lediglich um eine Checkliste und setzt zwingend das zugrundeliegende Hintergrundwissen voraus. Auch sollte es mehr als ein 
+        Trainingsinstrument zur Verinnerlichung der verschiedenen Faktoren verstanden werden und weniger als ein Tool, das man tatsächlich aktiv im Gelände einsetzt. 
         Ziel sollte sein, dass man die gesamten Zusammenhänge verinnerlicht und sie unmittelbar anwenden kann.
         \n\nDiese Beschreibung stellt nur einen kurzen Überblick dar. Für weiterführende Information wird auf die entsprechende Fachliteratur 
         sowie entsprechendes praktisches Training, z.B im Rahmen eines professionellen Lehrgangs, verwiesen.

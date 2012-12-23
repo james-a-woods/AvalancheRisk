@@ -2,11 +2,11 @@
 <resources>
 
     <string name="reductionTab">Reduktion</string>
-    <string name="dangerLevel">Gefahrenstufe: %</string>
-    <string name="riskSafe">Es kann losgehen!\nAber überprüfe stets die lokalen Gegebenheiten und den Hang. Änderungen an den Plänen verändert das Risiko!</string>
-    <string name="riskDangerous">Das Lawinenrisiko ist zu hoch, ändere Deine Planung um das Risiko zu verringern.</string>
+    <string name="dangerLevel">Gefahrenpotential: %</string>
+    <string name="riskSafe">Es kann losgehen!\nAber überprüfe stets die lokalen Gegebenheiten und den Hang. Änderungen an Deinen Plänen verändert das Risiko!</string>
+    <string name="riskDangerous">Das Lawinenrisiko ist zu hoch! Ändere Deine Planung um das Risiko zu verringern.</string>
     <string name="riskExtreme">Im Ernst, die Kneippe oder das Sofa sind heute der einzig sichere Ort.</string>
-    <string name="hazardLevel">Wie hoch ist die Gefahrenstufe im Lawinenlagebericht?</string>
+    <string name="hazardLevel">Wie hoch ist die Gefahrenstufe im Lawinenlagebericht (LLB)?</string>
     <string name="veryHigh">Stufe 5: sehr gross</string>
     <string name="high">Stufe 4: gross</string>
     <string name="considerable">Stufe 3: erheblich</string>
@@ -21,17 +21,17 @@
     <string name="moderatelySteep">30°-34° (weniger als 35°)</string>
     <string name="notSteep">29° und flacher</string>
     <string name="secondClass">Zweitklassige Reduktionsfaktoren</string>
-    <string name="secondClassHemisphere">Gilt nur für die nördliche Hemisphere, in südlicher Hemisphere sind entsprechende Anpassungen notwendig.</string>
-    <string name="allAspectsDanger">Sind im Lawinenlagebricht alle Hangausrichtungen als gefährlich ?</string>
-    <string name="inverse">Sind im Lawinenlagebricht südliche Ausrichtungen gefährlicher eingestuft als nördliche?</string>
+    <string name="secondClassHemisphere">Nur anwendbar für die nördliche Hemisphäre (für südliche Hemisphäre sind Anpassungen notwendig)</string>
+    <string name="allAspectsDanger">Sind im LLB alle Hangorientierungen als gefährlich eingestuft?</string>
+    <string name="inverse">Sind im LLB südliche Hangorientierungen gefährlicher eingestuft als nördliche?</string>
     <string name="where">Wo wirst Du Dich bewegen?</string>
     <string name="allAspects">Alle Ausrichtungen</string>
     <string name="avoidNorthSector">Verzicht auf Nord-Sektor (NW-N-NO)</string>
     <string name="avoidNorthHalf">Verzicht auf Nordhälfte (WNW-N-OSO)</string>
-    <string name="avoidCritical">Verzicht auf die im Lawinenlagebericht genannten kritischen Hang- und Höhenlagen</string>
-    <string name="tracked">Beschränkung auf häufig befahrene Hänge.\n(Nicht anwendbar bei Nasschschnee und sehr viel Neuschnee)</string>
+    <string name="avoidCritical">Verzicht auf die im LLB genannten kritischen Hang- und Höhenlagen</string>
+    <string name="tracked">Beschränkung auf häufig befahrene Hänge\n(nicht anwendbar bei Nassschnee und sehr viel Neuschnee)</string>
     <string name="thirdClass">Drittklassige Reduktionsfaktoren</string>
-    <string name="who">Wieviele sind in der Gruppe?</string>
+    <string name="who">Wie gross ist die Gruppe?</string>
     <string name="largeGroup">Grosse Gruppe (mehr als 4 Personen)</string>
     <string name="largeGroupSpaced">Grosse Gruppe (mehr als 4 Personen)\nmit Entlastungsabständen</string>
     <string name="smallGroup">Kleine Gruppe (2&#8211;4 Personen)</string>
