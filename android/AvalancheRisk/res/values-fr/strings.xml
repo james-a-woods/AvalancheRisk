@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">AviRisk</string> 
+  <string name="appLongName">Avalanche Risk</string> 
+  <string name="author">par Woodsie</string> 
+  <string name="asIs">Cette application est fournie tel quel.\nVotre sécurité reste sous votre propre responsabilité.</string> 
+  <string name="disclaimer">C\'est un outil d\'aide au calcul du risque d\'avalanche à l\'aide des méthodes développées par Werner Munter. En aucun cas il ne remplace la formation et l\'expérience dans l\'évaluation du danger d\'avalanche. Cette application doit être utilisée conjointement avec une évaluation des conditions locales et des choix d\'itinéraire. En cas de doute, il faut obtenir l\'avis d\'un guide de haute montagne qualifié.</string> 
+  <string name="noSnowMobiles">Ne pas utiliser avec les motoneiges</string> 
+  <string name="whyNoSnowMobiles">Les motoneiges placent une charge supplémentaire sur le manteau neigeux et peuvent ainsi déclencher une avalanche dans des conditions où un skieur ou un snowboarder seraient en sécurité.</string> 
+  <string name="continueButton">Continue</string> 
+  <string name="resetButton">Reset</string> 
+</resources>

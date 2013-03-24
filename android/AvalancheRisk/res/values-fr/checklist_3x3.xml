@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<resources>
+  <string name="checklist3x3Tab">Check-list</string> 
+  <string name="conditions">Conditions nivo-météorologiques</string> 
+  <string name="terrain">Terrain</string> 
+  <string name="human">Facteur humain</string> 
+  <string name="regional">Regional \nPréparation avant départ, incluant alternatives</string> 
+  <string name="regional_cond_a">Bulletin Avalanche \nNational, local et automatique</string> 
+  <string name="regional_cond_b">Prévision météo</string> 
+  <string name="regional_cond_c">Avis et information d\'expert</string> 
+  <string name="regional_terrain_a">Une carte à grande échelle, ~ 1:25 000</string> 
+  <string name="regional_terrain_b">Livre guide, photos (de sol, aériennes)</string> 
+  <string name="regional_terrain_c">Connaissance personnelle et locale du secteur</string> 
+  <string name="regional_human_a">Qui a prévu de venir ?\nNiveau d\'expérience, de technique, forme physique, force mentale</string> 
+  <string name="regional_human_b">Contrôle du matériel.\nDVA, pelle, sonde (harnais ?)</string> 
+  <string name="regional_human_c">Y-a-t-il un leader identifié ?</string> 
+  <string name="local">Local\nA portée de vue. Choix d\'itinéraire et de variantes</string> 
+  <string name="local_cond_a">Effet du vent.\nCongères, dunes ou sastrugi dus au vent</string> 
+  <string name="local_cond_b">Signes de danger.\nCondition de neige. Activité avalancheuse récente</string> 
+  <string name="local_cond_c">Quantité de nouvelle neige</string> 
+  <string name="local_cond_d">Conditions inversées ?\nPentes Nord plus sûres que les Sud ? Plus fortes que les plus faibles ?</string> 
+  <string name="local_cond_e">Le Föehn ou la pluie peut vite réduire la stabilité du manteau neigeux</string> 
+  <string name="local_cond_f">Visibilité, nuages, vitesse du vent</string> 
+  <string name="local_cond_g">Changement de températures</string> 
+  <string name="local_cond_h">Le bulletin est-il correct ? \nFaire changements en cas de doute</string> 
+  <string name="local_terrain_a">Raideur de la pente (incluant amont et aval), aspect(s), ampleur</string> 
+  <string name="local_terrain_b">L\'itinéraire est-il quitté par des randonneurs précédents à cause des conditions ?</string> 
+  <string name="local_human_a">Qui est dans le groupe ? \nCombien ?</string> 
+  <string name="local_human_b">Contrôle de DVA (=ARVA).\nContrôle des autres matériels: pelles, sondes (harnaix ?)</string> 
+  <string name="local_human_c">Y-a-t-il d\'autres groupes sur le même itinéraire ? Les différents groupes devraient-ils être coordonnés ?</string> 
+  <string name="local_human_d">A l\'heure ou est-ce trop tard ?</string> 
+  <string name="zonal">Zonal\nContrôlez la pente qui est devant vous</string> 
+  <string name="zonal_cond_a">Combien de nouvelle neige est tombée Hsur la pente ?</string> 
+  <string name="zonal_cond_b">Accumulations récentes de neige transportée par le vent ?</string> 
+  <string name="zonal_cond_c">Visibilité.\nMauvais temps arrivant ?</string> 
+  <string name="zonal_cond_d">Influence de la radiation solaire ?</string> 
+  <string name="zonal_cond_e">Où une plaque pourrait-elle se déclencher ? De quelle ampleur ?</string> 
+  <string name="zonal_cond_f">Regard sur tout alentour.\nQuel est votre impression globale ?</string> 
+  <string name="zonal_terrain_a">Qu\'y-a-t-il à l\'amont et à l\'aval de moi ?\nAutres personnes ?</string> 
+  <string name="zonal_terrain_b">Quelle est la pente de la section la plus pentue ?\nDans les couloirs: souvent les cotés, pas le milieu.</string> 
+  <string name="zonal_terrain_c">Aspect ?\nDans les couloirs il peut y avoir de multiple aspects.</string> 
+  <string name="zonal_terrain_d">Terrain typique d\'avalanche. Pente raide, rocheuse. Forte pente sous le vent. Clairière ombragée pentue</string> 
+  <string name="zonal_terrain_e">Forme de la pente.\nconcave, convexe, sinueuse</string> 
+  <string name="zonal_terrain_f">Altitude</string> 
+  <string name="zonal_human_a">Capacité, discipline, fatigue des membres du groupe</string> 
+  <string name="zonal_human_b">La pente est-elle fréquemment parcourue ?</string> 
+  <string name="zonal_human_c">Distance de sécurité.\nUn par un. Suivre la même trace</string> 
+  <string name="zonal_human_d">Identifier les "Ilots de sécurité" comme points de rencontre</string> 
+  <string name="zonal_human_e">Évitez les zones dangereuses et les itinéraires risqués</string> 
+  <string name="lastCheck">Ultime contrôle\nY aller ou renoncer. Tous dans le groupe sont-ils bien d\'accord avec la décision d\'y aller ?</string> 
+</resources>
