@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:installLocation="auto"
     package="woodsie.avalanche"
-    android:versionCode="20121223"
-    android:versionName="1.04" >
+    android:versionCode="20130407"
+    android:versionName="1.05" >
 
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="14"/>
     
