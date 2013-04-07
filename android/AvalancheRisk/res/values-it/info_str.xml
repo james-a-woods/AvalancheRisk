@@ -39,7 +39,8 @@
     
     <string name="thankyou">Grazie</string>
     <string name="dave">Dave O\'Riordan\n\tTest e consigliare</string>
-    <string name="giac">Giacomo Ghezzi\n\tTraduzione italiana</string>
-    <string name="peter">Peter Schnappauf\n\tTraduzione tedesca e consigliare</string>
+    <string name="giac">Giacomo Ghezzi\n\tTraduzione Italiana</string>
+    <string name="peter">Peter Schnappauf\n\tTraduzione Tedesca e consigliare</string>
+    <string name="francois">François Rapin\n\tTraduzione Francese</string>  
     
 </resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="infoTab">Info</string> 
+	<string name="hazard_heading">Indice de risque</string> 
+	<string name="hazard_desc">L\'indice de risque utilisé dans le bulletin d\'avalanche est un standart international reconnu 
+	    pour identifier le niveau général du risque d\'avalanches en montagne enneigée. C\'est une combinaison de la stabilité 
+	    du manteau neigeux avec la probabilité de déclenchement. Il se présente selon une échelle de cinq niveaux. 
+	    \n\nCes niveaux d\'aléa donnent seulement une tendance générale de la possibilité du déclenchement d\'avalanche et 
+	    doivent être toujours utilisés en relation avec votre expérience et les informations recueillies dans le bulletion 
+	    d\'avalanche.
+	</string> 
+	<string name="hazard_level_1_desc">Le manteau neigeux est bien stabilisé dans la plupart des pentes. Les déclenchements 
+	    d\'avalanches ne sont en général possibles que par forte surcharge sur de très rares pentes raides. Seules des petites 
+	    avalanches peuvent se produire spontanément. Même sur les très fortes pentes, de très fortes contraintes supplémentaires 
+	    sont nécessaires pour le déclenchement. 
+	    \n\nLe ski hors-pistes et de randonnée sont globalement sûres, avec des zones dangereuses rares et facilement identifiées.
+	</string> 
+	<string name="hazard_level_2_desc">Dans quelques pentes raides, le manteau neigeux n\'est que modérement stabilisé. Ailleurs 
+	    il est bien stabilisé. Des départs spontanés d\'avalanches de grande ampleur ne sont pas à craindre. Les conditions sont 
+	    globalement favorables pour le choix d\'itinéraires sûrs. Néanmoins, la possibilité de déclencher une avalanche existe, 
+	    en particulier sous des charges plus élevées telles qu\'un groupe skiant rapproché (montée ou descente). Les pentes 
+	    abruptes avec des conditions de neige défavorables peuvent être déclenchées par un skieur seul. 
+	    \n\nLes itinéraires très fréquentés et le hors-piste controlé de proximité sont généralement sans danger.
+	</string> 
+	<string name="hazard_level_3_desc">Dans de nombreuses pentes raides, le manteau neigeux n\'est que modérement ou faiblement 
+	    stabilisé, spécialement celles décrites dans le bulletin d\'avalanche. Des déclenchements naturels d\'avalanche de taille 
+	    moyenne sont possibles et, dans de rares occasions, de plus grande taille. Le ski hors-pistes et de randonnée nécessitent 
+	    bonne expérience et précautions. 
+	    \n\nMême un skieur seul peut déclencher une avalanche dans ces conditions, spécialement sur fortes pentes.
+	</string> 
+	<string name="hazard_level_4_desc">Le manteau neigeux est faiblement stabilisé dans la plupart des pentes raides. Le 
+	    déclenchement spontané ou provoqué d\'avalanches est probable, et peut être grand. 
+	    \n\nLe passage dans des zones avalancheuses est déconseillé.
+	</string> 
+	<string name="hazard_level_5_desc">L\'instabilité du manteau neigeux est généralisée. Le déclenchement spontané ou provoqué 
+	    d\'avalanches est certain, et probablement très grand. 
+	    \n\nLe passage même dans des zones à faible pente est risqué s\'il se situe dans une zone d\'arrivée d\'avalanche.
+	</string> 
+	<string name="reduction_heading">Méthode de réduction</string> 
+	<string name="reduction_desc">Il n\'est jamais possible d\'être certain à 100% de pouvoir parcourir une forte pente enneigée 
+	    sans y déclencher une avalanche. La formule de la méthode de réduction a été développée par Werner Munter pour aider à 
+	    réduire de déclenchement provoqué d\'avalanche à un niveau acceptable. Elle combine l\'indice de risque du bulletin 
+	    d\'avalanche avec plusieurs mesures de sécurité, ou de facteurs de réduction, pour fournir une estimation du risque 
+	    d\'avalanche. 
+	    \n\nCette formule assigne un nombre à l\'indice de risque du bulletin météo d\'avalanche, appelé le danger potentiel. Elle 
+	    fournit des valeurs aux facteurs variés de réduction que vous pouvez utiliser pour réduire le risque. Pour atteindre un 
+	    niveau acceptable de risque, la multiplication simultanée de tous les facteurs de réduction peut aboutir à un nombre plus 
+	    grand que celui du danger potentiel initial. 
+	    \n\nElle est conçue comme un outil d\'aide à votre décision de choix d\'itinéraire pour apprécier la sécurité avalanche de 
+	    celui-ci vis à vis des conditions nivo-météorologiques connues du jour. Elle fournit seulement une estimation des conditions 
+	    globales du trajet et devrait être utilisée conjointement avec la méthode du filtre 3x3, l\'expérience et la connaissance du 
+	    risque d\'avalanche. 
+	    \n\nLa méthode de réduction est conçue pour être utilisée aux latitudes Nord, entre 35° and 55°, ce qui couvre les domaines 
+	    skiables les plus populaires. D\'autres précautions doivent être prises plus au Nord (ex: Alaska et Scandinavie) car la plus 
+	    faible radiation solaire rend le manteau nneigeux moins stable. Elle doit aussi être adaptée pour l\'hémisphère Sud. 
+	    \n\nCette description est seulement un rapide survol de la méthode de réduction et ne se substitue pas à une lecture de la 
+	    littérature experte et des formations enseignées par les professionels en avalanche.
+	</string> 
+	<string name="threex3_heading">3x3 Filter Method</string> 
+	<string name="threex3_desc">La méthode du filtre 3x3 a été développée par Werner Munter pour aider l\'estimation du risque 
+	    d\'avalanche en identifiant les différents paramètres. Elle fournit trois étapes de bilan, avec trois types de facteurs, pour 
+	    aider au processus de décision avant et pendant le parcours en montagne enneigée. Cette application fournit une liste de 
+	    contrôle vous rappelant les facteurs importants pour l\'aide à votre décsion avant et pendant votre parcours en zone 
+	    d\'avalanche. 
+	    \n\nCette liste est simplement récapitulative. Il est important de comprendre complètement chacun de ses points grâce à 
+	    une formation appropriée. Ce n\'est pas le cochage des points de la liste qui assure la sécurité, c\'est la compréhension 
+	    approfondie de chacun des facteurs récapitulés. 
+	    \n\nTravailler sur la mémorisation de cette liste au cours de l\'hiver, spécialement des aspects locaux, est une bonne idée. 
+	    Il ne sera pas toujours pratique de sortir votre téléphone et de voir cette liste de vérification pour votre prise de 
+	    décisions. C\'est particulièrement le cas dans des conditions extrêmes où vous pouvez avoir besoin de prendre des décisions 
+	    rapides pour vous adapter aux conditions changeantes, ou lorsque vous et vos amis sont heureux de rejoindre des traces 
+	    fraîches. Votre ambition devrait être de connaître et de comprendre ces facteurs assez profondément et instinctivement pour 
+	    que cette application téléphone devienne inutile. 
+	    \n\nCette description est seulement un bref aperçu de la méthode 3x3 de filtre et n\'est pas un substitut à la lecture de 
+	    la littérature spécialisée et à la participation à la formation dispensée par des professionnels d\'avalanche.
+	</string> 
+	<string name="books_heading">Book References</string> 
+	<string name="threex3LawinenBook_title">3x3 Lawinen (Allemand)</string> 
+	<string name="PowderGuideBook_title">Powder Guide (Anglais)</string> 
+	
+	<string name="thankyou">Merci</string> 
+	<string name="dave">Dave O\'Riordan\n\tTest et conseiller</string> 
+	<string name="giac">Giacomo Ghezzi\n\tTraduction Italienne</string> 
+	<string name="peter">Peter Schnappauf\n\tTraduction en Allemand et conseiller</string>
+	<string name="francois">François Rapin\n\tTraduction Française</string>  
+	  
+</resources>

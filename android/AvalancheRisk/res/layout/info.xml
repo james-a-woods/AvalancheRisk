@@ -231,8 +231,7 @@
             </LinearLayout>
 
             <!-- Links -->
-<!-- 
- -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -390,8 +389,12 @@
             
             <TextView
                 style="@style/textMedium"
-                android:layout_marginBottom="15dp"
                 android:text="@string/peter" />
+            
+            <TextView
+                style="@style/textMedium"
+                android:layout_marginBottom="15dp"
+                android:text="@string/francois" />
             
             </LinearLayout>
     </ScrollView>
