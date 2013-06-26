@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string name="links_heading">Links</string> 
+  <string name="nationalAviInfoLinks">Centres nationaux d\'information du risque d\'avalanche</string> 
+  <string name="equipmentLinks">Avalanche Equipment</string> 
+  <string name="interestingLinks">Liens intéressants</string> 
+  <string name="aviGlossary1Link">Glossaire neige et avalanches\nhttp://www.avalanches.org/basics/glossar-fr</string> 
+</resources>

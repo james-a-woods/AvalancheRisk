@@ -348,11 +348,11 @@
 
                  <TextView
                     style="@style/textMedium.link"
-                    android:text="@string/SAALink" />
+                    android:text="@string/aviGlossary1Link" />
 
                  <TextView
                     style="@style/textMedium.link"
-                    android:text="@string/aviGlossaryLink" />
+                    android:text="@string/aviGlossary2Link" />
 
                  <TextView
                     style="@style/textMedium.link"
@@ -362,8 +362,41 @@
                     style="@style/textMedium.link"
                     android:text="@string/aviResearchLink" />
 
+                 <TextView
+                    style="@style/textMedium.link"
+                    android:text="@string/SAALink" />
+
                  </LinearLayout>
-        </LinearLayout>
+                 
+            <TextView
+                style="@style/textMedium.heading"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:background="@drawable/blue_hgradient"
+                android:text="@string/thankyou"
+                android:textColor="@color/white" />
+            
+            <TextView
+                style="@style/textMedium"
+                android:text="@string/dave" />
+            
+            <TextView
+                style="@style/textMedium"
+                android:text="@string/giac" />
+            
+            <TextView
+                style="@style/textMedium"
+                android:text="@string/peter" />
+            
+            <TextView
+                style="@style/textMedium"
+                android:layout_marginBottom="15dp"
+                android:text="@string/francois" />
+            
+            </LinearLayout>
     </ScrollView>
 
 </LinearLayout>

@@ -22,11 +22,11 @@
         Nevertheless, there is still a possibility of triggering an avalanche, especially under higher loads such as a group
         riding or ascending close together. Steep slopes with unfavourable snow conditions have the possibility of being
         triggered by an individual rider.
-        \n\nHighly trafficed routes and controlled off piste conditions are generally safe.
+        \n\nHighly trafficked routes and controlled off piste conditions are generally safe.
     </string>
     <string name="hazard_level_3_desc">
         The snowpack is moderately or poorly bonded on most steep slopes, especially those described in the avalanche bulletin.
-        Medium sized naturally triggered avalanches are possible and on rare occassions may be large.
+        Medium sized naturally triggered avalanches are possible and on rare occasions may be large.
         Off piste and back country routes require extensive experience and caution.
         \n\nEven a single rider can trigger an avalanche in these conditions, especially on steep slopes.
     </string>
@@ -73,17 +73,21 @@
         on the mountain. This is especially the case in extreme conditions where you may need to make fast decisions
         adapting to changing conditions, or when you and your mates are excited about hitting up fresh tracks.
         It should be your ambition to know and understand these factors deeply and instinctively enough that this phone 
-        application becomes unecessary.
+        application becomes unnecessary.
         \n\nThis description is only a brief overview of the 3x3 Filter Method and is not a substitute for reading expert literature
         and attending training provided by avalanche professionals.
 	</string>
 
 	<string name="books_heading">Book References</string>
     <string name="threex3LawinenBook_title">3x3 Lawinen (German)</string>
-	<string name="threex3LawinenBook">\tWerner Munter\n\t&#169; 2009 Verlag Pohl &amp; Schellhammer\n\tISBN 3-00-010520-4</string>
+	<string name="threex3LawinenBook" translatable="false">\tWerner Munter\n\t&#169; 2009 Verlag Pohl &amp; Schellhammer\n\tISBN 3&#8211;00&#8211;010520&#8211;4</string>
     <string name="PowderGuideBook_title">Powder Guide (English)</string>
-    <string name="PowderGuideBook">\tTobias Kurzeder and Holger Feist\n\t&#169; 2003 Mountain Sports Press\n\tISBN 0-9724827-3-3</string>
+    <string name="PowderGuideBook" translatable="false">\tTobias Kurzeder and Holger Feist\n\t&#169; 2003 Mountain Sports Press\n\tISBN 0&#8211;9724827&#8211;3&#8211;3</string>
     
-	<string name="links_heading">Links</string>
-
+    <string name="thankyou">Thank you</string>
+    <string name="dave">Dave O\'Riordan\n\tTesting and advise</string>
+    <string name="giac">Giacomo Ghezzi\n\tItalian translation</string>
+    <string name="peter">Peter Schnappauf\n\tGerman translation and advise</string>
+    <string name="francois">François Rapin\n\tFrench translation</string>  
+    
 </resources>

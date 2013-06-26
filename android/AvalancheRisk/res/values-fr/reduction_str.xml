@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="reductionTab">Réduction</string> 
+  <string name="dangerLevel">Niveau de danger: %</string> 
+  <string name="riskSafe">Dévalez les pentes !\nMais évaluez les conditions locales et les pentes. Changer de projet modifie également le risque.</string> 
+  <string name="riskDangerous">Le danger d\'avalanche est trop fort, changez votre projet pour réduire le risque.</string> 
+  <string name="riskExtreme">Sérieusement, le bar ou le canapé sont les seuls lieux sûrs aujourd\'hui.</string> 
+  <string name="hazardLevel">Quel est l\'indice du risque dans le bulletin avalanche du jour ?</string> 
+  <string name="veryHigh">Niveau 5: Très fort</string> 
+  <string name="high">Niveau 4: Fort</string> 
+  <string name="considerable">Niveau 3: Marqué</string> 
+  <string name="moderate">Niveau 2: Limité</string> 
+  <string name="low">Niveau 1: Faible</string> 
+  <string name="higherHazard">Dans votre évaluation, le risque est-il plus élevé que dans le bulletin d\'avalanches ?</string> 
+  <string name="firstClass">Première classe de facteurs de réduction</string> 
+  <string name="howSteep">Quelle est la pente la plus raide que vous allez parcourir (y compris les pentes amont) ?</string> 
+  <string name="veryVerySteep">40° ou plus</string> 
+  <string name="verySteep">35° - 39° (moins de 40°)</string> 
+  <string name="steep">Environ 35°</string> 
+  <string name="moderatelySteep">30°-34° (moins de 35°)</string> 
+  <string name="notSteep">29° ou moins</string> 
+  <string name="secondClass">Seconde classe de facteurs de réduction</string> 
+  <string name="secondClassHemisphere">Cette partie est écrite pour l\'hémisphère Nord, des ajustements sont nécessaire pour utilisation dans l\'hémisphère Sud.</string> 
+  <string name="allAspectsDanger">Le bulletin d\'avalanche déclare-t-il tous les aspects constatés du danger ?</string> 
+  <string name="inverse">Dans le bulletin d\'avalanche, les aspects Sud sont-ils plus dangereux que ceux du Nord ?</string> 
+  <string name="where">Où allez-vous tracer ?</string> 
+  <string name="allAspects">Tous les aspects</string> 
+  <string name="avoidNorthSector">Évitez le secteur Nord\n( du nord-ouest au nord-nord-est)</string> 
+  <string name="avoidNorthHalf">Évitez la \"moitié nord\" de la boussole\n(ouest-nord-ouest à est-sud-est)</string> 
+  <string name="avoidCritical">Évitez les aspects et les altitudes critiques définis dans le bulletin d\'avalanche</string> 
+  <string name="tracked">Pentes régulièrement parcourues.\n(Pas pour la neige mouillée ou des paquets de neige récente)</string> 
+  <string name="thirdClass">Troisième classe de facteurs de réduction</string> 
+  <string name="who">Avec qui allez vous tracer ?</string> 
+  <string name="largeGroup">Un grand groupe (plus de 4 membres)</string> 
+  <string name="largeGroupSpaced">Un grand groupe (plus de 4 membres)\nmaintenez une distance de sécurité</string> 
+  <string name="smallGroup">Un petit groupe (2–4 membres)</string> 
+  <string name="smallGroupSpaced">Un petit groupe (2–4 membres)\nmaintenez une distance de sécurité</string> 
+</resources>

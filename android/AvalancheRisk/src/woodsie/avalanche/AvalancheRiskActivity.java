@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class AvalancheRiskActivity extends Activity implements OnClickListener {
+public class AvalancheRiskActivity extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -14,28 +14,14 @@ public class AvalancheRiskActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.main);
 
 		View continueButton = findViewById(R.id.frontContinueButton);
-		continueButton.setOnClickListener(this);
+		continueButton.setOnClickListener(new OnClickListener() {
 
-	}
+			public void onClick(View v) {
+				Intent intent = new Intent().setClass(AvalancheRiskActivity.this, MainTabActivity.class);
+				startActivity(intent);
+			}
+		});
 
-//	@Override
-//	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-//		super.onRestoreInstanceState(savedInstanceState);
-//
-//		lastWarningShown = new Date(savedInstanceState.getLong("lastWarningShown"));
-//	}
-//
-//	@Override
-//	protected void onSaveInstanceState(Bundle outState) {
-//		super.onSaveInstanceState(outState);
-//
-//		if (lastWarningShown != null)
-//			outState.putLong("lastWarningShown", lastWarningShown.getTime());
-//	}
-
-	public void onClick(View v) {
-		Intent intent = new Intent().setClass(this, MainTabActivity.class);
-		startActivity(intent);
 	}
 
 }

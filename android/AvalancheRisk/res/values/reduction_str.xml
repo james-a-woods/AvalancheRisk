@@ -34,8 +34,8 @@
     <string name="who">Who will you be riding with?</string>
     <string name="largeGroup">A large group (more than 4 members)</string>
     <string name="largeGroupSpaced">A large group (more than 4 members)\nkeeping a safe distance</string>
-    <string name="smallGroup">A small group (2–4 members)</string>
-    <string name="smallGroupSpaced">A small group (2–4 members)\nkeeping a safe distance</string>
+    <string name="smallGroup">A small group (2&#8211;4 members)</string>
+    <string name="smallGroupSpaced">A small group (2&#8211;4 members)\nkeeping a safe distance</string>
 
     <string-array name="hazardLevelValues">
         <item>@string/veryHigh</item>

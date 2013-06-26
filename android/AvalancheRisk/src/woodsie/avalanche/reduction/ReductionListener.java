@@ -177,7 +177,7 @@ public class ReductionListener implements OnClickListener {
 
 	private void displayRisk(BigDecimal risk) {
 		String riskStr = activity.getResources().getString(R.string.dangerLevel);
-		riskStr = riskStr.replace("%", risk.setScale(3, RoundingMode.CEILING).toString());
+		riskStr = riskStr.replace("%", risk.setScale(1, RoundingMode.CEILING).toString());
 
 		TextView text = (TextView) activity.findViewById(R.id.dangerLevelText);
 

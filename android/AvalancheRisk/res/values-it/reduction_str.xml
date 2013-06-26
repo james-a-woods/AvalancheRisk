@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="reductionTab">Riduzione</string>
+    <string name="dangerLevel">Livello di pericolo:%</string>
+    <string name="riskSafe">Tempo per una bella sciata!\nMa valuta sempre le condizioni locali e pendii. Una modifica dei piani cambia anche il livello di rischio.</string>
+    <string name="riskDangerous">Il pericolo di valanghe è troppo alto, è necessario cambiare i piani per ridurre il rischio.</string>
+    <string name="riskExtreme">Scherzi a parte, il pub o il divano sono gli unici posti sicuri oggi.</string>
+    <string name="hazardLevel">Qual è il livello di rischio nel bollettino valanghe?</string>
+    <string name="veryHigh">Livello 5: Molto forte</string>
+    <string name="high">Livello 4: Forte</string>
+    <string name="considerable">Livello 3: Marcato</string>
+    <string name="moderate">Livello 2: Moderato</string>
+    <string name="low">Livello 1: Debole</string>
+    <string name="higherHazard">Nella tua valutazione il livello di pericolo è più elevato che nel bollettino delle valanghe?</string>
+    <string name="firstClass">Fattori di riduzione di primo livello</string>
+    <string name="howSteep">Qual è l\'inclinazione massima del pendio (compreso il pendio sopra di voi)?</string>
+    <string name="veryVerySteep">40° o più ripido</string>
+    <string name="verySteep">35° - 39° (meno di 40°)</string>
+    <string name="steep">Intorno a 35°</string>
+    <string name="moderatelySteep">30°-34° (inferiore a 35°)</string>
+    <string name="notSteep">29° o più piatto</string>
+    <string name="secondClass">Fattori di riduzione di secondo livello</string>
+    <string name="secondClassHemisphere">Questa sezione è specifica per l\'emisfero nord, pertanto sono necessari vari aggiustamenti se vi trovate nel emisfero sud.</string>
+    <string name="allAspectsDanger">Il bollettino valanghe dichiara pericolose tutte le esposizioni?</string>
+    <string name="inverse">Il bollettino valanghe dichiara le esposizioni meridionali più pericolose delle esposizioni settentrionali?</string>
+    <string name="where">Dove scieresti?</string>
+    <string name="allAspects">Tutte le esposizioni</string>
+    <string name="avoidNorthSector">Evitando il settore settentrionale\n(le esposizioni da nord-ovest a nord-nord-est)</string>
+    <string name="avoidNorthHalf">Evitando la \"metà settentrionale\" della\nbussola (le esposizioni da ovest-nord-ovest a est-sud-est)</string>
+    <string name="avoidCritical">Evitando le quote a le esposizioni a rischio indicate nel bollettino valanghe</string>
+    <string name="tracked">Pendio molto frequentato\n(non in caso di neve bagnata o molta neve fresca)</string>
+    <string name="thirdClass">Fattori di riduzione di terzo livello</string>
+    <string name="who">Con chi scieresti?</string>
+    <string name="largeGroup">Un grande gruppo (più di 4 persone)</string>
+    <string name="largeGroupSpaced">Un grande gruppo (più di 4 persone)\nche mantiene le distanze di sicurezza</string>
+    <string name="smallGroup">Un piccolo gruppo (2&#8211;4 persone)</string>
+    <string name="smallGroupSpaced">Un piccolo gruppo (2&#8211;4 persone)\nche mantiene le distanze di sicurezza</string>
+
+</resources>

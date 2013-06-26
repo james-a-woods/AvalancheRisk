@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="checklist3x3Tab">Checklist</string>
+    <string name="conditions">Condizioni meteorologiche e della neve</string>
+    <string name="terrain">Terreno</string>
+    <string name="human">Fattore Umano</string>
+    <string name="regional">Regionale\nPreparazione prima della partenza, compresi itinerari alternativi</string>
+    <string name="regional_cond_a">Bollettino valanghe.\nNazionale, locale e automatico</string>
+    <string name="regional_cond_b">Previsioni meteo</string>
+    <string name="regional_cond_c">Opinioni e notizie di esperti</string>
+    <string name="regional_terrain_a">Una mappa di grandi dimensioni, preferibilmente 1:25.000</string>
+    <string name="regional_terrain_b">Guide, foto, foto aeree</string>
+    <string name="regional_terrain_c">Conoscenza personale e locale della zona</string>
+    <string name="regional_human_a">Chi ha in programma di venire?\nLivello di esperienza, competenza, forma fisica, forza mentale (stabilità psichica)</string>
+    <string name="regional_human_b">Controllare i dispositivi.\nTransceiver, pala, sonda (imbracatura?)</string>
+    <string name="regional_human_c">C\'è un leader designato?</string>
+    <string name="local">Locale\nTutto ciò visibile ad occhio nudo. Selezione del percorso e delle alternative</string>
+    <string name="local_cond_a">Accumuli da vento\nIncrespature, dune o sastrugi causati dal vento</string>
+    <string name="local_cond_b">Segni di pericolo.\nCondizione della neve. Segni di una valanga recente.</string>
+    <string name="local_cond_c">Quantità di neve fresca</string>
+    <string name="local_cond_d">Le condizioni sono invertite?\nLe pendenze a nord sono più sicure di quelle a sud? È più sicuro nelle parti alte che nelle parti basse?</string>
+    <string name="local_cond_e">venti di Föhn/Chinook o pioggia possono ridurre la stabilità del manto nevoso rapidamente</string>
+    <string name="local_cond_f">Visibilità, nuvolosità, velocità del vento</string>
+    <string name="local_cond_g">Cambiamenti di temperatura</string>
+    <string name="local_cond_h">Il bollettino valanghe è corretto?\nFate modifiche in caso di dubbio</string>
+    <string name="local_terrain_a">Inclinazione (compresi sopra e sotto di voi), aspetto, dimensione</string>
+    <string name="local_terrain_b">Sono le tracce lasciate da altri sciatori adatte alle condizioni attuali?</string>
+    <string name="local_human_a">Chi fa parte del gruppo?\nIn quanti siete?</string>
+    <string name="local_human_b">Controllare la ricetrasmittente ARVA.\nControllare gli altri strumenti. Pale, sonde (imbracature?)</string>
+    <string name="local_human_c">Ci sono altri gruppi sullo stesso tragitto? Questi gruppi hanno bisogno di essere coordinati?</string>
+    <string name="local_human_d">Siete in orario o si sta facendo troppo tardi?</string>
+    <string name="zonal">Zonale\nControllare il pendio di fronte a voi</string>
+    <string name="zonal_cond_a">Quanta neve è caduta sul pendio?</string>
+    <string name="zonal_cond_b">Ci sono accumuli di neve causati dal vento recenti?</string>
+    <string name="zonal_cond_c">Visibilità.\nIl tempo sta diventando brutto?</string>
+    <string name="zonal_cond_d">Influenza della radiazione solare?</string>
+    <string name="zonal_cond_e">Dov\'è che si potrebbe staccare un lastra e quanto grossa sarebbe?</string>
+    <string name="zonal_cond_f">Guardati intorno\nCom\'è il quadro generale?</string>
+    <string name="zonal_terrain_a">Che cosa c\'è sopra e sotto di me?\nAltre persone?</string>
+    <string name="zonal_terrain_b">Quanto è ripida la parte più ripida?\nNei canaloni questa parte si trova di solito ai lati e non nel centro.</string>
+    <string name="zonal_terrain_c">Esposizione?\nNei canaloni ci possono essere molteplici esposizioni.</string>
+    <string name="zonal_terrain_d">Terreno tipico da valanga. Pendio roccioso e ripido. Pendio ripido e sottovento. Radura ripida e ombreggiata</string>
+    <string name="zonal_terrain_e">Forma del pendio.\nConcavo, convesso, a forma di S</string>
+    <string name="zonal_terrain_f">Altitudine</string>
+    <string name="zonal_human_a">Abilità, disciplina, stanchezza dei membri del gruppo</string>
+    <string name="zonal_human_b">Il pendio viene regolarmente percorso?</string>
+    <string name="zonal_human_c">Distanza di sicurezza.\nUna alla volta. Seguite lo stesso percorso</string>
+    <string name="zonal_human_d">Identificare zone sicure da usare come punti di incontro</string>
+    <string name="zonal_human_e">Evitare le zone pericolose e i percorsi rischiosi</string>
+    <string name="lastCheck">Controllo finale\nAndare o non andare. Il gruppo è unanimemente d\'accordo con la decisione di andare?</string>
+
+</resources>

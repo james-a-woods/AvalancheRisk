@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ScrollView;
 
-public class Checklist3x3Activity extends AbstractPersistedStateActivity implements CollapsibleSectionParent, OnClickListener {
+public class Checklist3x3Activity extends AbstractPersistedStateActivity implements CollapsibleSectionParent {
 
 	@Getter
 	private List<CollapsibleSection> sectionList;
@@ -44,8 +44,16 @@ public class Checklist3x3Activity extends AbstractPersistedStateActivity impleme
 			sectionList.get(savedInstanceState.getInt(OPEN_SECTION)).open();
 		}
 
-		findViewById(R.id.checklist3x3ResetTop).setOnClickListener(this);
-		findViewById(R.id.checklist3x3ResetBottom).setOnClickListener(this);
+		findViewById(R.id.checklist3x3ResetTop).setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				reset();
+			}
+		});
+		findViewById(R.id.checklist3x3ResetBottom).setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				reset();
+			}
+		});
 	}
 
 	@Override
@@ -60,7 +68,7 @@ public class Checklist3x3Activity extends AbstractPersistedStateActivity impleme
 		saveStateToFile(findViewById(R.id.checklist3x3Form));
 	}
 
-	public void onClick(View view) {
+	public void reset() {
 
 		for (CollapsibleSection section : sectionList) {
 			section.close();

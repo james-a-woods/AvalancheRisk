@@ -28,8 +28,18 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 		View topLevel = findViewById(R.id.reductionForm);
 		setRecursiveOnClickListener(topLevel, listener);
 
-		findViewById(R.id.reductionResetTop).setOnClickListener(this);
-		findViewById(R.id.reductionResetBottom).setOnClickListener(this);
+		findViewById(R.id.reductionResetTop).setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				reset();
+			}
+		});
+		findViewById(R.id.reductionResetBottom).setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				reset();
+			}
+		});
 		findViewById(R.id.hazardDummy).setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				new HazardFragment().show(getSupportFragmentManager(), "hazard");
@@ -63,7 +73,7 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 		}
 	}
 
-	public void onClick(View view) {
+	public void reset() {
 		reset(findViewById(R.id.reductionForm));
 
 		((ScrollView) findViewById(R.id.reductionScroller)).scrollTo(0, 0);
