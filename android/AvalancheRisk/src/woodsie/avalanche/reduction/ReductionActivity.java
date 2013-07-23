@@ -82,7 +82,7 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 
 	private void reset(View view) {
 
-		((RadioButton) findViewById(R.id.veryHigh)).setChecked(true);
+		// ((RadioButton) findViewById(R.id.veryHigh)).setChecked(true);
 		((RadioButton) findViewById(R.id.veryVerySteep)).setChecked(true);
 		((RadioButton) findViewById(R.id.allAspects)).setChecked(true);
 		((RadioButton) findViewById(R.id.largeGroup)).setChecked(true);
@@ -98,6 +98,7 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 	public void OnDialogClick(HazardFragment dialog, int which) {
 		hazardLevel = which;
 		((TextView) findViewById(R.id.hazardDummy)).setText(getResources().getStringArray(R.array.hazardLevelValues)[which]);
+		listener.onClick(null);
 	}
 
 	public int getInitialValue(HazardFragment dialog) {

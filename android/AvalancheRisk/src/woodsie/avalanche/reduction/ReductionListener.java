@@ -58,24 +58,38 @@ public class ReductionListener implements OnClickListener {
 		ReductionParams params = new ReductionParams();
 
 		// Hazard level
-		RadioGroup hazard = (RadioGroup) activity.findViewById(R.id.hazard);
-		switch (hazard.getCheckedRadioButtonId()) {
-		case R.id.low:
-			params.setHazardLevel(LOW);
-			break;
-		case R.id.moderate:
-			params.setHazardLevel(MODERATE);
-			break;
-		case R.id.considerable:
-			params.setHazardLevel(CONSIDERABLE);
-			break;
-		case R.id.high:
-			params.setHazardLevel(HIGH);
-			break;
-		case R.id.veryHigh:
-		default:
+		// RadioGroup hazard = (RadioGroup) activity.findViewById(R.id.hazard);
+		// switch (hazard.getCheckedRadioButtonId()) {
+		// case R.id.low:
+		// params.setHazardLevel(LOW);
+		// break;
+		// case R.id.moderate:
+		// params.setHazardLevel(MODERATE);
+		// break;
+		// case R.id.considerable:
+		// params.setHazardLevel(CONSIDERABLE);
+		// break;
+		// case R.id.high:
+		// params.setHazardLevel();
+		// break;
+		// case R.id.veryHigh:
+		// default:
+		// params.setHazardLevel(VERY_HIGH);
+		// break;
+		// }
+
+		String hazard = ((TextView) activity.findViewById(R.id.hazardDummy)).getText().toString();
+		String[] hazardLevels = activity.getResources().getStringArray(R.array.hazardLevelValues);
+		if (hazardLevels[0].equals(hazard)) {
 			params.setHazardLevel(VERY_HIGH);
-			break;
+		} else if (hazardLevels[1].equals(hazard)) {
+			params.setHazardLevel(HIGH);
+		} else if (hazardLevels[2].equals(hazard)) {
+			params.setHazardLevel(CONSIDERABLE);
+		} else if (hazardLevels[3].equals(hazard)) {
+			params.setHazardLevel(MODERATE);
+		} else if (hazardLevels[4].equals(hazard)) {
+			params.setHazardLevel(LOW);
 		}
 
 		CheckBox higherHazard = (CheckBox) activity.findViewById(R.id.higherHazard);

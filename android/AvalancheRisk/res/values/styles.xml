@@ -57,6 +57,17 @@
         <item name="android:padding">5dp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
+    
+    <style name="divider">
+        <item name="android:src">@android:drawable/divider_horizontal_dark</item>
+	 	<item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:scaleType">fitXY</item>
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:paddingRight">5dp</item>
+	    <item name="android:paddingBottom">2dp</item>
+	    <item name="android:paddingTop">2dp</item>
+    </style>
 
     <style name="checkBox" parent="textDefaultSize">
     </style>

@@ -55,53 +55,15 @@
                         android:layout_height="wrap_content"
                         android:text="@string/veryHigh" />
                     
-					<ImageView
-					    android:src="@android:drawable/divider_horizontal_dark"
-					    android:layout_width="fill_parent"
-					    android:layout_height="wrap_content"
-					    android:scaleType="fitXY"
-					    android:paddingLeft="5dp"
-					    android:paddingRight="5dp"
-					    android:paddingBottom="2dp"
-					    android:paddingTop="2dp" />	
+					<ImageView style="@style/divider" android:contentDescription="@string/divider"/>	
     
-                     <RadioGroup
-                        android:id="@+id/hazard"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-
-
-                        <RadioButton
-                            android:id="@+id/veryHigh"
-                            style="@style/radioButton"
-                            android:checked="true"
-                            android:text="@string/veryHigh" />
-
-                        <RadioButton
-                            android:id="@+id/moderate"
-                            style="@style/radioButton"
-                            android:text="@string/moderate" />
-
-                        <RadioButton
-                            android:id="@+id/high"
-                            style="@style/radioButton"
-                            android:text="@string/high" />
-
-                        <RadioButton
-                            android:id="@+id/considerable"
-                            style="@style/radioButton"
-                            android:text="@string/considerable" />
-
-                        <RadioButton
-                            android:id="@+id/low"
-                            style="@style/radioButton"
-                            android:text="@string/low" />
-                    </RadioGroup>
-
                     <CheckBox
                         android:id="@+id/higherHazard"
                         style="@style/checkBox"
                         android:text="@string/higherHazard" />
+                    
+					<ImageView style="@style/divider" android:contentDescription="@string/divider"/>	
+    
                 </LinearLayout>
 
                 <!-- First Class (steepness) -->
