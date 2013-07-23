@@ -48,13 +48,23 @@
                         style="@style/textMedium"
                         android:text="@string/hazardLevel" />
 
-                        <TextView
-                            android:id="@+id/hazardDummy"
-                            style="@style/selectBox"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/veryHigh" />
-
+                    <TextView
+                        android:id="@+id/hazardDummy"
+                        style="@style/selectBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/veryHigh" />
+                    
+					<ImageView
+					    android:src="@android:drawable/divider_horizontal_dark"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:scaleType="fitXY"
+					    android:paddingLeft="5dp"
+					    android:paddingRight="5dp"
+					    android:paddingBottom="2dp"
+					    android:paddingTop="2dp" />	
+    
                      <RadioGroup
                         android:id="@+id/hazard"
                         android:layout_width="match_parent"

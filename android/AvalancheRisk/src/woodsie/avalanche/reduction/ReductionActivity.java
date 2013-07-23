@@ -12,7 +12,7 @@ import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class ReductionActivity extends AbstractPersistedStateActivity implements OnClickListener, HazardDialogListener {
+public class ReductionActivity extends AbstractPersistedStateActivity implements HazardDialogListener {
 	private final ReductionListener listener = new ReductionListener(this);
 
 	private int hazardLevel = 0;
