@@ -2,7 +2,8 @@ package woodsie.avalanche.reduction;
 
 import woodsie.avalanche.AbstractPersistedStateActivity;
 import woodsie.avalanche.R;
-import woodsie.avalanche.reduction.HazardFragment.HazardDialogListener;
+import woodsie.avalanche.reduction.dialog.SelectionDialog;
+import woodsie.avalanche.reduction.dialog.SelectionDialogListener;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,10 +13,8 @@ import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class ReductionActivity extends AbstractPersistedStateActivity implements HazardDialogListener {
+public class ReductionActivity extends AbstractPersistedStateActivity implements SelectionDialogListener {
 	private final ReductionListener listener = new ReductionListener(this);
-
-	private int hazardLevel = 0;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -40,9 +39,10 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 				reset();
 			}
 		});
+
 		findViewById(R.id.hazardDummy).setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				new HazardFragment().show(getSupportFragmentManager(), "hazard");
+				new SelectionDialog().show(getSupportFragmentManager(), "hazard", R.array.hazardLevelValues);
 			}
 		});
 	}
@@ -95,14 +95,12 @@ public class ReductionActivity extends AbstractPersistedStateActivity implements
 		listener.onClick(null);
 	}
 
-	public void OnDialogClick(HazardFragment dialog, int which) {
-		hazardLevel = which;
-		((TextView) findViewById(R.id.hazardDummy)).setText(getResources().getStringArray(R.array.hazardLevelValues)[which]);
-		listener.onClick(null);
-	}
+	public void OnDialogClick(SelectionDialog dialog, String name, String choice) {
+		if (name.equals("hazard")) {
+			((TextView) findViewById(R.id.hazardDummy)).setText(choice);
+		}
 
-	public int getInitialValue(HazardFragment dialog) {
-		return hazardLevel;
+		listener.onClick(null);
 	}
 
 }
